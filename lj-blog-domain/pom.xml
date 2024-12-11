@@ -8,4 +8,18 @@
     </parent>
     <artifactId>lj-blog-domain</artifactId>
     <name>lj-blog-domain</name>
+    <dependencies>
+        <dependency>
+            <groupId>com.lj</groupId>
+            <artifactId>lj-blog-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lj</groupId>
+            <artifactId>lj-blog-infra</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 </project>

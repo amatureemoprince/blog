@@ -12,12 +12,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring-boot-web.version}</version>
         </dependency>
         <dependency>
             <groupId>com.lj</groupId>
             <artifactId>lj-blog-infra</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lj</groupId>
+            <artifactId>lj-blog-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lj</groupId>
+            <artifactId>lj-blog-domain</artifactId>
         </dependency>
     </dependencies>
 </project>

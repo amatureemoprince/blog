@@ -11,11 +11,31 @@
     <name>lj-blog-application</name>
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lj</groupId>
+                <artifactId>lj-blog-infra</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lj</groupId>
+                <artifactId>lj-blog-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lj</groupId>
+                <artifactId>lj-blog-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <properties>
         <spring-boot-web.version>3.3.5</spring-boot-web.version>
+        <project.version>0.0.1-SNAPSHOT</project.version>
     </properties>
     <modules>
         <module>lj-blog-mq</module>

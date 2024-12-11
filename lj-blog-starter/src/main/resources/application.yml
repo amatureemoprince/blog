@@ -2,7 +2,7 @@ server:
   port: 8085
 spring:
   application:
-    name: ljBlog
+    name: 博客后端
   datasource:
     username: root
     password: 200481lj
@@ -24,3 +24,15 @@ spring:
           enabled: true
           slow-sql-millis: 2000
           log-slow-sql: true
+logging:
+  config: classpath:log4j2-spring.xml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开启SQL日志
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto  # 主键策略
+  mapper-locations: classpath*:/mapper/**/*.xml  # mapper文件位置
+  type-aliases-package: com.lj.blog.infra.basic.entity
+
