@@ -1,5 +1,7 @@
 package com.lj.blog.infra.basic.service;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.lj.blog.infra.basic.entity.ArticleCategory;
 
 import java.util.List;
@@ -10,7 +12,7 @@ import java.util.List;
  * @author makejava
  * @since 2024-12-10 17:44:02
  */
-public interface ArticleCategoryService {
+public interface ArticleCategoryService extends IService<ArticleCategory> {
 
     /**
      * 通过ID查询单条数据
@@ -38,7 +40,7 @@ public interface ArticleCategoryService {
      * @param articleCategory 实例对象
      * @return 实例对象
      */
-    ArticleCategory insert(ArticleCategory articleCategory);
+    int insert(ArticleCategory articleCategory);
 
     /**
      * 修改数据

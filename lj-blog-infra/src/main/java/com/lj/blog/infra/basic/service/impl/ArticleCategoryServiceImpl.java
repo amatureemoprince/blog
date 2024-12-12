@@ -1,5 +1,6 @@
 package com.lj.blog.infra.basic.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lj.blog.infra.basic.entity.ArticleCategory;
 import com.lj.blog.infra.basic.mapper.ArticleCategoryDao;
 import com.lj.blog.infra.basic.service.ArticleCategoryService;
@@ -15,7 +16,7 @@ import java.util.List;
  * @since 2024-12-10 17:44:02
  */
 @Service("articleCategoryService")
-public class ArticleCategoryServiceImpl implements ArticleCategoryService {
+public class ArticleCategoryServiceImpl extends ServiceImpl<ArticleCategoryDao, ArticleCategory> implements ArticleCategoryService {
     @Resource
     private ArticleCategoryDao articleCategoryDao;
 
@@ -51,9 +52,8 @@ public class ArticleCategoryServiceImpl implements ArticleCategoryService {
      * @return 实例对象
      */
     @Override
-    public ArticleCategory insert(ArticleCategory articleCategory) {
-        this.articleCategoryDao.insertArticleCategory(articleCategory);
-        return articleCategory;
+    public int insert(ArticleCategory articleCategory) {
+        return this.articleCategoryDao.insertArticleCategory(articleCategory);
     }
 
     /**

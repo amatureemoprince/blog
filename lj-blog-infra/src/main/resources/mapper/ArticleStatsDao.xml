@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lj.blog.infra.basic.mapper.ArticleStatsDao">
+
+    <resultMap type="com.lj.blog.infra.basic.entity.ArticleStats" id="ArticleStatsMap">
+        <result property="articleId" column="article_id" jdbcType="INTEGER"/>
+        <result property="viewCount" column="view_count" jdbcType="INTEGER"/>
+        <result property="likeCount" column="like_count" jdbcType="INTEGER"/>
+        <result property="commentCount" column="comment_count" jdbcType="INTEGER"/>
+        <result property="collectionCount" column="collection_count" jdbcType="INTEGER"/>
+        <result property="shareCount" column="share_count" jdbcType="INTEGER"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ArticleStatsMap">
+        select
+article_id, view_count, like_count, comment_count, collection_count, share_count, update_time
+        from article_stats
+        where article_id = #{articleId}
+    </select>
+
+    <!--查询指定行数据-->
+
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from article_stats
+        <where>
+            <if test="articleId != null">
+                and article_id = #{articleId}
+            </if>
+            <if test="viewCount != null">
+                and view_count = #{viewCount}
+            </if>
+            <if test="likeCount != null">
+                and like_count = #{likeCount}
+            </if>
+            <if test="commentCount != null">
+                and comment_count = #{commentCount}
+            </if>
+            <if test="collectionCount != null">
+                and collection_count = #{collectionCount}
+            </if>
+            <if test="shareCount != null">
+                and share_count = #{shareCount}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="articleId" useGeneratedKeys="true">
+        insert into article_stats(view_count, like_count, comment_count, collection_count, share_count, update_time)
+        values (#{viewCount}, #{likeCount}, #{commentCount}, #{collectionCount}, #{shareCount}, #{updateTime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="articleId" useGeneratedKeys="true">
+        insert into article_stats(view_count, like_count, comment_count, collection_count, share_count, update_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.viewCount}, #{entity.likeCount}, #{entity.commentCount}, #{entity.collectionCount}, #{entity.shareCount}, #{entity.updateTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="articleId" useGeneratedKeys="true">
+        insert into article_stats(view_count, like_count, comment_count, collection_count, share_count, update_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.viewCount}, #{entity.likeCount}, #{entity.commentCount}, #{entity.collectionCount}, #{entity.shareCount}, #{entity.updateTime})
+        </foreach>
+        on duplicate key update
+view_count = values(view_count),
+like_count = values(like_count),
+comment_count = values(comment_count),
+collection_count = values(collection_count),
+share_count = values(share_count),
+update_time = values(update_time)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update article_stats
+        <set>
+            <if test="viewCount != null">
+                view_count = #{viewCount},
+            </if>
+            <if test="likeCount != null">
+                like_count = #{likeCount},
+            </if>
+            <if test="commentCount != null">
+                comment_count = #{commentCount},
+            </if>
+            <if test="collectionCount != null">
+                collection_count = #{collectionCount},
+            </if>
+            <if test="shareCount != null">
+                share_count = #{shareCount},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where article_id = #{articleId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from article_stats where article_id = #{articleId}
+    </delete>
+
+</mapper>
+

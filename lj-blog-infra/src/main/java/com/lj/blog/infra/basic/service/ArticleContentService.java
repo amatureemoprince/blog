@@ -1,15 +1,15 @@
 package com.lj.blog.infra.basic.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lj.blog.infra.basic.entity.ArticleInfo;
+import com.lj.blog.infra.basic.entity.ArticleContent;
 
 /**
- * 文章信息表(ArticleInfo)表服务接口
+ * 文章内容表(ArticleContent)表服务接口
  *
  * @author makejava
- * @since 2024-12-10 10:34:17
+ * @since 2024-12-12 08:12:55
  */
-public interface ArticleInfoService extends IService<ArticleInfo> {
+public interface ArticleContentService extends IService<ArticleContent> {
 
     /**
      * 通过ID查询单条数据
@@ -17,32 +17,33 @@ public interface ArticleInfoService extends IService<ArticleInfo> {
      * @param id 主键
      * @return 实例对象
      */
-    ArticleInfo queryById(int id);
+    ArticleContent queryById(Integer id);
 
     /**
      * 分页查询
      *
-     * @param articleInfo 筛选条件
+     * @param articleContent 筛选条件
      * @param pageRequest      分页对象
      * @return 查询结果
      */
 
 
+
     /**
      * 新增数据
      *
-     * @param articleInfo 实例对象
+     * @param articleContent 实例对象
      * @return 实例对象
      */
-    int insert(ArticleInfo articleInfo);
+    int insert(ArticleContent articleContent);
 
     /**
      * 修改数据
      *
-     * @param articleInfo 实例对象
+     * @param articleContent 实例对象
      * @return 实例对象
      */
-    ArticleInfo update(ArticleInfo articleInfo);
+    ArticleContent update(ArticleContent articleContent);
 
     /**
      * 通过主键删除数据
@@ -50,6 +51,6 @@ public interface ArticleInfoService extends IService<ArticleInfo> {
      * @param id 主键
      * @return 是否成功
      */
-    boolean deleteById(int id);
+    boolean deleteById(Integer id);
 
 }

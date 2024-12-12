@@ -1,5 +1,6 @@
 package com.lj.blog.infra.basic.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lj.blog.infra.basic.entity.ArticleInfo;
 import com.lj.blog.infra.basic.mapper.ArticleInfoDao;
 import com.lj.blog.infra.basic.service.ArticleInfoService;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @since 2024-12-10 10:34:17
  */
 @Service("articleInfoService")
-public class ArticleInfoServiceImpl implements ArticleInfoService {
+public class ArticleInfoServiceImpl extends ServiceImpl<ArticleInfoDao, ArticleInfo> implements ArticleInfoService {
     @Resource
     private ArticleInfoDao articleInfoDao;
 
@@ -44,9 +45,8 @@ public class ArticleInfoServiceImpl implements ArticleInfoService {
      * @return 实例对象
      */
     @Override
-    public ArticleInfo insert(ArticleInfo articleInfo) {
-        this.articleInfoDao.insert(articleInfo);
-        return articleInfo;
+    public int insert(ArticleInfo articleInfo) {
+        return this.articleInfoDao.insert(articleInfo);
     }
 
     /**
