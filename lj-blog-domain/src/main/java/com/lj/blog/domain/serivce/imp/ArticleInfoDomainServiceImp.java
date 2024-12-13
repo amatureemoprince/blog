@@ -1,7 +1,6 @@
 package com.lj.blog.domain.serivce.imp;
 
 import com.lj.blog.common.enums.ArticleModuleEnum;
-import com.lj.blog.common.enums.ResultEnum;
 import com.lj.blog.common.result.Result;
 import com.lj.blog.domain.serivce.ArticleInfoDomainService;
 import com.lj.blog.infra.basic.entity.ArticleInfo;

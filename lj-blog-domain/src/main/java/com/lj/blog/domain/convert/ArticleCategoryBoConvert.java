@@ -21,5 +21,4 @@ public interface ArticleCategoryBoConvert {
     ArticleCategory toArticleCategoryPo(ArticleCategoryBo articleCategoryBo);
     List<ArticleCategoryBo> toBOList(List<ArticleCategory> poList);
     List<ArticleCategory> toPoList(List<ArticleCategoryBo> boList);
-
 }

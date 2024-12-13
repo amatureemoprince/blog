@@ -1,4 +1,4 @@
-package com.lj.blog.application.controller.controller.article.backend;
+package com.lj.blog.application.controller.controller.backend;
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
 import com.lj.blog.application.controller.dto.article.info.AddArticleInfoDto;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.*;
  */
 @Slf4j
 @RestController
-@RequestMapping("/article")
-public class ArticleInfoController {
+@RequestMapping("/article/backend/article")
+public class ArticleInfoAndContentController {
 
     @Resource
     private ArticleInfoDomainServiceImp articleInfoDomainService;
@@ -30,7 +30,7 @@ public class ArticleInfoController {
     public Result<String> addArticleInfo(@RequestBody AddArticleInfoDto articleInfoDto){
         try {
             if(log.isInfoEnabled()) {
-                log.info("ArticleInfoController.addArticleInfo.dto:{}", JSON.toJSONString(articleInfoDto));
+                log.info("ArticleInfoAndContentController.addArticleInfo.dto:{}", JSON.toJSONString(articleInfoDto));
             }
             Preconditions.checkNotNull(articleInfoDto.getArticleTitle(), ArticleModuleEnum.ARTICLE_TITLE_NOT_NULL.getMsg());
             Preconditions.checkNotNull(articleInfoDto.getArticleDesc(), ArticleModuleEnum.ARTICLE_DESC_NOT_NULL.getMsg());

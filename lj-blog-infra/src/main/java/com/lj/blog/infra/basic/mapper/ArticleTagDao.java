@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lj.blog.infra.basic.entity.ArticleTag;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -82,5 +83,16 @@ public interface ArticleTagDao extends BaseMapper<ArticleTag> {
      */
     int deleteById(Integer id);
 
+    List<ArticleTag> queryPrimary(ArticleTag articleTag);
+    @Update(
+            "<script>" +
+                    "UPDATE article_tag SET is_deleted = 1 " +
+                    "WHERE id IN " +
+                    "<foreach collection='ids' item='id' open='(' separator=',' close=')'>" +
+                    "#{id}" +
+                    "</foreach>" +
+                    "</script>"
+    )
+    int deleteLogicByIds(@Param("ids") List<Integer> ids);
 }
 

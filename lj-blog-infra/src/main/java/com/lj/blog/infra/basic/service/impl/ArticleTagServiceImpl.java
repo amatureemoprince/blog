@@ -7,6 +7,8 @@ import com.lj.blog.infra.basic.service.ArticleTagService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 /**
  * 文章标签表(ArticleTag)表服务实现类
@@ -71,5 +73,19 @@ public class ArticleTagServiceImpl extends ServiceImpl<ArticleTagDao, ArticleTag
     @Override
     public boolean deleteById(Integer id) {
         return this.articleTagDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public List<ArticleTag> queryPrimary(ArticleTag articleTag) {
+        return this.articleTagDao.queryPrimary(articleTag);
+    }
+    @Override
+    public long counts(ArticleTag articleTag){
+        return this.articleTagDao.count(articleTag);
+    }
+
+    @Override
+    public int deleteByIds(List<Integer> ids) {
+        return this.articleTagDao.deleteLogicByIds(ids);
     }
 }

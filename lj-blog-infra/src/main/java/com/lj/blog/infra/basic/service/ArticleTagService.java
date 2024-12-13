@@ -3,6 +3,8 @@ package com.lj.blog.infra.basic.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lj.blog.infra.basic.entity.ArticleTag;
 
+import java.util.List;
+
 
 /**
  * 文章标签表(ArticleTag)表服务接口
@@ -52,4 +54,8 @@ public interface ArticleTagService extends IService<ArticleTag> {
      */
     boolean deleteById(Integer id);
 
+    List<ArticleTag> queryPrimary(ArticleTag articleTag);
+    long counts(ArticleTag articleTag);
+
+    int deleteByIds(List<Integer> ids);
 }

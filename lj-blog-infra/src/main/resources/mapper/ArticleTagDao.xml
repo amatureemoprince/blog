@@ -45,10 +45,42 @@
             <if test="updateTime != null">
                 and update_time = #{updateTime}
             </if>
-            <if test="isDeleted != null">
-                and is_deleted = #{isDeleted}
-            </if>
+            <choose>
+                <when test="isDeleted != null and isDeleted != ''">
+                    and is_deleted = #{isDeleted}
+                </when>
+                <otherwise>
+                    and is_deleted = 0
+                </otherwise>
+            </choose>
         </where>
+    </select>
+    <select id="queryPrimary" resultType="com.lj.blog.infra.basic.entity.ArticleTag">
+        select *
+        from article_tag
+        <where>
+            <choose>
+                <when test="isDeleted != null and isDeleted != ''">
+                    is_deleted = 1
+                </when>
+                <otherwise>
+                    is_deleted = 0
+                </otherwise>
+            </choose>
+        <if test="tagName != null and tagName != ''">
+            and tag_name like concat('%', #{tagName}, '%')
+        </if>
+        <if test="tagDesc">
+            and tag_desc like concat('%',  #{tagDesc}, '%')
+        </if>
+        <if test="createTime != null and createTime != ''">
+            and create_time = #{createTime}
+        </if>
+        <if test="updateTime != null and updateTime != ''">
+            and update_time = #{updateTime}
+        </if>
+        </where>
+        order by create_time desc
     </select>
 
     <!--新增所有列-->

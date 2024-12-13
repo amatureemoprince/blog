@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @ClassName ResultEnum
+ * @ClassName ResultHttpEnum
  * @Description 返回类中的code，msg
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2024/12/10 8:39
@@ -12,7 +12,7 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 @Getter
-public enum ResultEnum {
+public enum ResultHttpEnum {
     SUCCESS(200, "响应成功"),
     ERROR(400, "响应失败"),
     UNAUTHORIZED(401, "未授权"),

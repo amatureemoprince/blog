@@ -63,9 +63,8 @@ public class ArticleCategoryServiceImpl extends ServiceImpl<ArticleCategoryDao, 
      * @return 实例对象
      */
     @Override
-    public int update(ArticleCategory articleCategory) {
-        return this.articleCategoryDao.update(articleCategory);
-
+    public ArticleCategory update(ArticleCategory articleCategory) {
+         return this.articleCategoryDao.update(articleCategory);
     }
 
 

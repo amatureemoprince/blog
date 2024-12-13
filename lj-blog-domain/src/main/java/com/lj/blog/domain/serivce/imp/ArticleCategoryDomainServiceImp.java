@@ -50,10 +50,10 @@ public class ArticleCategoryDomainServiceImp implements ArticleCategoryDomainSer
             log.info("ArticleCategoryDomainServiceImp.addArticleCategory.po:{}",
                     JSON.toJSONString(po));
         }
-        if (articleCategoryService.insert(po) != null){
-            return Result.success(ArticleModuleEnum.ADD_ARTICLE_LABEL_SUCCESS.getMsg());
+        if (articleCategoryService.insert(po) > 0){
+            return Result.success(ArticleModuleEnum.ADD_ARTICLE_CATEGORY_SUCCESS.getMsg());
         }
-        return Result.error(ArticleModuleEnum.ADD_ARTICLE_LABEL_ERROR.getMsg());
+        return Result.error(ArticleModuleEnum.ADD_ARTICLE_CATEGORY_ERROR.getMsg());
     }
     /**
      * 删除文章分类
@@ -85,15 +85,17 @@ public class ArticleCategoryDomainServiceImp implements ArticleCategoryDomainSer
     }
 
     @Override
-    public Result<String> updateArticleCategory(ArticleCategoryBo updateArticleCategoryBo) {
+    public ArticleCategoryBo updateArticleCategory(ArticleCategoryBo updateArticleCategoryBo) {
         if(log.isInfoEnabled()){
             log.info("ArticleCategoryDomainServiceImp.updateArticleCategory.updateArticleCategoryBo:{}",
                     JSON.toJSONString(updateArticleCategoryBo));
         }
         ArticleCategory po = convert.toArticleCategoryPo(updateArticleCategoryBo);
-        if(articleCategoryService.update(po) > 0){
-            return Result.success(ArticleModuleEnum.UPDATE_ARTICLE_CATEGORY_SUCCESS.getMsg());
+        ArticleCategory update = articleCategoryService.update(po);
+        ArticleCategoryBo bo = convert.toBO(update);
+        if(update != null){
+            return bo;
         }
-        return Result.error(ArticleModuleEnum.UPDATE_ARTICLE_CATEGORY_ERROR.getMsg());
+        return updateArticleCategoryBo;
     }
 }

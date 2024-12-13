@@ -48,7 +48,7 @@ public interface ArticleCategoryService extends IService<ArticleCategory> {
      * @param articleCategory 实例对象
      * @return 实例对象
      */
-    int update(ArticleCategory articleCategory);
+    ArticleCategory update(ArticleCategory articleCategory);
 
     /**
      * 通过主键删除数据

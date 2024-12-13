@@ -1,11 +1,11 @@
-package com.lj.blog.application.controller.controller.article.backend;
+package com.lj.blog.application.controller.controller.backend;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
 import com.lj.blog.application.controller.convert.ArticleCategoryConvert;
 import com.lj.blog.application.controller.dto.article.category.AddArticleCategoryDto;
 import com.lj.blog.application.controller.dto.article.category.ArticleCategoryDto;
-import com.lj.blog.application.controller.dto.article.category.DeleteArticleCategoryDto;
+import com.lj.blog.application.controller.dto.article.category.DeleteArticleAttributeDto;
 import com.lj.blog.application.controller.dto.article.category.UpdateArticleCategoryDto;
 import com.lj.blog.common.enums.ArticleModuleEnum;
 import com.lj.blog.common.result.Result;
@@ -26,7 +26,7 @@ import java.util.List;
  */
 @Slf4j
 @RestController
-@RequestMapping("/article/category/backend/")
+@RequestMapping("/backend/article/category")
 public class ArticleCategoryController {
     @Resource
     private ArticleCategoryDomainServiceImp articleCategoryDomainService;
@@ -53,7 +53,7 @@ public class ArticleCategoryController {
      * 删除文章分类
      * */
     @PostMapping("/delete")
-    public Result<String> deleteCategory(@RequestBody DeleteArticleCategoryDto deleteArticleCategoryDto){
+    public Result<String> deleteCategory(@RequestBody DeleteArticleAttributeDto deleteArticleCategoryDto){
         try {
             if(log.isInfoEnabled()){
                 log.info("ArticleCategoryController.deleteCategory.dto:{}", JSON.toJSONString(deleteArticleCategoryDto));
@@ -69,14 +69,16 @@ public class ArticleCategoryController {
      * 更新文章分类
      * */
     @PostMapping("/update")
-    public Result<String> updateArticleCategory(@RequestBody UpdateArticleCategoryDto updateArticleCategoryDto){
+    public Result<ArticleCategoryDto> updateArticleCategory(@RequestBody UpdateArticleCategoryDto updateArticleCategoryDto){
         try {
             if(log.isInfoEnabled()){
                 log.info("ArticleCategoryController.updateArticleCategory.dto:{}", JSON.toJSONString(updateArticleCategoryDto));
             }
             Preconditions.checkNotNull(updateArticleCategoryDto.getId(), "要修改的文章分类id不能为空");
             ArticleCategoryBo updateArticleCategoryBo = convert.toArticleCategoryBo(updateArticleCategoryDto);
-            return articleCategoryDomainService.updateArticleCategory(updateArticleCategoryBo);
+            ArticleCategoryBo articleCategoryBo = articleCategoryDomainService.updateArticleCategory(updateArticleCategoryBo);
+            ArticleCategoryDto dto = convert.toDto(articleCategoryBo);
+            return Result.success(ArticleModuleEnum.UPDATE_ARTICLE_CATEGORY_SUCCESS.getMsg(), dto);
         }catch (Exception e){
             log.error("更新文章分类错误:{}", e.getMessage(), e);
             return Result.error(e.getMessage());

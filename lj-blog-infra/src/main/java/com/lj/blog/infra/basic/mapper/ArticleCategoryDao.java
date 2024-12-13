@@ -68,7 +68,7 @@ public interface ArticleCategoryDao extends BaseMapper<ArticleCategory> {
      * @param articleCategory 实例对象
      * @return 影响行数
      */
-    int update(ArticleCategory articleCategory);
+    ArticleCategory update(ArticleCategory articleCategory);
 
     /**
      * 通过主键删除数据

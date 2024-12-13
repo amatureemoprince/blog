@@ -77,8 +77,17 @@
         is_deleted
         FROM article_category
         <where>
-            <!-- 默认查询未删除的 -->
-            is_deleted = 0
+            <!-- 控制是否包含已删除的数据 -->
+            <choose>
+                <when test="isDeleted != null and isDeleted != ''">
+                    <!-- 包含已删除的数据 -->
+                    is_deleted = 1
+                </when>
+                <otherwise>
+                    <!-- 默认查询未删除的数据 -->
+                    is_deleted = 0
+                </otherwise>
+            </choose>
             <!-- 如果传入了分类名称 -->
             <if test="categoryName != null and categoryName != ''">
                 AND category_name LIKE CONCAT('%', #{categoryName}, '%')
@@ -93,8 +102,16 @@
             <if test="level != null">
                 AND level = #{level}
             </if>
+
+            <!-- 如果传入了分类描述 -->
             <if test="categoryDesc != null and categoryDesc != ''">
                 AND category_desc LIKE CONCAT('%', #{categoryDesc}, '%')
+            </if>
+            <if test="createTime != null and createTime != ''">
+                AND create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime != ''">
+                AND update_time = #{updateTime}
             </if>
         </where>
         <!-- 排序 -->

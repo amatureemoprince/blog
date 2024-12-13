@@ -1,13 +1,10 @@
-package com.lj.blog.application.controller.controller.article.blog;
-import com.lj.blog.common.result.Result;
-import jakarta.annotation.Resource;
+package com.lj.blog.application.controller.controller.blog.article;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @ClassName ArticleController
+ * @ClassName BlogArticleController
  * @Description
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2024/12/11 21:49
@@ -16,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/blog/article")
 @Slf4j
-public class ArticleController {
+public class BlogArticleController {
     /**
      * 获取文章信息
      * */

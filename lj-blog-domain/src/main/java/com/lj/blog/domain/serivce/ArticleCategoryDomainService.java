@@ -15,10 +15,7 @@ import java.util.List;
  */
 public interface ArticleCategoryDomainService {
     Result<String> addArticleCategory(ArticleCategoryBo articleCategoryBo);
-
     Result<String> deleteCategoryList(List<Integer> ids);
-
     List<ArticleCategoryBo> getAllArticleCategory();
-
-    Result<String> updateArticleCategory(ArticleCategoryBo updateArticleCategoryBo);
+    ArticleCategoryBo updateArticleCategory(ArticleCategoryBo updateArticleCategoryBo);
 }
