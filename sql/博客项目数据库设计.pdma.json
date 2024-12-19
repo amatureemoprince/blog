@@ -4,7 +4,7 @@
   "avatar": "data:image/png;base64,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",
   "version": "4.9.4",
   "createdTime": "2024-12-6 10:47:23",
-  "updatedTime": "2024-12-8 20:26:56",
+  "updatedTime": "2024-12-19 13:16:56",
   "dbConns": [],
   "profile": {
     "default": {
@@ -643,7 +643,7 @@
           "codeRoot": ""
         }
       },
-      "defKey": "article_info",
+      "defKey": "blog_article_basic_info",
       "defName": "文章基本信息表",
       "comment": "",
       "properties": {
@@ -804,11 +804,11 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
-          "defKey": "article_title",
+          "defKey": "title",
           "defName": "文章标题",
           "comment": "",
-          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
-          "type": "",
+          "domain": "",
+          "type": "VARCHAR",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -819,25 +819,43 @@
           "refDict": "",
           "uiHint": "",
           "id": "8051E218-A906-4D01-97C7-FED286FDAFA5",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64"
         },
         {
-          "defKey": "article_top",
-          "defName": "文章是否置顶",
+          "defKey": "description",
+          "defName": "文章描述",
           "comment": "",
           "domain": "",
-          "type": "INT",
+          "type": "VARCHAR",
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
           "uiHint": "",
           "id": "5C0C6D3C-7A92-4A9A-A18F-690DD5B8F7C3",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
+          "baseType": "FC9790A7-36B8-4A48-8F9A-BC1042BCFE64"
+        },
+        {
+          "defKey": "reading_time",
+          "defName": "文章建议阅读时间（单位分钟）",
+          "comment": "",
+          "type": "INT",
+          "len": 255,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811",
+          "extProps": {},
+          "domain": "",
+          "id": "3FE647B5-9272-47D6-87D8-C67134549093"
         },
         {
           "defKey": "cover_image",
@@ -917,269 +935,6 @@
       "type": "P"
     },
     {
-      "id": "FFD8BB07-0FCD-4507-A8EC-C8CCCF22DB8A",
-      "env": {
-        "base": {
-          "nameSpace": "",
-          "codeRoot": ""
-        }
-      },
-      "defKey": "article_type",
-      "defName": "文章类型关系表",
-      "comment": "",
-      "properties": {
-        "partitioned by": "(date string)",
-        "row format delimited": "",
-        "fields terminated by ','": "",
-        "collection items terminated by '-'": "",
-        "map keys terminated by ':'": "",
-        "store as textfile;": ""
-      },
-      "sysProps": {
-        "nameTemplate": "{defKey}[{defName}]"
-      },
-      "notes": {},
-      "headers": [
-        {
-          "refKey": "hideInGraph",
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "defName",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "primaryKey",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "notNull",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "autoIncrement",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "domain",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "type",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "len",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "scale",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "comment",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "refDict",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "defaultValue",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "isStandard",
-          "freeze": false,
-          "hideInGraph": false
-        },
-        {
-          "refKey": "uiHint",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "extProps",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr1",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr2",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr3",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr4",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr5",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr6",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr7",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr8",
-          "freeze": false,
-          "hideInGraph": true
-        },
-        {
-          "refKey": "attr9",
-          "freeze": false,
-          "hideInGraph": true
-        }
-      ],
-      "fields": [
-        {
-          "defKey": "id",
-          "defName": "文章类型关系主键",
-          "comment": "",
-          "type": "INT",
-          "len": 32,
-          "scale": "",
-          "primaryKey": true,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "domain": "",
-          "refDict": "",
-          "uiHint": "",
-          "id": "A346C685-6622-4BF8-AB5D-47B690C84C12",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
-        },
-        {
-          "defKey": "article_id",
-          "defName": "文章id",
-          "comment": "",
-          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "uiHint": "",
-          "id": "C5E5897F-6B28-4F33-9D85-6696D7585164",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
-        },
-        {
-          "defKey": "type_id",
-          "defName": "文章类型id",
-          "comment": "",
-          "domain": "",
-          "type": "INT",
-          "len": 32,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "uiHint": "",
-          "id": "E4D64330-8B32-4642-8D1E-E3232A683C8D",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
-        },
-        {
-          "defKey": "create_time",
-          "defName": "文章类型创建时间",
-          "comment": "",
-          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "uiHint": "",
-          "id": "7F1A9957-98F9-4F1A-B24E-9F2CC642DD43",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098"
-        },
-        {
-          "defKey": "update_time",
-          "defName": "文章类型更新时间",
-          "comment": "",
-          "domain": "7CFFA0D3-6A93-4DDC-BC10-DF21211064DC",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "uiHint": "",
-          "id": "07B1A9C1-D451-4319-A65C-2BF4CC15C15E",
-          "baseType": "89D69E81-EA34-42EE-9FA2-93B8BD27E098"
-        },
-        {
-          "defKey": "is_deleted",
-          "defName": "文章类型逻辑删除",
-          "comment": "",
-          "domain": "6BC8F04B-6CFA-4995-98D3-318F5CDD774E",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "uiHint": "",
-          "id": "27CFD417-6FE7-461A-A4D1-401FCDDC1113",
-          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
-        }
-      ],
-      "correlations": [],
-      "indexes": [],
-      "type": "P"
-    },
-    {
       "id": "BCAC289B-5789-4121-94D8-1EE87D84F295",
       "env": {
         "base": {
@@ -1187,7 +942,7 @@
           "codeRoot": ""
         }
       },
-      "defKey": "article_content",
+      "defKey": "blog_article_content",
       "defName": "文章内容表",
       "comment": "",
       "properties": {
@@ -1468,7 +1223,7 @@
           "codeRoot": ""
         }
       },
-      "defKey": "article_status",
+      "defKey": "blog_article_status",
       "defName": "文章统计表",
       "comment": "",
       "properties": {
@@ -1647,7 +1402,7 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
-          "defKey": "view_count",
+          "defKey": "views",
           "defName": "文章浏览数量",
           "comment": "",
           "domain": "",
@@ -1665,7 +1420,7 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
-          "defKey": "like_count",
+          "defKey": "likes",
           "defName": "文章点赞数量",
           "comment": "",
           "domain": "",
@@ -1683,7 +1438,7 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
-          "defKey": "comment_count",
+          "defKey": "comments",
           "defName": "文章评论数量",
           "comment": "",
           "domain": "",
@@ -1701,7 +1456,7 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
-          "defKey": "collection_count",
+          "defKey": "collections",
           "defName": "文章收藏数量",
           "comment": "",
           "type": "INT",
@@ -2084,8 +1839,8 @@
           "codeRoot": ""
         }
       },
-      "defKey": "article_label",
-      "defName": "文章标签关系表",
+      "defKey": "blog_article_category_label_mapping",
+      "defName": "文章分类标签关系表",
       "comment": "",
       "properties": {
         "partitioned by": "(date string)",
@@ -2228,7 +1983,7 @@
       "fields": [
         {
           "defKey": "id",
-          "defName": "文章标签关系主键",
+          "defName": "文章分类标签关系主键",
           "comment": "",
           "type": "INT",
           "len": 32,
@@ -2263,8 +2018,26 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
+          "defKey": "category_id",
+          "defName": "分类id",
+          "comment": "",
+          "type": "INT",
+          "len": 255,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811",
+          "extProps": {},
+          "domain": "",
+          "id": "02B22F91-9875-4ED0-AD3E-015666A31C48"
+        },
+        {
           "defKey": "label_id",
-          "defName": "文章标签id",
+          "defName": "标签id",
           "comment": "",
           "domain": "",
           "type": "INT",
@@ -2329,8 +2102,8 @@
           "codeRoot": ""
         }
       },
-      "defKey": "type",
-      "defName": "文章类型表",
+      "defKey": "blog_category",
+      "defName": "博客分类表",
       "comment": "",
       "properties": {
         "partitioned by": "(date string)",
@@ -2473,7 +2246,7 @@
       "fields": [
         {
           "defKey": "id",
-          "defName": "类型主键",
+          "defName": "主键",
           "comment": "",
           "type": "INT",
           "len": 32,
@@ -2490,8 +2263,8 @@
           "baseType": "1D764C4A-6F9F-421E-B11A-6F3E23B51811"
         },
         {
-          "defKey": "type",
-          "defName": "类型名称",
+          "defKey": "category",
+          "defName": "分类名称",
           "comment": "",
           "domain": "",
           "type": "VARCHAR",
@@ -2574,8 +2347,8 @@
           "codeRoot": ""
         }
       },
-      "defKey": "label",
-      "defName": "文章标签表",
+      "defKey": "blog_label",
+      "defName": "博客标签表",
       "comment": "",
       "properties": {
         "partitioned by": "(date string)",
@@ -2820,7 +2593,6 @@
       "defName": "博客文章模块",
       "refEntities": [
         "2982C9AC-6C88-402B-A4C8-54B342A23F12",
-        "FFD8BB07-0FCD-4507-A8EC-C8CCCF22DB8A",
         "BCAC289B-5789-4121-94D8-1EE87D84F295",
         "E7F51559-FC5B-41B3-9058-7709307B3584",
         "1FB5C176-7AD2-41A6-B567-7AAA4EF32FD2",

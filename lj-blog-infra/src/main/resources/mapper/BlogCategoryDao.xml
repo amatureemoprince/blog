@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lj.blog.infra.basic.dao.BlogCategoryDao">
+
+    <resultMap type="com.lj.blog.infra.basic.entity.BlogCategory" id="BlogCategoryMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="category" column="category" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BlogCategoryMap">
+        select
+id, category, create_time, update_time, is_deleted
+        from blog_category
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BlogCategoryMap">
+        select
+id, category, create_time, update_time, is_deleted
+        from blog_category
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="category != null and category != ''">
+                and category = #{category}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+            <if test="isDeleted != null">
+                and is_deleted = #{isDeleted}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from blog_category
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="category != null and category != ''">
+                and category = #{category}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+            <if test="isDeleted != null">
+                and is_deleted = #{isDeleted}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into blog_category(category, create_time, update_time, is_deleted)
+        values (#{category}, #{createTime}, #{updateTime}, #{isDeleted})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into blog_category(category, create_time, update_time, is_deleted)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+        (#{entity.category}, #{entity.createTime}, #{entity.updateTime}, #{entity.isDeleted})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into blog_category(category, create_time, update_time, is_deleted)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.category}, #{entity.createTime}, #{entity.updateTime}, #{entity.isDeleted})
+        </foreach>
+        on duplicate key update
+category = values(category),
+create_time = values(create_time),
+update_time = values(update_time),
+is_deleted = values(is_deleted)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update blog_category
+        <set>
+            <if test="category != null and category != ''">
+                category = #{category},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="isDeleted != null">
+                is_deleted = #{isDeleted},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from blog_category where id = #{id}
+    </delete>
+
+</mapper>
+

@@ -1,7 +1,8 @@
 package com.lj.blog.common.result;
 
+import lombok.Data;
 import lombok.Getter;
-
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,19 +13,14 @@ import java.util.List;
  * @Date 2024/12/13 14:35
  * @Version JDK 17
  */
-public class PageResponse<T> {
+@Data
+public class PageResponse<T> implements Serializable {
     private List<T> records;
-    @Getter
     private Integer currentPageNum = 1;
-    @Getter
     private Integer total = 0;
-    @Getter
     private Integer totalPages = 0;
-    @Getter
     private Integer pageSize = 15;
-    @Getter
     private Integer start = 1;
-    @Getter
     private Integer end = 0;
 
     public PageResponse() {

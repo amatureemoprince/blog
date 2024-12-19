@@ -7,7 +7,7 @@ spring:
     username: root
     password: 200481lj
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://116.198.36.205:3307/myblog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://116.198.36.205:3307/lj_blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 20
@@ -25,14 +25,16 @@ spring:
           slow-sql-millis: 2000
           log-slow-sql: true
 logging:
+  # 设置 MyBatis-Plus 包的日志级别为 ERROR
   config: classpath:log4j2-spring.xml
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开启SQL日志
-    map-underscore-to-camel-case: true
-  global-config:
-    db-config:
-      id-type: auto  # 主键策略
-  mapper-locations: classpath*:/mapper/**/*.xml  # mapper文件位置
-  type-aliases-package: com.lj.blog.infra.basic.entity
+
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 开启SQL日志
+#    map-underscore-to-camel-case: true
+#  global-config:
+#    db-config:
+#      id-type: auto  # 主键策略
+#  mapper-locations: classpath*:/mapper/**/*.xml  # mapper文件位置
+#  type-aliases-package: com.lj.blog.infra.basic.entity
 

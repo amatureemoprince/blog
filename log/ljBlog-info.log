@@ -2,9 +2,6 @@
 2024-12-19 08:04:48,887 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 08:04:48,889 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 08:04:49,208 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 08:04:49,209 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 08:04:49,238 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
 2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 349 ms
@@ -14,9 +11,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 08:38:52,949 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 08:38:52,952 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 08:38:53,165 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 08:38:53,182 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 08:38:53,212 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
 2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 260 ms
@@ -26,9 +20,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 08:39:17,985 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 08:39:17,986 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 08:39:17,987 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 08:39:17,987 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 08:39:18,026 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
 2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 40 ms
@@ -38,9 +29,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:11:54,257 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:11:54,259 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:11:55,605 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:11:55,608 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:11:55,749 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:11:55,749 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:11:55,749 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
 2024-12-19 11:11:55,750 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 1490 ms
@@ -50,9 +38,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:11:55,809 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:11:55,809 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:11:55,827 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:11:55,838 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:11:55,979 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
 2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 183 ms
@@ -62,9 +47,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:12:02,885 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:12:02,885 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:12:02,890 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:12:02,891 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:12:02,981 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:12:02,981 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:12:02,981 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
 2024-12-19 11:12:02,982 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 97 ms
@@ -74,9 +56,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:12:05,628 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:12:05,630 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:12:05,630 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:12:05,631 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:12:05,730 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:12:05,730 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:12:05,730 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
 2024-12-19 11:12:05,730 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 101 ms
@@ -86,9 +65,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:12:13,193 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:12:13,194 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:12:13,195 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:12:13,195 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:12:13,302 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
 2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 107 ms
@@ -98,9 +74,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:12:28,885 INFO  [http-nio-8085-exec-3] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:12:28,885 INFO  [http-nio-8085-exec-3] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:12:28,886 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:12:28,886 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:12:28,998 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): 方法: query
 2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): 执行时间: 113 ms
@@ -110,9 +83,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:12:46,194 INFO  [http-nio-8085-exec-1] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:12:46,194 INFO  [http-nio-8085-exec-1] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:12:46,196 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:12:46,196 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:12:46,270 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): 方法: query
 2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): 执行时间: 76 ms
@@ -122,9 +92,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:14:42,472 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:14:42,472 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:14:42,551 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:14:42,551 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:14:42,602 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:14:42,602 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:14:42,603 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
 2024-12-19 11:14:42,603 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 130 ms
@@ -134,9 +101,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:14:46,105 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:14:46,108 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:14:46,109 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:14:46,109 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:14:46,154 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
 2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 45 ms
@@ -146,9 +110,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:14:46,163 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:14:46,164 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:14:46,164 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:14:46,165 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:14:46,228 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
 2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 64 ms
@@ -158,9 +119,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:14:50,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:14:50,410 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:14:50,411 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:14:50,411 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:14:50,500 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
 2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 89 ms
@@ -170,9 +128,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:14:50,506 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:14:50,506 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:14:50,507 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:14:50,507 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:14:50,588 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
 2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 82 ms
@@ -182,9 +137,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:15:53,754 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:15:53,754 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:15:53,842 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:15:53,842 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:15:53,904 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
 2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 149 ms
@@ -194,9 +146,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:15:53,912 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:15:53,912 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:15:53,912 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:15:53,913 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:15:53,959 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
 2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 47 ms
@@ -206,9 +155,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:17:56,652 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:17:56,652 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:17:56,667 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:17:56,667 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:17:56,684 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
 2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 32 ms
@@ -218,9 +164,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:17:59,822 INFO  [http-nio-8085-exec-3] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:17:59,822 INFO  [http-nio-8085-exec-3] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:17:59,824 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:17:59,826 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:17:59,847 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): 方法: query
 2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): 执行时间: 26 ms
@@ -230,9 +173,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:17:59,855 INFO  [http-nio-8085-exec-1] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:17:59,856 INFO  [http-nio-8085-exec-1] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:17:59,857 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:17:59,857 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:17:59,873 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): 方法: query
 2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): 执行时间: 17 ms
@@ -242,9 +182,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:18:30,233 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:18:30,234 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:18:30,235 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:18:30,235 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:18:30,252 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
 2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 19 ms
@@ -254,9 +191,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:18:36,020 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:18:36,021 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:18:36,022 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:18:36,022 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:18:36,042 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
 2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 22 ms
@@ -266,9 +200,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:18:36,054 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:18:36,054 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:18:36,055 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:18:36,055 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:18:36,072 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
 2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 17 ms
@@ -278,9 +209,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:21:49,376 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:21:49,376 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:21:49,392 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:21:49,392 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:21:49,410 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
 2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 33 ms
@@ -290,9 +218,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:25:18,725 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:25:18,725 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:25:18,742 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:25:18,742 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:25:18,758 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
 2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 32 ms
@@ -302,9 +227,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:31:59,255 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:31:59,255 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:31:59,272 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:31:59,272 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:31:59,288 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
 2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 32 ms
@@ -314,9 +236,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:32:06,817 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:32:06,818 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:32:06,819 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:32:06,819 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:32:06,836 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
 2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 18 ms
@@ -326,9 +245,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:32:06,849 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:32:06,850 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:32:06,850 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:32:06,850 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:32:06,918 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
 2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 68 ms
@@ -338,9 +254,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:36:56,182 INFO  [http-nio-8085-exec-3] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:36:56,182 INFO  [http-nio-8085-exec-3] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:36:56,197 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:36:56,197 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:36:56,215 DEBUG [http-nio-8085-exec-3] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:36:56,215 INFO  [http-nio-8085-exec-3] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:36:56,215 INFO  [http-nio-8085-exec-3] sys-sql.(): 方法: query
 2024-12-19 11:36:56,216 INFO  [http-nio-8085-exec-3] sys-sql.(): 执行时间: 33 ms
@@ -350,9 +263,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:37:21,668 INFO  [http-nio-8085-exec-1] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:37:21,668 INFO  [http-nio-8085-exec-1] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:37:21,670 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:37:21,670 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:37:21,690 DEBUG [http-nio-8085-exec-1] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): 方法: query
 2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): 执行时间: 21 ms
@@ -362,9 +272,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:37:21,703 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:37:21,704 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:37:21,704 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:37:21,704 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:37:21,732 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
 2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 28 ms
@@ -374,9 +281,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:38:59,711 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:38:59,711 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:38:59,744 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:38:59,744 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:38:59,763 DEBUG [http-nio-8085-exec-5] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
 2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 52 ms
@@ -386,9 +290,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:39:04,264 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:39:04,264 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:39:04,264 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:39:04,264 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:39:04,280 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:39:04,280 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:39:04,280 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
 2024-12-19 11:39:04,280 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 17 ms
@@ -398,9 +299,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:39:07,750 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:39:07,750 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:39:07,753 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:39:07,753 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:39:07,770 DEBUG [http-nio-8085-exec-9] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
 2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 19 ms
@@ -410,9 +308,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:39:14,963 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:39:14,964 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:39:14,964 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:39:14,964 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:39:14,981 DEBUG [http-nio-8085-exec-10] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
 2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 17 ms
@@ -422,9 +317,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:39:37,020 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:39:37,021 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:39:37,021 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:39:37,021 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:39:37,042 DEBUG [http-nio-8085-exec-6] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
 2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 20 ms
@@ -434,9 +326,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:42:25,071 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:42:25,071 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:42:25,086 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:42:25,088 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:42:25,105 DEBUG [http-nio-8085-exec-7] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
 2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 33 ms
@@ -446,9 +335,6 @@ select * from blog_c ontent_items[0m
 2024-12-19 11:44:45,507 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
 2024-12-19 11:44:45,507 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
 select * from blog_c ontent_items[0m
-2024-12-19 11:44:45,535 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
-2024-12-19 11:44:45,535 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
-2024-12-19 11:44:45,551 DEBUG [http-nio-8085-exec-2] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
 2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
 2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
 2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 45 ms

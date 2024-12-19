@@ -224,4 +224,386 @@ readme文件中。
   - is_deleted
 
 **目前就先这样设计**：一个浏览我发出的博客内容功能和一些交互功能。2024-12-9先实现基本得增删改查功能吧！
+# 输出控制台的数据格式
+## 使用log4j2
+不使用SpringBoot自带的logback，一是因为logback的性能不如log4j2；而是log4j2的配置和扩展性更好。
+具体的需要引入log4j2的依赖，并将logback排除，这样才能启动项目，不然会因为兼容问题出错。
+然后在application.yml文件中配置
+```yml
+logging:
+  config: classpath:log4j2-spring.xml
+```
+后面的是配置文件的位置跟application同级
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Configuration后面的status用于设置log4j2自身内部的信息输出，可以不设置。
+当设置成trace时，你会看到log4j2内部各种详细输出。
+monitorInterval：Log4j能够自动检测修改配置文件和重新配置本身，设置间隔秒数(最小是5秒钟)
+-->
+<configuration monitorInterval="5" status="warn">
+    <!-- 日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
 
+    <!-- 变量配置 -->
+    <Properties>
+        <!--
+        格式化输出：
+        %d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度
+        %msg：日志消息，%n是换行符
+        %highlight{}用于根据日志级别自动添加颜色
+        -->
+        <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %highlight{%-5level} [%t] %highlight{%c{1.}.%M(%L)}: %msg%n" />
+
+        <!-- 定义日志存储的路径 -->
+        <property name="FILE_PATH" value="log" />
+        <property name="FILE_NAME" value="ljBlog" />
+    </Properties>
+
+    <!-- 此节点有三种常见的子节点：Console, RollingFile, File -->
+    <appenders>
+        <!-- console节点用来定义输出到控制台的Appender -->
+        <console name="Console" target="SYSTEM_OUT">
+            <!-- 输出日志的格式 -->
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <!-- 阈值过滤器，控制台只输出level及其以上级别的信息（onMatch），其他的直接拒绝（onMismatch） -->
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+        </console>
+
+        <!--
+        这个会打印出所有的debug及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档
+        -->
+        <RollingFile name="RollingFileDebug" fileName="${FILE_PATH}/${FILE_NAME}-debug.log" filePattern="${FILE_PATH}/debug/DEBUG-%d{yyyy-MM-dd}_%i.log.gz">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <!-- 指定滚动日志的策略 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="15">
+                <!-- 删除15天之前的日志 -->
+                <Delete basePath="${FILE_PATH}" maxDepth="2">
+                    <IfFileName glob="*/*.log.gz" />
+                    <IfLastModified age="360H" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <!--
+        这个会打印出所有的info及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档
+        -->
+        <RollingFile name="RollingFileInfo" fileName="${FILE_PATH}/${FILE_NAME}-info.log" filePattern="${FILE_PATH}/info/INFO-%d{yyyy-MM-dd}_%i.log.gz">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="15"/>
+        </RollingFile>
+
+        <!--
+        这个会打印出所有的error及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档
+        -->
+        <RollingFile name="RollingFileError" fileName="${FILE_PATH}/${FILE_NAME}-error.log" filePattern="${FILE_PATH}/error/ERROR-%d{yyyy-MM-dd}_%i.log.gz">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="15"/>
+        </RollingFile>
+
+        <!-- 启用异步日志，阻塞队列最大容量为20000 -->
+        <Async name="Async" bufferSize="20000" blocking="true">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFileDebug"/>
+            <AppenderRef ref="RollingFileInfo"/>
+            <AppenderRef ref="RollingFileError"/>
+        </Async>
+    </appenders>
+
+    <!-- Logger节点用来单独指定日志的形式，比如要为指定包下的class指定不同的日志级别等 -->
+    <loggers>
+        <!-- 过滤掉spring和mybatis的一些无用的DEBUG信息 -->
+        <logger name="org.mybatis" level="info" additivity="false">
+            <AppenderRef ref="Async"/>
+        </logger>
+
+        <!-- 设置 MyBatis-Plus 包的日志级别为 ERROR -->
+        <Logger name="com.baomidou.mybatisplus" level="error" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- 监控系统信息 -->
+        <Logger name="org.springframework" level="info" additivity="false">
+            <AppenderRef ref="Async"/>
+        </Logger>
+
+        <!-- root 节点用来指定项目的根日志 -->
+        <root level="debug">
+            <AppenderRef ref="Async" />
+        </root>
+    </loggers>
+</configuration>
+```
+这个是一个基础的配置文件
+## sql语句的输出
+在项目开发中难免会出现bug，在排查过程中少不了去看sql语句，虽然可以直接在application.yml文件中配置mybatis的输出格式
+但是输出的参数是带有?这个的，不会有具体的值，值在后面，一旦参数多了，根本看不过来，所以使用实现接口的形式来进行替换。
+这样在输出时就是带有具体值的sql语句了，而且可以将sql语句和执行的时间进行输出和改变为易于发现的颜色。这样的实现就合理多了。
+```java
+package com.lj.blog.infra.config;
+
+import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
+import org.apache.ibatis.executor.Executor;
+import org.apache.ibatis.mapping.BoundSql;
+import org.apache.ibatis.mapping.MappedStatement;
+import org.apache.ibatis.mapping.ParameterMapping;
+import org.apache.ibatis.reflection.MetaObject;
+import org.apache.ibatis.session.Configuration;
+import org.apache.ibatis.session.ResultHandler;
+import org.apache.ibatis.session.RowBounds;
+import org.apache.ibatis.type.TypeHandlerRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.CollectionUtils;
+
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Matcher;
+
+/**
+ * @ClassName MybatisPlusAllSqlLog
+ * @Description MyBatis Plus SQL 日志拦截器
+ * @Author Dark Chocolate 2069057986@qq.com
+ * @Date 2024/12/13 16:58
+ * @Version JDK 17
+ */
+public class MybatisPlusAllSqlLog implements InnerInterceptor {
+    public static final Logger logger = LoggerFactory.getLogger("sys-sql");
+
+    // ANSI 颜色编码
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_GREEN = "\u001B[32m";
+    private static final String ANSI_YELLOW = "\u001B[93m";
+
+    @Override
+    public void beforeQuery(Executor executor, MappedStatement ms, Object parameter,
+                            RowBounds rowBounds, ResultHandler resultHandler, BoundSql boundSql) throws SQLException {
+        logInfo(boundSql, ms, parameter);
+    }
+
+    @Override
+    public void beforeUpdate(Executor executor, MappedStatement ms, Object parameter) throws SQLException {
+        BoundSql boundSql = ms.getBoundSql(parameter);
+        logInfo(boundSql, ms, parameter);
+    }
+
+    private static void logInfo(BoundSql boundSql, MappedStatement ms, Object parameter) {
+        try {
+            logger.info("参数 = {}", parameter);
+            String sqlId = ms.getId();
+            logger.info("调用方法 = {}", sqlId);
+            Configuration configuration = ms.getConfiguration();
+            String sql = getSql(configuration, boundSql, sqlId);
+            logger.info(ANSI_YELLOW + "使用的完整的SQL:\n{}", sql + ANSI_RESET);
+        } catch (Exception e) {
+            logger.error("异常:{}", e.getLocalizedMessage(), e);
+        }
+    }
+
+    private static String getSql(Configuration configuration, BoundSql boundSql, String sqlId) {
+        Object parameterObject = boundSql.getParameterObject();
+        List<ParameterMapping> parameterMappings = boundSql.getParameterMappings();
+        String sql = boundSql.getSql().replaceAll("[\\s]+", " "); 
+        if (!CollectionUtils.isEmpty(parameterMappings) && parameterObject != null) {
+            TypeHandlerRegistry typeHandlerRegistry = configuration.getTypeHandlerRegistry();
+            if (typeHandlerRegistry.hasTypeHandler(parameterObject.getClass())) {
+                sql = sqlId.replaceFirst("\\?", Matcher.quoteReplacement(getParameterValue(parameterObject)));
+            } else {
+                MetaObject metaObject = configuration.newMetaObject(parameterObject);
+                for (ParameterMapping parameterMapping : parameterMappings) {
+                    String propertyName = parameterMapping.getProperty();
+                    if (metaObject.hasGetter(propertyName)) {
+                        Object obj = metaObject.getValue(propertyName);
+                        sql = sql.replaceFirst("\\?", Matcher.quoteReplacement(getParameterValue(obj)));
+                    } else if (boundSql.hasAdditionalParameter(propertyName)) {
+                        Object obj = boundSql.getAdditionalParameter(propertyName);
+                        sql = sql.replaceFirst("\\?", Matcher.quoteReplacement(getParameterValue(obj)));
+                    } else {
+                        sql = sql.replaceFirst("\\?", "缺失");
+                    }
+                }
+            }
+        }
+        return formatSql(sql);
+    }
+
+    private static String formatSql(String sql) {
+        // 在这里添加换行和缩进以提高可读性
+        return sql.replaceAll("(?i)(select|from|where|and|or|join|on|group by|order by|limit)", "\n$1")
+                .replaceAll("\\s+", " ") // 去除多余空格
+                .trim(); // 去掉首尾空格
+    }
+
+    private static String getParameterValue(Object obj) {
+        String value;
+        if (obj instanceof String) {
+            value = "'" + obj + "'";
+        } else if (obj instanceof Date) {
+            DateFormat format = DateFormat.getDateTimeInstance(DateFormat.DEFAULT, DateFormat.DEFAULT, Locale.CHINA);
+            value = "'" + format.format(new Date()) + "'";
+        } else {
+            value = (obj != null) ? obj.toString() : "NULL";
+        }
+        return value;
+    }
+}
+```
+```java
+package com.lj.blog.infra.config;
+
+import org.apache.ibatis.cache.CacheKey;
+import org.apache.ibatis.executor.Executor;
+import org.apache.ibatis.mapping.BoundSql;
+import org.apache.ibatis.mapping.MappedStatement;
+import org.apache.ibatis.plugin.*;
+import org.apache.ibatis.session.ResultHandler;
+import org.apache.ibatis.session.RowBounds;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+/**
+ * @ClassName SqlStatementInterceptor
+ * @Description SQL 拦截器，用于记录和监控 SQL 语句的执行情况，包含实际参数值
+ * @Author Dark Chocolate 2069057986@qq.com
+ * @Date 2024/12/13 16:43
+ * @Version JDK 17
+ */
+@Component
+@Intercepts({
+        @Signature(type = Executor.class, method = "update", args = {MappedStatement.class, Object.class}),
+        @Signature(type = Executor.class, method = "query", args = {
+                MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class, CacheKey.class, BoundSql.class
+        })
+})
+public class SqlStatementInterceptor implements Interceptor {
+    private static final Logger logger = LoggerFactory.getLogger("sys-sql");
+    // 设置慢查询的阈值（毫秒）
+    private static final long SLOW_SQL_THRESHOLD = 2000;
+    // ANSI 颜色编码
+    private static final String ANSI_GREEN = "\u001B[32m";
+    private static final String ANSI_YELLOW = "\u001B[33m";
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_RESET = "\u001B[0m";
+
+    @Override
+    public Object intercept(Invocation invocation) throws Throwable {
+        String methodName = invocation.getMethod().getName();
+        // 开始时间
+        long startTime = System.nanoTime();
+        try {
+            // 执行原方法
+            return invocation.proceed();
+        } finally {
+            // 结束时间
+            long endTime = System.nanoTime();
+            long duration = TimeUnit.NANOSECONDS.toMillis(endTime - startTime);
+
+            // 判断是否为慢查询并应用颜色
+            if (duration > SLOW_SQL_THRESHOLD) {
+                // 黄色或红色表示慢查询
+                String color = duration > SLOW_SQL_THRESHOLD * 2 ? ANSI_RED : ANSI_YELLOW;
+                logger.warn("{}慢查询检测:", color);
+                logger.warn("方法: {}", methodName);
+                logger.warn("执行时间: {} ms", duration);
+                logger.warn("========================================" + ANSI_RESET);
+            } else {
+                // 绿色表示正常查询
+                logger.info(ANSI_GREEN + "SQL 执行时间:");
+                logger.info("方法: {}", methodName);
+                logger.info("执行时间: {} ms", duration);
+                logger.info("========================================" + ANSI_RESET);
+            }
+        }
+    }
+
+    @Override
+    public Object plugin(Object target) {
+        return Plugin.wrap(target, this);
+    }
+
+    @Override
+    public void setProperties(Properties properties) {
+        
+    }
+}
+```
+```java
+package com.lj.blog.infra.config;
+
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+/**
+ * @ClassName MybatisConfiguration
+ * @Description
+ * @Author Dark Chocolate 2069057986@qq.com
+ * @Date 2024/12/13 17:21
+ * @Version JDK 17
+ */
+@Configuration
+public class MybatisConfiguration {
+    @Bean
+    public MybatisPlusInterceptor mybatisPlusInterceptor(){
+        MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();
+        mybatisPlusInterceptor.addInnerInterceptor(new MybatisPlusAllSqlLog());
+        return mybatisPlusInterceptor;
+    }
+}
+```
+实现这三个类就可以实现详细且带有颜色的sql语句输出了，在调试时真的是非常好用。
+```java
+package com.lj.blog.application.controller.config;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import lombok.NonNull;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+
+import java.util.List;
+
+/**
+ * @ClassName GlobalConfig
+ * @Description
+ * @Author Dark Chocolate 2069057986@qq.com
+ * @Date 2024/12/14 9:55
+ * @Version JDK 17
+ */
+@Configuration
+public class GlobalConfig extends WebMvcConfigurationSupport {
+    @Override
+    protected void configureMessageConverters(@NonNull List<HttpMessageConverter<?>> converters) {
+        super.configureMessageConverters(converters);
+        converters.add(mappingJackson2HttpMessageConverter());
+    }
+    private MappingJackson2HttpMessageConverter mappingJackson2HttpMessageConverter(){
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        return new MappingJackson2HttpMessageConverter(objectMapper);
+    }
+}
+```
+配置消息转换器，防止空对象转json报错和null值不返回（没有用的数据拦截了）
