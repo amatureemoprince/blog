@@ -6,6 +6,9 @@ import com.lj.blog.infra.basic.service.BlogCategoryService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.List;
+
 
 /**
  * 博客分类表(BlogCategory)表服务实现类
@@ -71,5 +74,10 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
     @Override
     public boolean deleteById(Integer id) {
         return this.blogCategoryDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public List<BlogCategory> queryByIds(Collection<Integer> categoryIds) {
+        return blogCategoryDao.queryByIds(categoryIds);
     }
 }

@@ -71,4 +71,9 @@ public class BlogArticleContentServiceImpl implements BlogArticleContentService 
     public boolean deleteById(Integer id) {
         return this.blogArticleContentDao.deleteById(id) > 0;
     }
+
+    @Override
+    public BlogArticleContent queryPrimary(BlogArticleContent build) {
+        return this.blogArticleContentDao.queryPrimary(build);
+    }
 }

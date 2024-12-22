@@ -2,7 +2,8 @@ package com.lj.blog.infra.basic.dao;
 
 import com.lj.blog.infra.basic.entity.BlogLabel;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.data.domain.Pageable;
+
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -28,7 +29,6 @@ public interface BlogLabelDao {
      * @param pageable         分页对象
      * @return 对象列表
      */
-    List<BlogLabel> queryAllByLimit(BlogLabel blogLabel, @Param("pageable") Pageable pageable);
 
     /**
      * 统计总行数
@@ -79,5 +79,6 @@ public interface BlogLabelDao {
      */
     int deleteById(Integer id);
 
+    List<BlogLabel> queryByIds(@Param("ids") Collection<Integer> labelIds);
 }
 

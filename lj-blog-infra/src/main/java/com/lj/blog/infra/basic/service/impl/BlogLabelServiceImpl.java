@@ -6,6 +6,9 @@ import com.lj.blog.infra.basic.service.BlogLabelService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.List;
+
 
 /**
  * 博客标签表(BlogLabel)表服务实现类
@@ -71,5 +74,10 @@ public class BlogLabelServiceImpl implements BlogLabelService {
     @Override
     public boolean deleteById(Integer id) {
         return this.blogLabelDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public List<BlogLabel> queryByIds(Collection<Integer> labelIds) {
+        return this.blogLabelDao.queryByIds(labelIds);
     }
 }

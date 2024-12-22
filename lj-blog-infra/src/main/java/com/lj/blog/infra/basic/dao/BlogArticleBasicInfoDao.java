@@ -1,8 +1,8 @@
 package com.lj.blog.infra.basic.dao;
 
+import com.lj.blog.common.result.PageRequest;
 import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 /**
@@ -23,12 +23,9 @@ public interface BlogArticleBasicInfoDao {
 
     /**
      * 查询指定行数据
-     *
-     * @param blogArticleBasicInfo 查询条件
-     * @param pageable         分页对象
      * @return 对象列表
      */
-    List<BlogArticleBasicInfo> queryAllByLimit(BlogArticleBasicInfo blogArticleBasicInfo, @Param("pageable") Pageable pageable);
+    List<BlogArticleBasicInfo> queryAllByLimit(@Param("blogArticleBasicInfo") BlogArticleBasicInfo blogArticleBasicInfo,@Param("pageRequest") PageRequest pageRequest);
 
     /**
      * 统计总行数
@@ -36,7 +33,7 @@ public interface BlogArticleBasicInfoDao {
      * @param blogArticleBasicInfo 查询条件
      * @return 总行数
      */
-    long count(BlogArticleBasicInfo blogArticleBasicInfo);
+    int count(BlogArticleBasicInfo blogArticleBasicInfo);
 
     /**
      * 新增数据

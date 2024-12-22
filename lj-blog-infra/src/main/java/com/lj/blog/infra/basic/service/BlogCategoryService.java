@@ -2,6 +2,10 @@ package com.lj.blog.infra.basic.service;
 
 import com.lj.blog.infra.basic.entity.BlogCategory;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+
 
 /**
  * 博客分类表(BlogCategory)表服务接口
@@ -51,5 +55,7 @@ public interface BlogCategoryService {
      * @return 是否成功
      */
     boolean deleteById(Integer id);
+
+    List<BlogCategory> queryByIds(Collection<Integer> categoryIds);
 
 }

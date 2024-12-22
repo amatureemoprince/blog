@@ -31,6 +31,7 @@
         <guava.version>33.2.1-jre</guava.version>
         <log4j2.version>3.4.0</log4j2.version>
         <commonslang3.version>3.17.0</commonslang3.version>
+        <redis.version>3.3.5</redis.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -93,6 +94,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commonslang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.version}</version>
             </dependency>
 
 

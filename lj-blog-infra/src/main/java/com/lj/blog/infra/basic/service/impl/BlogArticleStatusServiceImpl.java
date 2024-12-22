@@ -6,6 +6,8 @@ import com.lj.blog.infra.basic.service.BlogArticleStatusService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 /**
  * 文章统计表(BlogArticleStatus)表服务实现类
@@ -72,4 +74,16 @@ public class BlogArticleStatusServiceImpl implements BlogArticleStatusService {
     public boolean deleteById(Integer id) {
         return this.blogArticleStatusDao.deleteById(id) > 0;
     }
+
+    @Override
+    public BlogArticleStatus queryPrimary(BlogArticleStatus status) {
+        return this.blogArticleStatusDao.queryPrimary(status);
+    }
+
+    @Override
+    public List<BlogArticleStatus> queryByArticleIds(List<Integer> articleIds) {
+        return this.blogArticleStatusDao.queryByIds(articleIds);
+    }
+
+
 }

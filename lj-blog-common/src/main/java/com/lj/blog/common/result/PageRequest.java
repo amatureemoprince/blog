@@ -10,7 +10,15 @@ package com.lj.blog.common.result;
  */
 public class PageRequest {
     private Integer pageNum;
+
     private Integer pageSize;
+
+    private Integer offset;
+
+
+    public Integer getOffset() {
+        return (getPageNum() - 1) * getPageSize();
+    }
 
     public Integer getPageNum(){
         if(pageNum == null || pageNum < 1){
@@ -20,7 +28,7 @@ public class PageRequest {
     }
     public Integer getPageSize(){
         if(pageSize == null || pageSize < 1 || pageSize > Integer.MAX_VALUE - 1){
-            return 15;
+            return 10;
         }
         return pageSize;
     }

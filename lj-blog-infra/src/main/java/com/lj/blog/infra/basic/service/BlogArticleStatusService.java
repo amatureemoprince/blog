@@ -2,6 +2,9 @@ package com.lj.blog.infra.basic.service;
 
 import com.lj.blog.infra.basic.entity.BlogArticleStatus;
 
+import java.util.Collection;
+import java.util.List;
+
 
 /**
  * 文章统计表(BlogArticleStatus)表服务接口
@@ -52,4 +55,8 @@ public interface BlogArticleStatusService {
      */
     boolean deleteById(Integer id);
 
+
+    BlogArticleStatus queryPrimary(BlogArticleStatus status);
+
+    List<BlogArticleStatus> queryByArticleIds(List<Integer> articleIds);
 }

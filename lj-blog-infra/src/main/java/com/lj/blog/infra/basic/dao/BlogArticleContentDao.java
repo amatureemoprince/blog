@@ -2,7 +2,6 @@ package com.lj.blog.infra.basic.dao;
 
 import com.lj.blog.infra.basic.entity.BlogArticleContent;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 /**
@@ -28,7 +27,6 @@ public interface BlogArticleContentDao {
      * @param pageable         分页对象
      * @return 对象列表
      */
-    List<BlogArticleContent> queryAllByLimit(BlogArticleContent blogArticleContent, @Param("pageable") Pageable pageable);
 
     /**
      * 统计总行数
@@ -79,5 +77,6 @@ public interface BlogArticleContentDao {
      */
     int deleteById(Integer id);
 
+    BlogArticleContent queryPrimary(BlogArticleContent build);
 }
 

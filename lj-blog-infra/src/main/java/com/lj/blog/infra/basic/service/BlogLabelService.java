@@ -2,6 +2,9 @@ package com.lj.blog.infra.basic.service;
 
 import com.lj.blog.infra.basic.entity.BlogLabel;
 
+import java.util.Collection;
+import java.util.List;
+
 
 /**
  * 博客标签表(BlogLabel)表服务接口
@@ -52,4 +55,5 @@ public interface BlogLabelService {
      */
     boolean deleteById(Integer id);
 
+    List<BlogLabel> queryByIds(Collection<Integer> labelIds);
 }

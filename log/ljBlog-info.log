@@ -1,344 +1,83 @@
-2024-12-19 08:04:48,885 INFO  [http-nio-8085-exec-4] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 08:04:48,887 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 08:04:48,889 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
-2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 349 ms
-2024-12-19 08:04:49,238 INFO  [http-nio-8085-exec-4] sys-sql.(): ========================================[0m
-2024-12-19 08:04:49,239 INFO  [http-nio-8085-exec-4] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 08:38:52,944 INFO  [http-nio-8085-exec-5] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 08:38:52,949 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 08:38:52,952 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
-2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 260 ms
-2024-12-19 08:38:53,212 INFO  [http-nio-8085-exec-5] sys-sql.(): ========================================[0m
-2024-12-19 08:38:53,220 INFO  [http-nio-8085-exec-5] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 08:39:17,985 INFO  [http-nio-8085-exec-8] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 08:39:17,985 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 08:39:17,986 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
-2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 40 ms
-2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] sys-sql.(): ========================================[0m
-2024-12-19 08:39:18,027 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:11:54,251 INFO  [http-nio-8085-exec-9] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:11:54,257 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:11:54,259 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:11:55,749 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:11:55,749 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
-2024-12-19 11:11:55,750 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 1490 ms
-2024-12-19 11:11:55,750 INFO  [http-nio-8085-exec-9] sys-sql.(): ========================================[0m
-2024-12-19 11:11:55,754 INFO  [http-nio-8085-exec-9] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:11:55,809 INFO  [http-nio-8085-exec-10] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:11:55,809 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:11:55,809 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
-2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 183 ms
-2024-12-19 11:11:55,992 INFO  [http-nio-8085-exec-10] sys-sql.(): ========================================[0m
-2024-12-19 11:11:55,993 INFO  [http-nio-8085-exec-10] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:12:02,885 INFO  [http-nio-8085-exec-6] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:12:02,885 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:12:02,885 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:12:02,981 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:12:02,981 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
-2024-12-19 11:12:02,982 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 97 ms
-2024-12-19 11:12:02,982 INFO  [http-nio-8085-exec-6] sys-sql.(): ========================================[0m
-2024-12-19 11:12:02,982 INFO  [http-nio-8085-exec-6] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:12:05,628 INFO  [http-nio-8085-exec-7] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:12:05,628 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:12:05,630 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:12:05,730 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:12:05,730 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
-2024-12-19 11:12:05,730 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 101 ms
-2024-12-19 11:12:05,732 INFO  [http-nio-8085-exec-7] sys-sql.(): ========================================[0m
-2024-12-19 11:12:05,732 INFO  [http-nio-8085-exec-7] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:12:13,193 INFO  [http-nio-8085-exec-2] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:12:13,193 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:12:13,194 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
-2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 107 ms
-2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] sys-sql.(): ========================================[0m
-2024-12-19 11:12:13,302 INFO  [http-nio-8085-exec-2] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:12:28,885 INFO  [http-nio-8085-exec-3] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:12:28,885 INFO  [http-nio-8085-exec-3] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:12:28,885 INFO  [http-nio-8085-exec-3] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): 方法: query
-2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): 执行时间: 113 ms
-2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] sys-sql.(): ========================================[0m
-2024-12-19 11:12:28,999 INFO  [http-nio-8085-exec-3] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:12:46,193 INFO  [http-nio-8085-exec-1] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:12:46,194 INFO  [http-nio-8085-exec-1] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:12:46,194 INFO  [http-nio-8085-exec-1] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): 方法: query
-2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): 执行时间: 76 ms
-2024-12-19 11:12:46,270 INFO  [http-nio-8085-exec-1] sys-sql.(): ========================================[0m
-2024-12-19 11:12:46,271 INFO  [http-nio-8085-exec-1] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:14:42,472 INFO  [http-nio-8085-exec-4] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:14:42,472 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:14:42,472 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:14:42,602 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:14:42,603 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
-2024-12-19 11:14:42,603 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 130 ms
-2024-12-19 11:14:42,603 INFO  [http-nio-8085-exec-4] sys-sql.(): ========================================[0m
-2024-12-19 11:14:42,603 INFO  [http-nio-8085-exec-4] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:14:46,105 INFO  [http-nio-8085-exec-5] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:14:46,105 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:14:46,108 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
-2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 45 ms
-2024-12-19 11:14:46,154 INFO  [http-nio-8085-exec-5] sys-sql.(): ========================================[0m
-2024-12-19 11:14:46,155 INFO  [http-nio-8085-exec-5] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:14:46,163 INFO  [http-nio-8085-exec-8] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:14:46,163 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:14:46,164 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
-2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 64 ms
-2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] sys-sql.(): ========================================[0m
-2024-12-19 11:14:46,229 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:14:50,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:14:50,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:14:50,410 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
-2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 89 ms
-2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] sys-sql.(): ========================================[0m
-2024-12-19 11:14:50,501 INFO  [http-nio-8085-exec-9] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:14:50,506 INFO  [http-nio-8085-exec-10] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:14:50,506 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:14:50,506 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
-2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 82 ms
-2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] sys-sql.(): ========================================[0m
-2024-12-19 11:14:50,588 INFO  [http-nio-8085-exec-10] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:15:53,754 INFO  [http-nio-8085-exec-6] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:15:53,754 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:15:53,754 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
-2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 149 ms
-2024-12-19 11:15:53,904 INFO  [http-nio-8085-exec-6] sys-sql.(): ========================================[0m
-2024-12-19 11:15:53,905 INFO  [http-nio-8085-exec-6] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:15:53,912 INFO  [http-nio-8085-exec-7] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:15:53,912 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:15:53,912 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
-2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 47 ms
-2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] sys-sql.(): ========================================[0m
-2024-12-19 11:15:53,959 INFO  [http-nio-8085-exec-7] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:17:56,650 INFO  [http-nio-8085-exec-2] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:17:56,652 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:17:56,652 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
-2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 32 ms
-2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] sys-sql.(): ========================================[0m
-2024-12-19 11:17:56,684 INFO  [http-nio-8085-exec-2] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:17:59,822 INFO  [http-nio-8085-exec-3] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:17:59,822 INFO  [http-nio-8085-exec-3] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:17:59,822 INFO  [http-nio-8085-exec-3] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): 方法: query
-2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): 执行时间: 26 ms
-2024-12-19 11:17:59,849 INFO  [http-nio-8085-exec-3] sys-sql.(): ========================================[0m
-2024-12-19 11:17:59,850 INFO  [http-nio-8085-exec-3] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:17:59,855 INFO  [http-nio-8085-exec-1] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:17:59,855 INFO  [http-nio-8085-exec-1] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:17:59,856 INFO  [http-nio-8085-exec-1] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): 方法: query
-2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): 执行时间: 17 ms
-2024-12-19 11:17:59,873 INFO  [http-nio-8085-exec-1] sys-sql.(): ========================================[0m
-2024-12-19 11:17:59,874 INFO  [http-nio-8085-exec-1] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:18:30,233 INFO  [http-nio-8085-exec-4] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:18:30,233 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:18:30,234 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
-2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 19 ms
-2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] sys-sql.(): ========================================[0m
-2024-12-19 11:18:30,253 INFO  [http-nio-8085-exec-4] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:18:36,020 INFO  [http-nio-8085-exec-5] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:18:36,020 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:18:36,021 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
-2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 22 ms
-2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] sys-sql.(): ========================================[0m
-2024-12-19 11:18:36,042 INFO  [http-nio-8085-exec-5] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:18:36,054 INFO  [http-nio-8085-exec-8] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:18:36,054 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:18:36,054 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
-2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 17 ms
-2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] sys-sql.(): ========================================[0m
-2024-12-19 11:18:36,072 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:21:49,376 INFO  [http-nio-8085-exec-9] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:21:49,376 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:21:49,376 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
-2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 33 ms
-2024-12-19 11:21:49,410 INFO  [http-nio-8085-exec-9] sys-sql.(): ========================================[0m
-2024-12-19 11:21:49,411 INFO  [http-nio-8085-exec-9] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:25:18,725 INFO  [http-nio-8085-exec-10] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:25:18,725 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:25:18,725 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
-2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 32 ms
-2024-12-19 11:25:18,758 INFO  [http-nio-8085-exec-10] sys-sql.(): ========================================[0m
-2024-12-19 11:25:18,759 INFO  [http-nio-8085-exec-10] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:31:59,255 INFO  [http-nio-8085-exec-6] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:31:59,255 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:31:59,255 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
-2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 32 ms
-2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] sys-sql.(): ========================================[0m
-2024-12-19 11:31:59,288 INFO  [http-nio-8085-exec-6] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:32:06,817 INFO  [http-nio-8085-exec-7] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:32:06,817 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:32:06,818 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
-2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 18 ms
-2024-12-19 11:32:06,836 INFO  [http-nio-8085-exec-7] sys-sql.(): ========================================[0m
-2024-12-19 11:32:06,837 INFO  [http-nio-8085-exec-7] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:32:06,849 INFO  [http-nio-8085-exec-2] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:32:06,849 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:32:06,850 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
-2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 68 ms
-2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] sys-sql.(): ========================================[0m
-2024-12-19 11:32:06,918 INFO  [http-nio-8085-exec-2] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:36:56,182 INFO  [http-nio-8085-exec-3] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:36:56,182 INFO  [http-nio-8085-exec-3] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:36:56,182 INFO  [http-nio-8085-exec-3] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:36:56,215 INFO  [http-nio-8085-exec-3] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:36:56,215 INFO  [http-nio-8085-exec-3] sys-sql.(): 方法: query
-2024-12-19 11:36:56,216 INFO  [http-nio-8085-exec-3] sys-sql.(): 执行时间: 33 ms
-2024-12-19 11:36:56,216 INFO  [http-nio-8085-exec-3] sys-sql.(): ========================================[0m
-2024-12-19 11:36:56,216 INFO  [http-nio-8085-exec-3] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:37:21,668 INFO  [http-nio-8085-exec-1] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:37:21,668 INFO  [http-nio-8085-exec-1] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:37:21,668 INFO  [http-nio-8085-exec-1] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): 方法: query
-2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): 执行时间: 21 ms
-2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] sys-sql.(): ========================================[0m
-2024-12-19 11:37:21,691 INFO  [http-nio-8085-exec-1] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:37:21,703 INFO  [http-nio-8085-exec-4] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:37:21,703 INFO  [http-nio-8085-exec-4] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:37:21,704 INFO  [http-nio-8085-exec-4] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): 方法: query
-2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): 执行时间: 28 ms
-2024-12-19 11:37:21,732 INFO  [http-nio-8085-exec-4] sys-sql.(): ========================================[0m
-2024-12-19 11:37:21,733 INFO  [http-nio-8085-exec-4] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:38:59,711 INFO  [http-nio-8085-exec-5] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:38:59,711 INFO  [http-nio-8085-exec-5] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:38:59,711 INFO  [http-nio-8085-exec-5] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): 方法: query
-2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): 执行时间: 52 ms
-2024-12-19 11:38:59,764 INFO  [http-nio-8085-exec-5] sys-sql.(): ========================================[0m
-2024-12-19 11:38:59,765 INFO  [http-nio-8085-exec-5] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:39:04,264 INFO  [http-nio-8085-exec-8] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:39:04,264 INFO  [http-nio-8085-exec-8] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:39:04,264 INFO  [http-nio-8085-exec-8] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:39:04,280 INFO  [http-nio-8085-exec-8] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:39:04,280 INFO  [http-nio-8085-exec-8] sys-sql.(): 方法: query
-2024-12-19 11:39:04,280 INFO  [http-nio-8085-exec-8] sys-sql.(): 执行时间: 17 ms
-2024-12-19 11:39:04,282 INFO  [http-nio-8085-exec-8] sys-sql.(): ========================================[0m
-2024-12-19 11:39:04,282 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:39:07,750 INFO  [http-nio-8085-exec-9] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:39:07,750 INFO  [http-nio-8085-exec-9] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:39:07,750 INFO  [http-nio-8085-exec-9] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): 方法: query
-2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): 执行时间: 19 ms
-2024-12-19 11:39:07,770 INFO  [http-nio-8085-exec-9] sys-sql.(): ========================================[0m
-2024-12-19 11:39:07,772 INFO  [http-nio-8085-exec-9] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:39:14,963 INFO  [http-nio-8085-exec-10] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:39:14,963 INFO  [http-nio-8085-exec-10] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:39:14,964 INFO  [http-nio-8085-exec-10] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): 方法: query
-2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): 执行时间: 17 ms
-2024-12-19 11:39:14,981 INFO  [http-nio-8085-exec-10] sys-sql.(): ========================================[0m
-2024-12-19 11:39:14,982 INFO  [http-nio-8085-exec-10] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:39:37,020 INFO  [http-nio-8085-exec-6] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:39:37,020 INFO  [http-nio-8085-exec-6] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:39:37,021 INFO  [http-nio-8085-exec-6] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): 方法: query
-2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): 执行时间: 20 ms
-2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] sys-sql.(): ========================================[0m
-2024-12-19 11:39:37,042 INFO  [http-nio-8085-exec-6] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:42:25,071 INFO  [http-nio-8085-exec-7] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:42:25,071 INFO  [http-nio-8085-exec-7] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:42:25,071 INFO  [http-nio-8085-exec-7] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): 方法: query
-2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): 执行时间: 33 ms
-2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] sys-sql.(): ========================================[0m
-2024-12-19 11:42:25,105 INFO  [http-nio-8085-exec-7] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 11:44:45,506 INFO  [http-nio-8085-exec-2] sys-sql.(): 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)
-2024-12-19 11:44:45,507 INFO  [http-nio-8085-exec-2] sys-sql.(): 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary
-2024-12-19 11:44:45,507 INFO  [http-nio-8085-exec-2] sys-sql.(): [93m使用的完整的SQL:
-select * from blog_c ontent_items[0m
-2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): [32mSQL 执行时间:
-2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): 方法: query
-2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): 执行时间: 45 ms
-2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] sys-sql.(): ========================================[0m
-2024-12-19 11:44:45,553 INFO  [http-nio-8085-exec-2] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"想你、想你、像我","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"拥抱变化，拥抱成长","type":0},{"content":"ljBlog. All Rights Reserved. 你好世界🙂","type":2},{"content":"დ 每个人都有属于自己的一片森林,迷失的人迷失了,相逢的人会再相逢 დ","type":3}]
-2024-12-19 13:37:17,848 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closing ...
-2024-12-19 13:37:17,862 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closed
+2024-12-22 17:58:23,153 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closing ...
+2024-12-22 17:58:23,168 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closed
+2024-12-22 17:58:26,526 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 24084 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2024-12-22 17:58:26,534 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2024-12-22 17:58:27,282 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2024-12-22 17:58:27,290 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2024-12-22 17:58:27,294 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2024-12-22 17:58:27,295 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-22 17:58:27,351 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2024-12-22 17:58:27,351 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 780 ms
+2024-12-22 17:58:28,834 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2024-12-22 17:58:28,846 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2024-12-22 17:58:28,853 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 2.674 seconds (process running for 3.828)
+2024-12-22 18:07:23,114 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2024-12-22 18:07:34,216 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 24404 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2024-12-22 18:07:34,221 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2024-12-22 18:07:34,669 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-22 18:07:34,671 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-22 18:07:34,703 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-12-22 18:07:35,194 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2024-12-22 18:07:35,202 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2024-12-22 18:07:35,210 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2024-12-22 18:07:35,210 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-22 18:07:35,265 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2024-12-22 18:07:35,265 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1011 ms
+2024-12-22 18:07:37,063 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2024-12-22 18:07:37,075 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2024-12-22 18:07:37,080 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 3.162 seconds (process running for 4.147)
+2024-12-22 18:08:12,883 INFO  [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-22 18:08:12,883 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2024-12-22 18:08:12,884 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
+2024-12-22 18:08:14,035 ERROR [http-nio-8085-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet].(): Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.114.Final.jar:4.1.114.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+2024-12-22 18:11:05,178 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2024-12-22 18:11:07,742 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 13540 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2024-12-22 18:11:07,748 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2024-12-22 18:11:08,190 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-22 18:11:08,191 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-22 18:11:08,219 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-12-22 18:11:08,650 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2024-12-22 18:11:08,661 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2024-12-22 18:11:08,666 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2024-12-22 18:11:08,666 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-22 18:11:08,744 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2024-12-22 18:11:08,744 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 960 ms
+2024-12-22 18:11:10,349 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2024-12-22 18:11:10,362 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2024-12-22 18:11:10,367 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 2.95 seconds (process running for 3.713)
+2024-12-22 18:11:25,594 INFO  [http-nio-8085-exec-3] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-22 18:11:25,594 INFO  [http-nio-8085-exec-3] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2024-12-22 18:11:25,609 INFO  [http-nio-8085-exec-3] o.s.w.s.DispatcherServlet.(): Completed initialization in 15 ms
+2024-12-22 18:24:13,153 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2024-12-22 18:24:18,571 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 42772 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2024-12-22 18:24:18,576 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2024-12-22 18:24:18,961 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2024-12-22 18:24:18,963 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-12-22 18:24:18,989 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2024-12-22 18:24:19,393 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2024-12-22 18:24:19,401 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2024-12-22 18:24:19,407 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2024-12-22 18:24:19,408 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-22 18:24:19,466 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2024-12-22 18:24:19,466 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 864 ms
+2024-12-22 18:24:21,141 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2024-12-22 18:24:21,152 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2024-12-22 18:24:21,157 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 2.85 seconds (process running for 3.487)
+2024-12-22 18:24:33,933 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-22 18:24:33,933 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2024-12-22 18:24:33,933 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 0 ms
+2024-12-22 18:33:28,539 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...

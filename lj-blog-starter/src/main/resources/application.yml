@@ -1,6 +1,9 @@
 server:
   port: 8085
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
   application:
     name: 博客后端
   datasource:
@@ -24,9 +27,22 @@ spring:
           enabled: true
           slow-sql-millis: 2000
           log-slow-sql: true
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password:
+      database: 0
+      lettuce:
+        pool:
+          max-active: 20
+          max-idle: 8
+          max-wait: -1
+          min-idle: 0
 logging:
   # 设置 MyBatis-Plus 包的日志级别为 ERROR
   config: classpath:log4j2-spring.xml
+
 
 #mybatis-plus:
 #  configuration:

@@ -1,5 +1,6 @@
 package com.lj.blog.common.result;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import java.io.Serializable;
@@ -16,55 +17,23 @@ import java.util.List;
 @Data
 public class PageResponse<T> implements Serializable {
     private List<T> records;
-    private Integer currentPageNum = 1;
-    private Integer total = 0;
-    private Integer totalPages = 0;
-    private Integer pageSize = 15;
-    private Integer start = 1;
-    private Integer end = 0;
-
+    private Integer currentPageNum;
+    private Integer pageSize;
+    private Integer totalPages;
+    private Integer total;
     public PageResponse() {
         this.records = Collections.emptyList();
     }
-
     public List<T> getRecords() {
         return this.records != null ? this.records : Collections.emptyList();
     }
-
+    //设置在最后设置内容，在这之前需要将total、pageSize、currentPageNum设置完整
     public void setRecords(List<T> records) {
         this.records = (records != null && !records.isEmpty()) ? records : Collections.emptyList();
+        compute(this.pageSize);
     }
-
-    public void setTotal(Integer total) {
-        if (total != null && total >= 0) {
-            this.total = total;
-            calculateTotalPagesAndBounds();
-        }
+    void compute(Integer pageSize){
+        this.totalPages = this.total % pageSize == 0 ? this.total / pageSize : this.total / pageSize + 1;
     }
-
-    private void calculateTotalPagesAndBounds() {
-        if (this.pageSize != null && this.pageSize > 0) {
-            this.totalPages = (this.total / this.pageSize) + ((this.total % pageSize > 0) ? 1 : 0) ;
-            if (this.currentPageNum != null && this.currentPageNum > 0) {
-                this.start = (this.currentPageNum - 1) * pageSize + 1;
-                this.end = Math.min(this.start + pageSize * this.currentPageNum - 1, total);
-            } else {
-                this.start = 1;
-                this.end = 0;
-            }
-        } else {
-            this.totalPages = 0;
-            this.start = 1;
-            this.end = 0;
-        }
-    }
-    public void setCurrentPageNum(Integer currentPageNum) {
-        this.currentPageNum = currentPageNum;
-        calculateTotalPagesAndBounds();
-    }
-    public void setPageSize(Integer pageSize) {
-        this.pageSize = pageSize;
-        calculateTotalPagesAndBounds();
-    }
-
+    //设置总数和pageSize就可以得知总的页数
 }

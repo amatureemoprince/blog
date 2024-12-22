@@ -1,6 +1,9 @@
 package com.lj.blog.infra.basic.service;
 
+import com.lj.blog.common.result.PageRequest;
 import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
+
+import java.util.List;
 
 /**
  * 文章基本信息表(BlogArticleBasicInfo)表服务接口
@@ -9,6 +12,8 @@ import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
  * @since 2024-12-19 13:28:09
  */
 public interface BlogArticleBasicInfoService {
+
+    Integer count(BlogArticleBasicInfo info);
 
     /**
      * 通过ID查询单条数据
@@ -51,4 +56,5 @@ public interface BlogArticleBasicInfoService {
      */
     boolean deleteById(Integer id);
 
+    List<BlogArticleBasicInfo> queryLimit(BlogArticleBasicInfo info, PageRequest pageRequest);
 }

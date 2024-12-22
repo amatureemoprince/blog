@@ -607,3 +607,5 @@ public class GlobalConfig extends WebMvcConfigurationSupport {
 }
 ```
 配置消息转换器，防止空对象转json报错和null值不返回（没有用的数据拦截了）
+
+需要实现前端获取文章卡片数据了

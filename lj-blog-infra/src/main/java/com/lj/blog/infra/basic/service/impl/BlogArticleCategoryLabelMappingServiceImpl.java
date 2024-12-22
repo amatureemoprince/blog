@@ -6,6 +6,8 @@ import com.lj.blog.infra.basic.service.BlogArticleCategoryLabelMappingService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 文章分类标签关系表(BlogArticleCategoryLabelMapping)表服务实现类
  *
@@ -69,5 +71,15 @@ public class BlogArticleCategoryLabelMappingServiceImpl implements BlogArticleCa
     @Override
     public boolean deleteById(Integer id) {
         return this.blogArticleCategoryLabelMappingDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public List<BlogArticleCategoryLabelMapping> queryPrimary(BlogArticleCategoryLabelMapping build) {
+        return this.blogArticleCategoryLabelMappingDao.queryPrimary(build);
+    }
+
+    @Override
+    public List<BlogArticleCategoryLabelMapping> queryByArticleIds(List<Integer> articleIds) {
+        return this.blogArticleCategoryLabelMappingDao.queryByArticleIds(articleIds);
     }
 }

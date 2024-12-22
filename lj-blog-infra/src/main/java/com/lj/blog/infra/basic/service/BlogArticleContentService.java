@@ -52,4 +52,5 @@ public interface BlogArticleContentService {
      */
     boolean deleteById(Integer id);
 
+    BlogArticleContent queryPrimary(BlogArticleContent build);
 }

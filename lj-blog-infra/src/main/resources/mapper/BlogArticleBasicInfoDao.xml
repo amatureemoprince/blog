@@ -24,39 +24,40 @@ id, title, description, reading_time, cover_image, article_status, create_time, 
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="BlogArticleBasicInfoMap">
         select
-id, title, description, reading_time, cover_image, article_status, create_time, is_deleted
+        id, title, description, reading_time, cover_image,
+        article_status, create_time, is_deleted
         from blog_article_basic_info
         <where>
-            <if test="id != null">
-                and id = #{id}
+            <if test="blogArticleBasicInfo.id != null">
+                and id = #{blogArticleBasicInfo.id}
             </if>
-            <if test="title != null and title != ''">
-                and title = #{title}
+            <if test="blogArticleBasicInfo.title != null and blogArticleBasicInfo.title != ''">
+                and title = #{blogArticleBasicInfo.title}
             </if>
-            <if test="description != null and description != ''">
-                and description = #{description}
+            <if test="blogArticleBasicInfo.description != null and blogArticleBasicInfo.description != ''">
+                and description = #{blogArticleBasicInfo.description}
             </if>
-            <if test="readingTime != null">
-                and reading_time = #{readingTime}
+            <if test="blogArticleBasicInfo.readingTime != null">
+                and reading_time = #{blogArticleBasicInfo.readingTime}
             </if>
-            <if test="coverImage != null and coverImage != ''">
-                and cover_image = #{coverImage}
+            <if test="blogArticleBasicInfo.coverImage != null and blogArticleBasicInfo.coverImage != ''">
+                and cover_image = #{blogArticleBasicInfo.coverImage}
             </if>
-            <if test="articleStatus != null">
-                and article_status = #{articleStatus}
+            <if test="blogArticleBasicInfo.articleStatus != null">
+                and article_status = #{blogArticleBasicInfo.articleStatus}
             </if>
-            <if test="createTime != null">
-                and create_time = #{createTime}
+            <if test="blogArticleBasicInfo.createTime != null">
+                and create_time = #{blogArticleBasicInfo.createTime}
             </if>
-            <if test="isDeleted != null">
-                and is_deleted = #{isDeleted}
+            <if test="blogArticleBasicInfo.isDeleted != null">
+                and is_deleted = #{blogArticleBasicInfo.isDeleted}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
+        LIMIT #{pageRequest.pageSize} OFFSET #{pageRequest.offset}
     </select>
 
     <!--统计总行数-->
-    <select id="count" resultType="java.lang.Long">
+    <select id="count" resultType="java.lang.Integer">
         select count(1)
         from blog_article_basic_info
         <where>

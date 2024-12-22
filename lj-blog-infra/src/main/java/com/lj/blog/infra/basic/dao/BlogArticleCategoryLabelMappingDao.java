@@ -2,7 +2,6 @@ package com.lj.blog.infra.basic.dao;
 
 import com.lj.blog.infra.basic.entity.BlogArticleCategoryLabelMapping;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 /**
@@ -28,7 +27,6 @@ public interface BlogArticleCategoryLabelMappingDao {
      * @param pageable         分页对象
      * @return 对象列表
      */
-    List<BlogArticleCategoryLabelMapping> queryAllByLimit(BlogArticleCategoryLabelMapping blogArticleCategoryLabelMapping, @Param("pageable") Pageable pageable);
 
     /**
      * 统计总行数
@@ -79,5 +77,8 @@ public interface BlogArticleCategoryLabelMappingDao {
      */
     int deleteById(Integer id);
 
+    List<BlogArticleCategoryLabelMapping> queryPrimary(BlogArticleCategoryLabelMapping build);
+
+    List<BlogArticleCategoryLabelMapping> queryByArticleIds(@Param("articleIds") List<Integer> articleIds);
 }
 

@@ -2,6 +2,8 @@ package com.lj.blog.infra.basic.service;
 
 import com.lj.blog.infra.basic.entity.BlogArticleCategoryLabelMapping;
 
+import java.util.List;
+
 /**
  * 文章分类标签关系表(BlogArticleCategoryLabelMapping)表服务接口
  *
@@ -50,4 +52,7 @@ public interface BlogArticleCategoryLabelMappingService {
      */
     boolean deleteById(Integer id);
 
+    List<BlogArticleCategoryLabelMapping> queryPrimary(BlogArticleCategoryLabelMapping build);
+
+    List<BlogArticleCategoryLabelMapping> queryByArticleIds(List<Integer> articleIds);
 }

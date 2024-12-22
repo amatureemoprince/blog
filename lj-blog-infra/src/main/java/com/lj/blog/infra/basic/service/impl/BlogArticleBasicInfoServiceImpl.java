@@ -1,10 +1,13 @@
 package com.lj.blog.infra.basic.service.impl;
 
+import com.lj.blog.common.result.PageRequest;
 import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
 import com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao;
 import com.lj.blog.infra.basic.service.BlogArticleBasicInfoService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 /**
@@ -17,6 +20,11 @@ import org.springframework.stereotype.Service;
 public class BlogArticleBasicInfoServiceImpl implements BlogArticleBasicInfoService {
     @Resource
     private BlogArticleBasicInfoDao blogArticleBasicInfoDao;
+
+    @Override
+    public Integer count(BlogArticleBasicInfo info) {
+        return this.blogArticleBasicInfoDao.count(info);
+    }
 
     /**
      * 通过ID查询单条数据
@@ -72,5 +80,10 @@ public class BlogArticleBasicInfoServiceImpl implements BlogArticleBasicInfoServ
     @Override
     public boolean deleteById(Integer id) {
         return this.blogArticleBasicInfoDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public List<BlogArticleBasicInfo> queryLimit(BlogArticleBasicInfo info, PageRequest page) {
+        return this.blogArticleBasicInfoDao.queryAllByLimit(info, page);
     }
 }
