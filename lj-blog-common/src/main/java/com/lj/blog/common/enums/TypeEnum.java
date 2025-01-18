@@ -16,7 +16,7 @@ public enum TypeEnum {
     VIEW(2, "浏览量"),
     COMMENT(3, "评论量"),
     COLLECTION(4, "收藏量"),
-    IS_DELETED(1, "删除"),
+    IS_DELETED(5, "删除"),
     IS_NOT_DELETED(0, "未删除");
     final int code;
     final String msg;

@@ -1,0 +1,12 @@
+<!-- templates/common/navbar.html -->
+<nav th:fragment="navbar" class="navbar" th:class="{ 'navbar-hidden': isHidden, 'navbar-scrolled': isScrolled }">
+    <div class="nav-brand">
+        <a href="/" class="logo">Wonder Life</a>
+    </div>
+    <div class="nav-links">
+        <a href="/" class="nav-item">首页</a>
+        <a href="/articles" class="nav-item">文章</a>
+        <a href="/music" class="nav-item">音乐</a>
+        <a href="/about" class="nav-item">关于</a>
+    </div>
+</nav>

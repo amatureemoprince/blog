@@ -1,6 +1,7 @@
 package com.lj.blog.infra.basic.dao;
 
 import com.lj.blog.infra.basic.entity.BlogArticleStatus;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @author makejava
  * @since 2024-12-19 13:29:28
  */
+@Mapper
 public interface BlogArticleStatusDao {
 
     /**

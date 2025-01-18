@@ -1,6 +1,7 @@
 package com.lj.blog.infra.basic.dao;
 
 import com.lj.blog.infra.basic.entity.BlogLabel;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Collection;
@@ -12,6 +13,7 @@ import java.util.List;
  * @author makejava
  * @since 2024-12-19 13:30:09
  */
+@Mapper
 public interface BlogLabelDao {
 
     /**

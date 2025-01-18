@@ -1,6 +1,7 @@
 package com.lj.blog.infra.config;
 
 import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
+import com.lj.blog.common.utils.LogUtil;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -29,12 +30,7 @@ import java.util.regex.Matcher;
  * @Version JDK 17
  */
 public class MybatisPlusAllSqlLog implements InnerInterceptor {
-    public static final Logger logger = LoggerFactory.getLogger("sys-sql");
-
-    // ANSI 颜色编码
-    private static final String ANSI_RESET = "\u001B[0m";
-    private static final String ANSI_GREEN = "\u001B[32m";
-    private static final String ANSI_YELLOW = "\u001B[93m";
+    public static final Logger logger = LoggerFactory.getLogger("BLOG-SYSTEM-SQL");
 
     @Override
     public void beforeQuery(Executor executor, MappedStatement ms, Object parameter,
@@ -50,14 +46,14 @@ public class MybatisPlusAllSqlLog implements InnerInterceptor {
 
     private static void logInfo(BoundSql boundSql, MappedStatement ms, Object parameter) {
         try {
-            logger.info("参数 = {}", parameter);
+            logger.info("{}", LogUtil.yellow(">>>> 参数 = " + parameter));
             String sqlId = ms.getId();
-            logger.info("调用方法 = {}", sqlId);
+            logger.info("{}", LogUtil.yellow(">>>> 调用方法 = " + sqlId));
             Configuration configuration = ms.getConfiguration();
             String sql = getSql(configuration, boundSql, sqlId);
-            logger.info(ANSI_YELLOW + "使用的完整的SQL:\n{}", sql + ANSI_RESET);
+            logger.info("{}", LogUtil.yellow(">>>> 使用的完整的SQL:\n" + sql));
         } catch (Exception e) {
-            logger.error("异常:{}", e.getLocalizedMessage(), e);
+            logger.error(">>>> 异常:{}", e.getLocalizedMessage(), e);
         }
     }
 

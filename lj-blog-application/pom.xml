@@ -9,6 +9,11 @@
     <artifactId>lj-blog-application</artifactId>
     <packaging>pom</packaging>
     <name>lj-blog-application</name>
+    <properties>
+        <spring-boot-web.version>3.3.5</spring-boot-web.version>
+        <project.version>0.0.1-SNAPSHOT</project.version>
+        <satoken.version>1.39.0</satoken.version>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -31,12 +36,20 @@
                 <artifactId>lj-blog-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <!-- Sa-Token 权限认证，在线文档：https://sa-token.cc -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-spring-boot3-starter</artifactId>
+                <version>${satoken.version}</version>
+            </dependency>
+            <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-redis-jackson</artifactId>
+                <version>${satoken.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-    <properties>
-        <spring-boot-web.version>3.3.5</spring-boot-web.version>
-        <project.version>0.0.1-SNAPSHOT</project.version>
-    </properties>
     <modules>
         <module>lj-blog-mq</module>
         <module>lj-blog-controller</module>

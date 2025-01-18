@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>零壹&</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<!-- 导航栏 -->
+<nav th:replace="~{common/navbar :: navbar}"></nav>
+
+<!-- 主要内容区 -->
+<div class="main-container">
+    <!-- 左侧文章列表 -->
+    <div class="content-area">
+        <div th:replace="~{common/content :: content}"></div>
+    </div>
+
+    <!-- 右侧公告栏 -->
+    <div class="sidebar">
+        <div th:replace="~{common/sidebar :: sidebar}"></div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<footer th:replace="~{common/footer :: footer}"></footer>
+</body>
+</html>

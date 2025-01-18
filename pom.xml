@@ -16,6 +16,7 @@
         <module>lj-blog-domain</module>
         <module>lj-blog-infra</module>
         <module>lj-blog-starter</module>
+        <module>lj-blog-ui</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,6 +33,7 @@
         <log4j2.version>3.4.0</log4j2.version>
         <commonslang3.version>3.17.0</commonslang3.version>
         <redis.version>3.3.5</redis.version>
+        <satoken.version>1.39.0</satoken.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -100,8 +102,18 @@
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${redis.version}</version>
             </dependency>
-
-
+            <!-- Sa-Token 权限认证，在线文档：https://sa-token.cc -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-spring-boot3-starter</artifactId>
+                <version>${satoken.version}</version>
+            </dependency>
+            <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-redis-jackson</artifactId>
+                <version>${satoken.version}</version>
+            </dependency>
             <!--模块依赖-->
             <dependency>
                 <groupId>com.lj</groupId>

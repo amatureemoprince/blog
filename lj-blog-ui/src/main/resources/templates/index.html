@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>零壹&</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"> <!-- 其他样式 -->
+    <link rel="stylesheet" th:href="@{/css/footer.css}"> <!-- 页脚样式 -->
+</head>
+<body>
+<!-- 导航栏 -->
+<nav th:replace="~{components/base/navbar :: navbar}"></nav>
+
+<!-- 主要内容区 -->
+<div class="main-container">
+    <div>
+    </div>
+</div>
+<!-- 页脚 -->
+<footer th:replace="~{components/base/footer :: footer}"></footer>
+<!-- 引入 JS 文件 -->
+<script th:src="@{/js/home/footer.js}"></script> <!-- 页脚脚本 -->
+</body>
+</html>

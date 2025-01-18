@@ -5,11 +5,6 @@ import com.lj.blog.application.controller.dto.BlogArticleContentDto;
 import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
 import com.lj.blog.domain.entity.BlogArticleContentBo;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Named;
-import org.springframework.beans.factory.annotation.Qualifier;
-
-import java.util.Date;
 import java.util.List;
 
 /**

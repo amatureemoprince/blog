@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
         })
 })
 public class SqlStatementInterceptor implements Interceptor {
-    private static final Logger logger = LoggerFactory.getLogger("sys-sql");
+    private static final Logger logger = LoggerFactory.getLogger("BLOG-SYSTEM-SQL");
     // 设置慢查询的阈值（毫秒）
     private static final long SLOW_SQL_THRESHOLD = 2000;
 

@@ -33,5 +33,10 @@
             <artifactId>lj-blog-controller</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.lj</groupId>
+            <artifactId>lj-blog-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>

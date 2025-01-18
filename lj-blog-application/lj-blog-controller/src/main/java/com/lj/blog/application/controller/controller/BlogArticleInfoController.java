@@ -13,17 +13,14 @@ import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
 import com.lj.blog.domain.entity.BlogArticleContentBo;
 import com.lj.blog.domain.serivce.imp.BlogArticleBasicDomainServiceImp;
 import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
-import com.lj.blog.infra.basic.entity.BlogArticleContent;
 import jakarta.annotation.Resource;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 /**
  * @ClassName BlogArticleInfoController
- * @Description
+ * @Description 获取展示的帖子基本信息
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2024/12/19 21:32
  * @Version JDK 17
@@ -55,7 +52,6 @@ public class BlogArticleInfoController {
                     .build()));
             pageResponse.setRecords(basicInfoDtos);
             return Result.success("获取文章卡片内容成功", pageResponse);
-
         }catch (Exception e){
             log.error("获取文章基本信息失败", e);
             return Result.error(e.getMessage());

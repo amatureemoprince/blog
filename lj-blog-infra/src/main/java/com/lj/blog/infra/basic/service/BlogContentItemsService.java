@@ -10,7 +10,7 @@ import java.util.List;
  * @author makejava
  * @since 2024-12-18 18:49:44
  */
-public interface BlogContentItemsService {
+public interface BlogContentItemsService{
 
     /**
      * 通过ID查询单条数据

@@ -1,0 +1,34 @@
+<!-- templates/common/footer.html -->
+<footer th:fragment="footer" class="blog-footer">
+    <div class="footer-section">
+        <div class="social-links">
+            <a href="https://github.com/amatureemoprince" title="GitHub">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="javascript:void(0)" onclick="showWechatQR()" title="微信">
+                <i class="fab fa-weixin"></i> 微信
+            </a>
+            <a href="javascript:void(0)" onclick="copyEmail()" title="点击复制邮箱">
+                <i class="fas fa-envelope"></i> QQ邮箱
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">© <span th:text="${#dates.year(#dates.createNow())}">2024</span>
+            <span th:text="${footerText}">版权信息</span></p>
+    </div>
+
+    <!-- 微信二维码弹窗 -->
+    <div id="qrModal" class="qr-modal" style="display: none;" onclick="hideWechatQR()">
+        <div class="qr-container">
+            <img th:src="@{/images/weixin.jpg}" alt="微信二维码" />
+            <p>谢谢你的主动，扫码添加为我的好友</p>
+        </div>
+    </div>
+
+    <!-- 复制提示 -->
+    <div id="copyTip" class="copy-tip" style="display: none;">
+        邮箱已复制到剪贴板！
+    </div>
+</footer>

@@ -1,0 +1,86 @@
+/* static/css/footer.css */
+
+.blog-footer {
+    background-color: #000000; /* 黑色背景 */
+    color: #ffffff; /* 白色文字 */
+    padding: 1rem; /* 内边距 */
+    font-size: 0.9rem; /* 字体大小 */
+}
+
+.footer-section {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 居中对齐 */
+    margin-bottom: 1rem; /* 底部间距 */
+}
+
+.social-links {
+    display: flex; /* 使用 flexbox 布局 */
+    gap: 1.5rem; /* 链接之间的间距 */
+}
+
+.social-links a {
+    color: #ffffff; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s; /* 过渡效果 */
+}
+
+.social-links a:hover {
+    color: #f0f0f0; /* 悬停时的颜色 */
+}
+
+.footer-bottom {
+    text-align: center; /* 居中对齐 */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* 上边框 */
+    padding-top: 0.5rem; /* 上内边距 */
+}
+
+.copyright {
+    opacity: 0.7; /* 版权信息透明度 */
+}
+
+/* 微信二维码弹窗样式 */
+.qr-modal {
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 居中对齐 */
+    align-items: center; /* 垂直居中 */
+    z-index: 1000; /* 确保在最上层 */
+}
+
+.qr-container {
+    background-color: white; /* 白色背景 */
+    padding: 20px; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+    text-align: center; /* 文本居中 */
+}
+
+.qr-container img {
+    max-width: 200px; /* 最大宽度 */
+    height: auto; /* 自适应高度 */
+}
+
+.copy-tip {
+    position: fixed; /* 固定定位 */
+    bottom: 20px; /* 距离底部 */
+    left: 50%; /* 居中 */
+    transform: translateX(-50%); /* 居中 */
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明黑色背景 */
+    color: white; /* 白色文字 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 4px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+    z-index: 1000; /* 确保在最上层 */
+    animation: fadeInOut 2s ease-in-out; /* 动画效果 */
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+}
