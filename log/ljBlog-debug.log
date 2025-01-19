@@ -15391,3 +15391,538 @@ select count(1) from blog_article_basic_info WHERE is_deleted = 0[0m
 2025-01-18 19:03:29,243 DEBUG [SpringApplicationShutdownHook] i.l.c.r.DefaultEventLoopGroupProvider.(): Initiate shutdown (0, 2, SECONDS)
 2025-01-18 19:03:29,247 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closing ...
 2025-01-18 19:03:29,256 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closed
+2025-01-18 19:03:33,694 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 33996 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2025-01-18 19:03:33,700 DEBUG [main] c.l.b.BlogApplication.(): Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-18 19:03:33,701 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2025-01-18 19:03:34,112 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-18 19:03:34,113 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-18 19:03:34,143 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2025-01-18 19:03:34,219 DEBUG [main] o.a.i.l.LogFactory.(): Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-01-18 19:03:34,536 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2025-01-18 19:03:34,544 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2025-01-18 19:03:34,546 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [Connector["http-nio-8085"]] to [INITIALIZED]
+2025-01-18 19:03:34,547 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardService[Tomcat]] to [INITIALIZED]
+2025-01-18 19:03:34,547 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardServer[-1]] to [INITIALIZED]
+2025-01-18 19:03:34,547 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardServer[-1]] to [STARTING_PREP]
+2025-01-18 19:03:34,547 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardServer[-1]] to [STARTING]
+2025-01-18 19:03:34,548 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@57ce2898] to [STARTING_PREP]
+2025-01-18 19:03:34,548 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@57ce2898] to [STARTING]
+2025-01-18 19:03:34,548 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@57ce2898] to [STARTED]
+2025-01-18 19:03:34,548 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardService[Tomcat]] to [STARTING_PREP]
+2025-01-18 19:03:34,549 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2025-01-18 19:03:34,549 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardService[Tomcat]] to [STARTING]
+2025-01-18 19:03:34,549 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat]] to [STARTING_PREP]
+2025-01-18 19:03:34,549 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-18 19:03:34,549 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [INITIALIZING]
+2025-01-18 19:03:34,550 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [INITIALIZED]
+2025-01-18 19:03:34,550 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [STARTING_PREP]
+2025-01-18 19:03:34,550 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [STARTING]
+2025-01-18 19:03:34,550 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [SimpleRealm[StandardEngine[Tomcat]]] to [STARTED]
+2025-01-18 19:03:34,551 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [INITIALIZING]
+2025-01-18 19:03:34,551 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [INITIALIZED]
+2025-01-18 19:03:34,551 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [STARTING_PREP]
+2025-01-18 19:03:34,551 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [INITIALIZING]
+2025-01-18 19:03:34,551 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [INITIALIZED]
+2025-01-18 19:03:34,551 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [STARTING_PREP]
+2025-01-18 19:03:34,567 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.StandardRoot@5b066c33] to [INITIALIZING]
+2025-01-18 19:03:34,570 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.StandardRoot@5b066c33] to [INITIALIZED]
+2025-01-18 19:03:34,570 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.StandardRoot@5b066c33] to [STARTING_PREP]
+2025-01-18 19:03:34,572 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.DirResourceSet@4245bf68] to [INITIALIZING]
+2025-01-18 19:03:34,573 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.DirResourceSet@4245bf68] to [INITIALIZED]
+2025-01-18 19:03:34,573 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.DirResourceSet@4245bf68] to [STARTING_PREP]
+2025-01-18 19:03:34,573 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.DirResourceSet@4245bf68] to [STARTING]
+2025-01-18 19:03:34,573 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.DirResourceSet@4245bf68] to [STARTED]
+2025-01-18 19:03:34,573 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.StandardRoot@5b066c33] to [STARTING]
+2025-01-18 19:03:34,573 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.webresources.StandardRoot@5b066c33] to [STARTED]
+2025-01-18 19:03:34,574 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+2025-01-18 19:03:34,574 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+2025-01-18 19:03:34,574 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+2025-01-18 19:03:34,574 DEBUG [main] o.a.c.l.WebappLoader.(): Starting this Loader
+2025-01-18 19:03:34,580 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+2025-01-18 19:03:34,580 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+2025-01-18 19:03:34,599 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+2025-01-18 19:03:34,599 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+2025-01-18 19:03:34,599 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+2025-01-18 19:03:34,600 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+2025-01-18 19:03:34,600 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+2025-01-18 19:03:34,600 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [NonLoginAuthenticator[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardContextValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+2025-01-18 19:03:34,601 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+2025-01-18 19:03:34,602 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+2025-01-18 19:03:34,602 DEBUG [main] o.a.c.c.StandardContext.(): No manager found. Checking if cluster manager should be used. Cluster configured: [false], Application distributable: [false]
+2025-01-18 19:03:34,605 DEBUG [main] o.a.c.c.StandardContext.(): Configured a manager of class [org.apache.catalina.session.StandardManager]
+2025-01-18 19:03:34,606 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@2b7facc7] to [INITIALIZING]
+2025-01-18 19:03:34,606 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@2b7facc7] to [INITIALIZED]
+2025-01-18 19:03:34,606 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@2b7facc7] to [STARTING_PREP]
+2025-01-18 19:03:34,606 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@2b7facc7] to [STARTING]
+2025-01-18 19:03:34,606 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.deploy.NamingResourcesImpl@2b7facc7] to [STARTED]
+2025-01-18 19:03:34,609 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2025-01-18 19:03:34,609 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 879 ms
+2025-01-18 19:03:34,619 DEBUG [main] o.a.c.c.ContainerBase.(): Add container child [StandardWrapper[dispatcherServlet]] to container [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]
+2025-01-18 19:03:34,620 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [INITIALIZING]
+2025-01-18 19:03:34,620 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [INITIALIZED]
+2025-01-18 19:03:34,620 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [STARTING_PREP]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZING]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZED]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING_PREP]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZING]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [INITIALIZED]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING_PREP]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardWrapperValve[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTED]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTING]
+2025-01-18 19:03:34,621 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]]] to [STARTED]
+2025-01-18 19:03:34,622 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [STARTING]
+2025-01-18 19:03:34,622 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[].StandardWrapper[dispatcherServlet]] to [STARTED]
+2025-01-18 19:03:34,635 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZING]
+2025-01-18 19:03:34,635 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [INITIALIZED]
+2025-01-18 19:03:34,635 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING_PREP]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@3f0ce0d1] to [INITIALIZING]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@3f0ce0d1] to [INITIALIZED]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@3f0ce0d1] to [STARTING_PREP]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@3f0ce0d1] to [STARTING]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.springframework.boot.web.embedded.tomcat.LazySessionIdGenerator@3f0ce0d1] to [STARTED]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTING]
+2025-01-18 19:03:34,636 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardManager[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]] to [STARTED]
+2025-01-18 19:03:34,640 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [STARTING]
+2025-01-18 19:03:34,640 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]] to [STARTED]
+2025-01-18 19:03:34,640 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZING]
+2025-01-18 19:03:34,640 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZED]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING_PREP]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZING]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZED]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING_PREP]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [ErrorReportValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTED]
+2025-01-18 19:03:34,641 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZING]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [INITIALIZED]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING_PREP]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardHostValve[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTED]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTING]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat].StandardHost[localhost]]] to [STARTED]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [STARTING]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat].StandardHost[localhost]] to [STARTED]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [INITIALIZING]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [INITIALIZED]
+2025-01-18 19:03:34,642 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [STARTING_PREP]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [INITIALIZING]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [INITIALIZED]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [STARTING_PREP]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [STARTING]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngineValve[StandardEngine[Tomcat]]] to [STARTED]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [STARTING]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardPipeline[StandardEngine[Tomcat]]] to [STARTED]
+2025-01-18 19:03:34,643 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat]] to [STARTING]
+2025-01-18 19:03:34,645 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardEngine[Tomcat]] to [STARTED]
+2025-01-18 19:03:34,645 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.mapper.MapperListener@5abf6a99] to [STARTING_PREP]
+2025-01-18 19:03:34,645 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.mapper.MapperListener@5abf6a99] to [STARTING]
+2025-01-18 19:03:34,646 DEBUG [main] o.a.c.m.Mapper.(): Registered host [localhost]
+2025-01-18 19:03:34,646 DEBUG [main] o.a.c.m.MapperListener.(): Register Wrapper [dispatcherServlet] in Context [] for service [StandardService[Tomcat]]
+2025-01-18 19:03:34,646 DEBUG [main] o.a.c.m.MapperListener.(): Register Context [] for service [StandardService[Tomcat]]
+2025-01-18 19:03:34,646 DEBUG [main] o.a.c.m.MapperListener.(): Register host [localhost] at domain [null] for service [StandardService[Tomcat]]
+2025-01-18 19:03:34,646 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [org.apache.catalina.mapper.MapperListener@5abf6a99] to [STARTED]
+2025-01-18 19:03:34,647 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardService[Tomcat]] to [STARTED]
+2025-01-18 19:03:34,647 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [StandardServer[-1]] to [STARTED]
+2025-01-18 19:03:34,916 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:34,916 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:34,917 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:34,918 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 84
+2025-01-18 19:03:34,918 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:34,918 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:34,918 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:34,919 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  3, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2025-01-18 19:03:34,919 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.s.call.(): RMI TCP Connection(1)-192.168.1.2: [192.168.1.2] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1088) ~[?:?]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:640) ~[?:?]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:679) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1449) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[?:?]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:?]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) [?:?]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+2025-01-18 19:03:34,923 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:34,923 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@6e889fa5: connectionId=rmi://192.168.1.2  3] closing.
+2025-01-18 19:03:34,923 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@6e889fa5: connectionId=rmi://192.168.1.2  3] closed.
+2025-01-18 19:03:35,424 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,424 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,426 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,426 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,426 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,427 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,427 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,427 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,427 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,427 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,428 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 84
+2025-01-18 19:03:35,428 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,429 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,429 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:35,429 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  4, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2025-01-18 19:03:35,429 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.s.call.(): RMI TCP Connection(1)-192.168.1.2: [192.168.1.2] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1088) ~[?:?]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:640) ~[?:?]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:679) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1449) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[?:?]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:639) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[?:?]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:?]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) [?:?]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) [?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+2025-01-18 19:03:35,430 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,430 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@16f16e19: connectionId=rmi://192.168.1.2  4] closing.
+2025-01-18 19:03:35,430 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@16f16e19: connectionId=rmi://192.168.1.2  4] closed.
+2025-01-18 19:03:35,526 DEBUG [main] i.n.u.i.l.InternalLoggerFactory.(): Using SLF4J as the default logging framework
+2025-01-18 19:03:35,528 DEBUG [main] i.l.c.r.AddressResolverGroupProvider.(): Starting without optional netty's non-blocking DNS resolver library
+2025-01-18 19:03:35,530 DEBUG [main] i.l.c.r.DefaultClientResources.(): -Dio.netty.eventLoopThreads: 16
+2025-01-18 19:03:35,534 DEBUG [main] i.l.c.r.DefaultEventLoopGroupProvider.(): Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2025-01-18 19:03:35,540 DEBUG [main] i.n.u.c.GlobalEventExecutor.(): -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2025-01-18 19:03:35,546 DEBUG [main] i.n.u.i.InternalThreadLocalMap.(): -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2025-01-18 19:03:35,546 DEBUG [main] i.n.u.i.InternalThreadLocalMap.(): -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2025-01-18 19:03:35,547 DEBUG [main] i.n.u.ResourceLeakDetector.(): -Dio.netty.leakDetection.level: simple
+2025-01-18 19:03:35,547 DEBUG [main] i.n.u.ResourceLeakDetector.(): -Dio.netty.leakDetection.targetRecords: 4
+2025-01-18 19:03:35,550 DEBUG [main] i.n.u.ResourceLeakDetectorFactory.(): Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1c6ac73c
+2025-01-18 19:03:35,566 DEBUG [main] i.n.u.i.PlatformDependent0.(): -Dio.netty.noUnsafe: false
+2025-01-18 19:03:35,566 DEBUG [main] i.n.u.i.PlatformDependent0.(): Java version: 17
+2025-01-18 19:03:35,567 DEBUG [main] i.n.u.i.PlatformDependent0.(): sun.misc.Unsafe.theUnsafe: available
+2025-01-18 19:03:35,567 DEBUG [main] i.n.u.i.PlatformDependent0.(): sun.misc.Unsafe base methods: all available
+2025-01-18 19:03:35,568 DEBUG [main] i.n.u.i.PlatformDependent0.(): sun.misc.Unsafe.storeFence: available
+2025-01-18 19:03:35,568 DEBUG [main] i.n.u.i.PlatformDependent0.(): java.nio.Buffer.address: available
+2025-01-18 19:03:35,568 DEBUG [main] i.n.u.i.PlatformDependent0.(): direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2025-01-18 19:03:35,569 DEBUG [main] i.n.u.i.PlatformDependent0.(): java.nio.Bits.unaligned: available, true
+2025-01-18 19:03:35,569 DEBUG [main] i.n.u.i.PlatformDependent0.(): jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5a61f5df
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent0.(): java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent.(): sun.misc.Unsafe: available
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent.(): -Dio.netty.tmpdir: C:\Users\PC\AppData\Local\Temp (java.io.tmpdir)
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent.(): -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent.(): Platform: Windows
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent.(): -Dio.netty.maxDirectMemory: -1 bytes
+2025-01-18 19:03:35,570 DEBUG [main] i.n.u.i.PlatformDependent.(): -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2025-01-18 19:03:35,571 DEBUG [main] i.n.u.i.CleanerJava9.(): java.nio.ByteBuffer.cleaner(): available
+2025-01-18 19:03:35,571 DEBUG [main] i.n.u.i.PlatformDependent.(): -Dio.netty.noPreferDirect: false
+2025-01-18 19:03:35,576 DEBUG [main] i.n.u.i.PlatformDependent.(): org.jctools-core.MpscChunkedArrayQueue: available
+2025-01-18 19:03:35,583 DEBUG [main] r.u.Loggers.(): Using Slf4j logging framework
+2025-01-18 19:03:35,585 DEBUG [main] i.l.c.e.j.EventRecorderHolder.(): Starting with JFR support
+2025-01-18 19:03:35,591 DEBUG [main] i.l.c.r.DefaultClientResources.(): LatencyUtils/HdrUtils are not available, metrics are disabled
+2025-01-18 19:03:35,739 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
+2025-01-18 19:03:35,774 DEBUG [main] _.s.w.s.H.Mappings.(): 
+	c.l.b.a.c.c.BlogArticleInfoController:
+	{POST [/home/articles]}: getBlogArticleInfos(PageRequest)
+	{GET [/home/get/{id}]}: getArticleContent(Integer)
+2025-01-18 19:03:35,776 DEBUG [main] _.s.w.s.H.Mappings.(): 
+	c.l.b.a.c.c.BlogContentItemsController:
+	{GET [/home/sentences]}: getSentences()
+2025-01-18 19:03:35,777 DEBUG [main] _.s.w.s.H.Mappings.(): 
+	c.l.b.a.c.c.BlogStatusController:
+	{POST [/article/like]}: putLike(PutStatusRequest)
+	{POST [/article/comment]}: putComment()
+	{POST [/article/collection]}: putCollection()
+2025-01-18 19:03:35,778 DEBUG [main] _.s.w.s.H.Mappings.(): 
+	c.l.b.a.c.c.TestController:
+	{GET [/test/error]}: error()
+	{POST [/test/redis]}: redis()
+	{GET [/test/hello]}: hello()
+2025-01-18 19:03:35,779 DEBUG [main] _.s.w.s.H.Mappings.(): 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2025-01-18 19:03:35,785 DEBUG [main] _.s.w.s.H.Mappings.(): 'beanNameHandlerMapping' {}
+2025-01-18 19:03:35,830 DEBUG [main] _.s.w.s.H.Mappings.(): 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2025-01-18 19:03:35,931 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,931 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,932 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,933 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:35,933 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,933 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 84
+2025-01-18 19:03:35,933 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,934 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,934 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,934 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,934 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:35,934 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  5, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2025-01-18 19:03:35,936 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:35,937 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:35,937 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@3d0b44a: connectionId=rmi://192.168.1.2  5] closing.
+2025-01-18 19:03:35,937 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@3d0b44a: connectionId=rmi://192.168.1.2  5] closed.
+2025-01-18 19:03:36,040 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [Connector["http-nio-8085"]] to [STARTING_PREP]
+2025-01-18 19:03:36,040 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [Connector["http-nio-8085"]] to [STARTING]
+2025-01-18 19:03:36,040 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2025-01-18 19:03:36,051 DEBUG [main] o.a.c.u.LifecycleBase.(): Setting state for [Connector["http-nio-8085"]] to [STARTED]
+2025-01-18 19:03:36,052 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2025-01-18 19:03:36,058 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 2.659 seconds (process running for 3.358)
+2025-01-18 19:03:36,438 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,439 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,439 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,439 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,439 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,440 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,440 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,440 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,440 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,440 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,440 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 84
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:36,441 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  6, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2025-01-18 19:03:36,442 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,443 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,443 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@19d2eea8: connectionId=rmi://192.168.1.2  6] closing.
+2025-01-18 19:03:36,443 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@19d2eea8: connectionId=rmi://192.168.1.2  6] closed.
+2025-01-18 19:03:36,444 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,444 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 82
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,445 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,446 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 84
+2025-01-18 19:03:36,446 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,446 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,446 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:36,446 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.MarshalledObject", codebase = ""
+2025-01-18 19:03:36,447 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = ""
+2025-01-18 19:03:36,447 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = ""
+2025-01-18 19:03:36,447 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  7 unwrapping params with MBean extended ClassLoader.
+2025-01-18 19:03:36,447 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,448 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  7, name=org.springframework.boot:type=Admin,name=SpringApplication, operationName=getProperty, signature=[java.lang.String]
+2025-01-18 19:03:36,448 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,448 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@1c3d2f4b: connectionId=rmi://192.168.1.2  7] closing.
+2025-01-18 19:03:36,448 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@1c3d2f4b: connectionId=rmi://192.168.1.2  7] closed.
+2025-01-18 19:03:36,449 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,450 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,450 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,450 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,452 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,452 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,452 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,452 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,453 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 84
+2025-01-18 19:03:36,453 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,453 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,453 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:36,454 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.MarshalledObject", codebase = ""
+2025-01-18 19:03:36,454 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = ""
+2025-01-18 19:03:36,454 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = ""
+2025-01-18 19:03:36,454 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8 unwrapping params with MBean extended ClassLoader.
+2025-01-18 19:03:36,455 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,455 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8, name=org.springframework.boot:type=Admin,name=SpringApplication, operationName=getProperty, signature=[java.lang.String]
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.MarshalledObject", codebase = ""
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = ""
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = ""
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8 unwrapping params with MBean extended ClassLoader.
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,456 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8, name=org.springframework.boot:type=Admin,name=SpringApplication, operationName=getProperty, signature=[java.lang.String]
+2025-01-18 19:03:36,457 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,457 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:36,457 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.MarshalledObject", codebase = ""
+2025-01-18 19:03:36,457 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = ""
+2025-01-18 19:03:36,458 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = ""
+2025-01-18 19:03:36,458 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8 unwrapping params with MBean extended ClassLoader.
+2025-01-18 19:03:36,458 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,458 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8, name=org.springframework.boot:type=Admin,name=SpringApplication, operationName=getProperty, signature=[java.lang.String]
+2025-01-18 19:03:36,460 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,460 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "javax.management.ObjectName", codebase = ""
+2025-01-18 19:03:36,460 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "java.rmi.MarshalledObject", codebase = ""
+2025-01-18 19:03:36,460 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[B", codebase = ""
+2025-01-18 19:03:36,460 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = ""
+2025-01-18 19:03:36,460 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8 unwrapping params with MBean extended ClassLoader.
+2025-01-18 19:03:36,461 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.loader.(): RMI TCP Connection(1)-192.168.1.2: name = "[Ljava.lang.String;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:03:36,461 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): connectionId=rmi://192.168.1.2  8, name=org.springframework.boot:type=Admin,name=SpringApplication, operationName=getProperty, signature=[java.lang.String]
+2025-01-18 19:03:36,461 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:03:36,461 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@27678a7c: connectionId=rmi://192.168.1.2  8] closing.
+2025-01-18 19:03:36,461 DEBUG [RMI TCP Connection(1)-192.168.1.2] j.m.r.rmi.(): [javax.management.remote.rmi.RMIConnectionImpl@27678a7c: connectionId=rmi://192.168.1.2  8] closed.
+2025-01-18 19:03:47,896 DEBUG [http-nio-8085-exec-2] o.a.c.h.Http11Processor.(): Error parsing HTTP request header
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:792) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+2025-01-18 19:03:47,896 DEBUG [http-nio-8085-exec-2] o.a.c.h.Http11Processor.(): Error state [CLOSE_CONNECTION_NOW] reported while processing request
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:792) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+2025-01-18 19:03:47,920 DEBUG [http-nio-8085-exec-1] o.a.c.a.j.AuthConfigFactoryImpl.(): Loading persistent provider registrations from [C:\Users\PC\AppData\Local\Temp\tomcat.8085.14693091860497423823\conf\jaspic-providers.xml]
+2025-01-18 19:03:47,922 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-18 19:03:47,922 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2025-01-18 19:03:47,923 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
+2025-01-18 19:03:47,977 WARN  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): startTime属性未设置或类型错误
+2025-01-18 19:04:03,908 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: (port 51409) connection closed
+2025-01-18 19:04:03,909 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: close connection, socket: Socket[addr=/192.168.1.2,port=51410,localport=51409]
+2025-01-18 19:04:03,909 DEBUG [RMI TCP Connection(1)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(1)-192.168.1.2: socket close: Socket[addr=/192.168.1.2,port=51410,localport=51409]
+2025-01-18 19:04:41,557 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(2)-192.168.1.2: accepted socket from [192.168.1.2:51544]
+2025-01-18 19:04:41,557 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(2)-192.168.1.2: (port 51409) op = 80
+2025-01-18 19:04:41,558 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.loader.(): RMI TCP Connection(2)-192.168.1.2: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:04:41,558 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.loader.(): RMI TCP Connection(2)-192.168.1.2: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:04:41,558 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.loader.(): RMI TCP Connection(2)-192.168.1.2: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:04:41,558 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.loader.(): RMI TCP Connection(2)-192.168.1.2: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:04:41,558 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.loader.(): RMI TCP Connection(2)-192.168.1.2: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@1b7cc17c
+2025-01-18 19:04:56,564 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(2)-192.168.1.2: (port 51409) connection closed
+2025-01-18 19:04:56,564 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(2)-192.168.1.2: close connection, socket: Socket[addr=/192.168.1.2,port=51544,localport=51409]
+2025-01-18 19:04:56,564 DEBUG [RMI TCP Connection(2)-192.168.1.2] s.r.t.tcp.(): RMI TCP Connection(2)-192.168.1.2: socket close: Socket[addr=/192.168.1.2,port=51544,localport=51409]
+2025-01-18 19:55:21,462 DEBUG [RMI Scheduler(0)] s.r.dgc.(): RMI Scheduler(0): b14d2fe679fa6ad0:50e50fc5:1944e3468ec:-7fff
+2025-01-18 21:48:36,831 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.GlobalInterceptor.(): [96m>>>> 收到请求 - URI: /home/sentences Method: GET Params: {}[0m
+2025-01-18 21:48:36,847 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.GlobalInterceptor.(): [96m>>>> 收到请求 - URI: /home/articles Method: POST Params: {}[0m
+2025-01-18 21:48:37,126 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)[0m
+2025-01-18 21:48:37,126 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary[0m
+2025-01-18 21:48:37,126 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_c ontent_items[0m
+2025-01-18 21:48:37,449 INFO  [http-nio-8085-exec-4] c.a.d.p.DruidDataSource.(): {dataSource-1} inited
+2025-01-18 21:48:38,007 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==>  Preparing: select * from blog_content_items
+2025-01-18 21:48:38,050 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): ==> Parameters: 
+2025-01-18 21:48:38,104 DEBUG [http-nio-8085-exec-4] c.l.b.i.b.d.B.queryPrimary.(): <==      Total: 9
+2025-01-18 21:48:38,108 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,108 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,108 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): 执行时间: 981 ms
+2025-01-18 21:48:38,108 INFO  [http-nio-8085-exec-4] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,381 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogArticleBasicDomainServiceImp.(): BlogArticleBasicDomainServiceImp.getBlogArticleBasicInfo.pageRequest:{"offset":0,"pageNum":1,"pageSize":10}
+2025-01-18 21:48:38,381 INFO  [http-nio-8085-exec-4] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"探索编程的无限可能","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"用代码改变世界","type":0},{"content":"ljBlog. All Rights Reserved. 版权所有","type":2},{"content":"在 技术的海洋中探索前行，分享知识的乐趣，共同成长的喜悦","type":3}]
+2025-01-18 21:48:38,462 WARN  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): 执行时间过长：1712毫秒
+2025-01-18 21:48:38,481 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {blogArticleBasicInfo=null, pageRequest=com.lj.blog.common.result.PageRequest@f3c1fdc, param1=null, param2=com.lj.blog.common.result.PageRequest@f3c1fdc}[0m
+2025-01-18 21:48:38,481 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao.queryAllByLimit[0m
+2025-01-18 21:48:38,482 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select id, title, descripti on, reading_time, cover_image, article_status, create_time, is_deleted from blog_article_basic_info LIMIT 10 OFFSET 0[0m
+2025-01-18 21:48:38,486 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryAllByLimit.(): ==>  Preparing: select id, title, description, reading_time, cover_image, article_status, create_time, is_deleted from blog_article_basic_info LIMIT ? OFFSET ?
+2025-01-18 21:48:38,487 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryAllByLimit.(): ==> Parameters: 10(Integer), 0(Integer)
+2025-01-18 21:48:38,500 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryAllByLimit.(): <==      Total: 8
+2025-01-18 21:48:38,500 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,500 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,500 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 17 ms
+2025-01-18 21:48:38,500 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,502 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {articleIds=[1, 2, 3, 4, 5, 6, 7, 8], param1=[1, 2, 3, 4, 5, 6, 7, 8]}[0m
+2025-01-18 21:48:38,502 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleCategoryLabelMappingDao.queryByArticleIds[0m
+2025-01-18 21:48:38,502 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_article_categ ory_label_mapping where article_id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 )[0m
+2025-01-18 21:48:38,504 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByArticleIds.(): ==>  Preparing: select * from blog_article_category_label_mapping where article_id in ( ? , ? , ? , ? , ? , ? , ? , ? )
+2025-01-18 21:48:38,505 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByArticleIds.(): ==> Parameters: 1(Integer), 2(Integer), 3(Integer), 4(Integer), 5(Integer), 6(Integer), 7(Integer), 8(Integer)
+2025-01-18 21:48:38,509 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByArticleIds.(): <==      Total: 11
+2025-01-18 21:48:38,509 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,509 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,510 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 6 ms
+2025-01-18 21:48:38,510 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,511 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 3, 4, 5, 6], param1=[1, 3, 4, 5, 6]}[0m
+2025-01-18 21:48:38,511 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogCategoryDao.queryByIds[0m
+2025-01-18 21:48:38,511 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_categ ory where id in ( 1 , 3 , 4 , 5 , 6 ) and is_deleted = 0[0m
+2025-01-18 21:48:38,512 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): ==>  Preparing: select * from blog_category where id in ( ? , ? , ? , ? , ? ) and is_deleted = 0
+2025-01-18 21:48:38,512 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): ==> Parameters: 1(Integer), 3(Integer), 4(Integer), 5(Integer), 6(Integer)
+2025-01-18 21:48:38,514 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): <==      Total: 5
+2025-01-18 21:48:38,514 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,514 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,514 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 3 ms
+2025-01-18 21:48:38,514 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,516 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 2, 3, 4, 5, 6, 7, 8, 9], param1=[1, 2, 3, 4, 5, 6, 7, 8, 9]}[0m
+2025-01-18 21:48:38,516 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogLabelDao.queryByIds[0m
+2025-01-18 21:48:38,516 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_label where id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 )[0m
+2025-01-18 21:48:38,518 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): ==>  Preparing: select * from blog_label where id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? )
+2025-01-18 21:48:38,519 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): ==> Parameters: 1(Integer), 2(Integer), 3(Integer), 4(Integer), 5(Integer), 6(Integer), 7(Integer), 8(Integer), 9(Integer)
+2025-01-18 21:48:38,522 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): <==      Total: 9
+2025-01-18 21:48:38,522 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,522 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,522 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 5 ms
+2025-01-18 21:48:38,522 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,523 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 2, 3, 4, 5, 6, 7, 8], param1=[1, 2, 3, 4, 5, 6, 7, 8]}[0m
+2025-01-18 21:48:38,523 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleStatusDao.queryByIds[0m
+2025-01-18 21:48:38,523 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_article_status where id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 )[0m
+2025-01-18 21:48:38,524 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): ==>  Preparing: select * from blog_article_status where id in ( ? , ? , ? , ? , ? , ? , ? , ? )
+2025-01-18 21:48:38,524 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): ==> Parameters: 1(Integer), 2(Integer), 3(Integer), 4(Integer), 5(Integer), 6(Integer), 7(Integer), 8(Integer)
+2025-01-18 21:48:38,526 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.queryByIds.(): <==      Total: 1
+2025-01-18 21:48:38,526 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,526 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,526 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 2 ms
+2025-01-18 21:48:38,526 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,527 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogArticleBasicDomainServiceImp.(): BlogArticleBasicDomainServiceImp.getBlogArticleBasicInf.boList[BlogArticleBasicInfoBo(id=1, title=Vue3 基础教程, description=深入学习Vue3的核心概念和实践应用, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Thu Dec 19 05:43:13 CST 2024, readingTime=5, category=前端开发, labels=[Vue3], likes=21, views=12, comments=0, collections=0), BlogArticleBasicInfoBo(id=2, title=TypeScript 入门指南, description=详解TypeScript的基本语法和高级特性, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Fri Dec 20 07:24:28 CST 2024, readingTime=7, category=前端开发, labels=[Vue3, JavaScript], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=3, title=前端构建工具对比, description=深入对比Vite、Webpack和Rollup的特点和应用场景, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:28:09 CST 2024, readingTime=6, category=前端开发, labels=[Vue3, Vite], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=4, title=Docker容器化实践, description=详细讲解Docker的基本概念和实际应用案例, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:28:38 CST 2024, readingTime=8, category=数据库, labels=[Docker], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=5, title=React高级开发技巧, description=探索React的高级特性和性能优化方法, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:29:19 CST 2024, readingTime=10, category=前端开发, labels=[React], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=6, title=MongoDB数据库入门, description=学习MongoDB的基础操作和实践应用, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:29:54 CST 2024, readingTime=5, category=架构设计, labels=[MongoDB], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=7, title=微服务架构实践, description=探讨微服务架构的设计与实现方案, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:30:27 CST 2024, readingTime=7, category=开发工具, labels=[SpringBoot], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=8, title=AI编程助手指南, description=介绍主流的AI编程工具，如GitHub Copilot, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:31:05 CST 2024, readingTime=8, category=运维部署, labels=[AI开发, Cursor], likes=null, views=null, comments=null, collections=null)]
+2025-01-18 21:48:38,547 INFO  [http-nio-8085-exec-8] c.l.b.a.c.c.BlogArticleInfoController.(): BlogArticleInfoController.getBlogArticleInfos.dto:[{"category":"前端开发","collections":0,"comments":0,"coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-19 05:43:13","description":"深入学习Vue3的核心概念和实践应用","id":1,"labels":["Vue3"],"likes":21,"readingTime":5,"title":"Vue3 基础教程","views":12},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-20 07:24:28","description":"详解TypeScript的基本语法和高级特性","id":2,"labels":["Vue3","JavaScript"],"readingTime":7,"title":"TypeScript 入门指南"},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:28:09","description":"深入对比Vite、Webpack和Rollup的特点和应用场景","id":3,"labels":["Vue3","Vite"],"readingTime":6,"title":"前端构建工具对比"},{"category":"数据库","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:28:38","description":"详细讲解Docker的基本概念和实际应用案例","id":4,"labels":["Docker"],"readingTime":8,"title":"Docker容器化实践"},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:29:19","description":"探索React的高级特性和性能优化方法","id":5,"labels":["React"],"readingTime":10,"title":"React高级开发技巧"},{"category":"架构设计","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:29:54","description":"学习MongoDB的基础操作和实践应用","id":6,"labels":["MongoDB"],"readingTime":5,"title":"MongoDB数据库入门"},{"category":"开发工具","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:30:27","description":"探讨微服务架构的设计与实现方案","id":7,"labels":["SpringBoot"],"readingTime":7,"title":"微服务架构实践"},{"category":"运维部署","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:31:05","description":"介绍主流的AI编程工具，如GitHub Copilot","id":8,"labels":["AI开发","Cursor"],"readingTime":8,"title":"AI编程助手指南"}]
+2025-01-18 21:48:38,557 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = BlogArticleBasicInfo(id=null, title=null, description=null, readingTime=null, coverImage=null, articleStatus=null, createTime=null, isDeleted=0)[0m
+2025-01-18 21:48:38,557 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao.count[0m
+2025-01-18 21:48:38,557 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select count(1) from blog_article_basic_info WHERE is_deleted = 0[0m
+2025-01-18 21:48:38,558 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.count.(): ==>  Preparing: select count(1) from blog_article_basic_info WHERE is_deleted = ?
+2025-01-18 21:48:38,558 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.count.(): ==> Parameters: 0(Integer)
+2025-01-18 21:48:38,560 DEBUG [http-nio-8085-exec-8] c.l.b.i.b.d.B.count.(): <==      Total: 1
+2025-01-18 21:48:38,560 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-18 21:48:38,560 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-18 21:48:38,560 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 2 ms
+2025-01-18 21:48:38,560 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-18 21:48:38,560 WARN  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): 执行时间过长：1714毫秒

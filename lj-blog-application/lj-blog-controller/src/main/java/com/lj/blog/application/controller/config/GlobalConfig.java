@@ -1,11 +1,9 @@
 package com.lj.blog.application.controller.config;
 
-import cn.dev33.satoken.interceptor.SaInterceptor;
-import cn.dev33.satoken.stp.StpUtil;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.lj.blog.application.controller.intercepter.GlobalInterceptor;
+import com.lj.blog.application.controller.intercepter.StatisticsAccessInterfaceTimeInterceptor;
 import lombok.NonNull;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -36,7 +34,7 @@ public class GlobalConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new GlobalInterceptor())
+        registry.addInterceptor(new StatisticsAccessInterfaceTimeInterceptor())
                 .addPathPatterns("/**")
                 .order(1);
     }

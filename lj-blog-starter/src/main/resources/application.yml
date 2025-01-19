@@ -27,6 +27,7 @@ spring:
           enabled: true
           slow-sql-millis: 2000
           log-slow-sql: true
+  # redis配置
   data:
     redis:
       host: 127.0.0.1
@@ -39,10 +40,28 @@ spring:
           max-idle: 8
           max-wait: -1
           min-idle: 0
+  # 邮箱配置
+  mail:
+    host: smtp.qq.com  # 邮箱服务器地址
+    username: 2069057986@qq.com  # 邮箱账号
+    password: fosxhidqxtmnehce  # 邮箱授权码，请确保这是您的邮箱授权码而非登录密码
+    default-encoding: utf-8  # 默认编码
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
 logging:
   # 设置 MyBatis-Plus 包的日志级别为 ERROR
   config: classpath:log4j2-spring.xml
-
 
 #mybatis-plus:
 #  configuration:

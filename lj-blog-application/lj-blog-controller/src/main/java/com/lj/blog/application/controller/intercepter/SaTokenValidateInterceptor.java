@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @ClassName SaTokenValidateInterceptor
- * @Description 校验拦截器
+ * @Description SaToken校验拦截器
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2025/1/18 15:41
  * @Version JDK 17

@@ -12,14 +12,14 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * @ClassName GlobalInterceptor
- * @Description
+ * @ClassName StatisticsAccessInterfaceTimeInterceptor
+ * @Description 设置请求进入的startTime拦截器
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2025/1/17 21:23
  * @Version JDK 17
  */
 @Slf4j
-public class GlobalInterceptor implements HandlerInterceptor {
+public class StatisticsAccessInterfaceTimeInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull Object handler) throws Exception {

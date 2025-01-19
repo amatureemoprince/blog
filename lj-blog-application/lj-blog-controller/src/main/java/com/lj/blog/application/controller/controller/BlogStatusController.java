@@ -1,7 +1,9 @@
 package com.lj.blog.application.controller.controller;
 
+import cn.dev33.satoken.annotation.SaCheckPermission;
 import com.alibaba.fastjson.JSON;
 import com.lj.blog.application.controller.dto.PutStatusRequest;
+import com.lj.blog.common.constant.PermissionConstant;
 import com.lj.blog.common.result.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/article")
 public class BlogStatusController {
     @PostMapping("/like")
+    @SaCheckPermission(PermissionConstant.USER_LIKE)
     public Result<Integer> putLike(@RequestBody PutStatusRequest request){
         try {
             if(log.isInfoEnabled()){
@@ -34,6 +37,7 @@ public class BlogStatusController {
     }
 
     @PostMapping("/collection")
+    @SaCheckPermission(PermissionConstant.USER_COMMENT)
     public Result<String> putCollection(){
         return null;
     }

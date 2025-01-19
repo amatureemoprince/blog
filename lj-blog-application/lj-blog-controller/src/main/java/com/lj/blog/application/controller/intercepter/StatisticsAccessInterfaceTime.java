@@ -44,5 +44,6 @@ public class StatisticsAccessInterfaceTime implements ResponseBodyAdvice<Object>
         }
         return body;
     }
+
 }
 
