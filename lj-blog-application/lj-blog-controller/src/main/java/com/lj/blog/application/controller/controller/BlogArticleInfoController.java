@@ -9,6 +9,7 @@ import com.lj.blog.common.enums.TypeEnum;
 import com.lj.blog.common.result.PageRequest;
 import com.lj.blog.common.result.PageResponse;
 import com.lj.blog.common.result.Result;
+import com.lj.blog.common.utils.LogUtil;
 import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
 import com.lj.blog.domain.entity.BlogArticleContentBo;
 import com.lj.blog.domain.serivce.imp.BlogArticleBasicDomainServiceImp;
@@ -42,7 +43,7 @@ public class BlogArticleInfoController {
             List<BlogArticleBasicInfoBo> blogArticleBasicInfo = blogArticleBasicDomainService.getBlogArticleBasicInfo(pageRequest);
             List<BlogArticleBasicInfoDto> basicInfoDtos = convert.toBlogArticleBasicInfoDtoList(blogArticleBasicInfo);
             if(log.isInfoEnabled()){
-                log.info("BlogArticleInfoController.getBlogArticleInfos.dto:{}", JSON.toJSONString(basicInfoDtos));
+                log.info(LogUtil.green("BlogArticleInfoController.getBlogArticleInfos.basicInfoDtos:" + JSON.toJSONString(basicInfoDtos)));
             }
             PageResponse<BlogArticleBasicInfoDto> pageResponse = new PageResponse<>();
             pageResponse.setCurrentPageNum(pageRequest.getPageNum());

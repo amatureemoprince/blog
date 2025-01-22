@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSON;
 import com.lj.blog.application.controller.dto.PutStatusRequest;
 import com.lj.blog.common.constant.PermissionConstant;
 import com.lj.blog.common.result.Result;
+import com.lj.blog.common.utils.LogUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,14 +21,14 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping("/article")
+@RequestMapping("/user/article")
 public class BlogStatusController {
     @PostMapping("/like")
     @SaCheckPermission(PermissionConstant.USER_LIKE)
     public Result<Integer> putLike(@RequestBody PutStatusRequest request){
         try {
             if(log.isInfoEnabled()){
-                log.info("BlogStatusController.putLike:request:{}", JSON.toJSONString(request));
+                LogUtil.green("BlogStatusController.putLike:request:" + JSON.toJSONString(request));
             }
             return null;
         }catch (Exception e){

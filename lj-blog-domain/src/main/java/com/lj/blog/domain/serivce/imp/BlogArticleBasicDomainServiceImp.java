@@ -2,6 +2,7 @@ package com.lj.blog.domain.serivce.imp;
 
 import com.alibaba.fastjson.JSON;
 import com.lj.blog.common.enums.TypeEnum;
+import com.lj.blog.common.exception.exceptions.BusinessException;
 import com.lj.blog.common.result.PageRequest;
 import com.lj.blog.domain.convert.BlogArticleInfoBoConvert;
 import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
@@ -13,6 +14,7 @@ import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -48,7 +50,7 @@ public class BlogArticleBasicDomainServiceImp implements BlogArticleBasicInfoDom
     @Resource
     private BlogArticleContentServiceImpl blogArticleContentService;
     /**
-     *
+     * @Description 将映射表中的标签id、分类id在对应的表中查询到数据并组装为BlogArticleBasicInfoBo
      * */
     @Transactional
     @Override
@@ -58,8 +60,8 @@ public class BlogArticleBasicDomainServiceImp implements BlogArticleBasicInfoDom
         }
         //查询到10条基本信息数据
         List<BlogArticleBasicInfo> poList = basicInfoService.queryLimit(null, pageRequest);
-        if (poList.isEmpty()) {
-            return new ArrayList<>();
+        if (CollectionUtils.isEmpty(poList)) {
+            throw new BusinessException("没有文章啦!!!");
         }
         //获取到所有的文章id
         List<Integer> articleIds = poList.stream()
@@ -117,7 +119,9 @@ public class BlogArticleBasicDomainServiceImp implements BlogArticleBasicInfoDom
         }
         return boList;
     }
-
+    /**
+     * @Description 获取某一id的文章内容
+     * */
     @Override
     public BlogArticleContentBo getArticleContent(Integer articleId) {
         BlogArticleContent articleContent = blogArticleContentService.queryPrimary(BlogArticleContent
@@ -131,10 +135,19 @@ public class BlogArticleBasicDomainServiceImp implements BlogArticleBasicInfoDom
         }
         return blogArticleContentBo;
     }
-
+    /**
+     * @Description 查询满足条件的文章数量
+     * */
     @Override
     public Integer getCount(BlogArticleBasicInfo info){
         return basicInfoService.count(info);
+    }
+    /**
+     * @Description 获取用户点赞过的文章基本信息
+     * */
+    @Override
+    public List<BlogArticleBasicInfoBo> getUserLikeArticleBasicInfo() {
+        return List.of();
     }
 
 }

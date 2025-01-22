@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @ClassName PermissionConstant
- * @Description
+ * @Description 用户权限常量类
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2025/1/18 20:23
  * @Version JDK 17

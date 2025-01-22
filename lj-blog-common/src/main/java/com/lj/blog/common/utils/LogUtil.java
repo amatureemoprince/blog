@@ -16,7 +16,7 @@ public class LogUtil {
     }
 
     public static String red(String message){
-        return ColorEnum.GREEN_BRIGHT.getCode() + message + ColorEnum.RESET.getCode();
+        return ColorEnum.RED_BRIGHT.getCode() + message + ColorEnum.RESET.getCode();
     }
 
     public static String green(String message){

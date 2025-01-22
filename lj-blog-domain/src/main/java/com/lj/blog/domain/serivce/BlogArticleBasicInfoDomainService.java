@@ -27,4 +27,6 @@ public interface BlogArticleBasicInfoDomainService {
     BlogArticleContentBo getArticleContent(Integer articleId);
 
     Integer getCount(BlogArticleBasicInfo info);
+
+    List<BlogArticleBasicInfoBo> getUserLikeArticleBasicInfo();
 }

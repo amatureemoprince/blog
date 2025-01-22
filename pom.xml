@@ -34,6 +34,7 @@
         <commonslang3.version>3.17.0</commonslang3.version>
         <redis.version>3.3.5</redis.version>
         <satoken.version>1.39.0</satoken.version>
+        <hutool.version>5.8.25</hutool.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -120,6 +121,12 @@
                 <artifactId>lj-blog-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.lj</groupId>
                 <artifactId>lj-blog-domain</artifactId>

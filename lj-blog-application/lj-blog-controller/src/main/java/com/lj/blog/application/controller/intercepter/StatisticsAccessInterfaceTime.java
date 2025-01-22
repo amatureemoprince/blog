@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
  * @ClassName StatisticsAccessInterfaceTime
- * @Description
+ * @Description 获取接口运行时间
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2025/1/17 21:16
  * @Version JDK 17
@@ -38,9 +38,9 @@ public class StatisticsAccessInterfaceTime implements ResponseBodyAdvice<Object>
                 log.info("{}", LogUtil.blue(">>> 执行了："+ time +"毫秒"));
                 return body;
             }
-            log.warn("执行时间过长：{}毫秒", time);
+            log.warn(LogUtil.yellow("执行时间过长：" + time + "毫秒"));
         } else {
-            log.warn("startTime属性未设置或类型错误");
+            log.warn(LogUtil.yellow("没有到获取时间的拦截器"));
         }
         return body;
     }

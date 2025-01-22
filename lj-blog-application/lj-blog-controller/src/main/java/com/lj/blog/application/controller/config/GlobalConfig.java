@@ -27,6 +27,8 @@ import java.util.TimeZone;
 //继承WebMvcConfigurationSupport会导致其他所有的WebMvcConfigurer全部失效，所以之前配置的跨域没有用
 @Configuration
 public class GlobalConfig implements WebMvcConfigurer {
+
+
     @Override
     public void configureMessageConverters(@NonNull List<HttpMessageConverter<?>> converters) {
         converters.add(mappingJackson2HttpMessageConverter());
@@ -36,7 +38,7 @@ public class GlobalConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new StatisticsAccessInterfaceTimeInterceptor())
                 .addPathPatterns("/**")
-                .order(1);
+                .order(5);
     }
 
     @Override

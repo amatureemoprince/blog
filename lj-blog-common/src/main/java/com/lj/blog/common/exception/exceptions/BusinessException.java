@@ -1,4 +1,4 @@
-package com.lj.blog.application.controller.exception.exceptions;
+package com.lj.blog.common.exception.exceptions;
 
 import lombok.Getter;
 
