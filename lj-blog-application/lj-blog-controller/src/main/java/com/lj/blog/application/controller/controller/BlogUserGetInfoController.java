@@ -7,7 +7,7 @@ import com.lj.blog.application.controller.dto.BlogArticleBasicInfoDto;
 import com.lj.blog.application.controller.dto.BlogUserInfoRspDto;
 import com.lj.blog.common.result.PageRequest;
 import com.lj.blog.common.result.Result;
-import com.lj.blog.common.utils.LogUtil;
+import com.lj.blog.common.utils.LogUtils;
 import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
 import com.lj.blog.domain.entity.BlogUserInfoRspBo;
 import com.lj.blog.domain.serivce.imp.BlogArticleBasicDomainServiceImp;
@@ -61,7 +61,7 @@ public class BlogUserGetInfoController {
     @GetMapping("likes")
     public Result<List<BlogArticleBasicInfoDto>> likes(@RequestBody PageRequest pageRequest){
         if(log.isInfoEnabled()){
-            log.info(LogUtil.green("BlogUserGetInfoController.likes.PageRequest:" + JSON.toJSONString(pageRequest)));
+            log.info(LogUtils.green("BlogUserGetInfoController.likes.PageRequest:" + JSON.toJSONString(pageRequest)));
         }
         //根据id去查询用户点赞过的文章id，再使用文章id获取文章卡片数据
         List<BlogArticleBasicInfoBo> articleBasicInfoBos = blogArticleBasicDomainService.getUserLikeArticleBasicInfo();

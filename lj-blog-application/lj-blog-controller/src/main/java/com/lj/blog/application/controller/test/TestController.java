@@ -1,4 +1,4 @@
-package com.lj.blog.application.controller.controller;
+package com.lj.blog.application.controller.test;
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaIgnore;
 import cn.dev33.satoken.stp.StpUtil;

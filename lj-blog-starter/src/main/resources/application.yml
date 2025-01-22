@@ -5,7 +5,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   application:
-    name: 单体博客系统
+    name: 博客后端
   datasource:
     username: root
     password: 200481lj
@@ -75,6 +75,16 @@ sa-token:
   token-style: simple-uuid
   # 是否输出操作日志
   is-log: true
+############## MinIo配置 ##############
+# AccessKey: TkeEY9pIXSijY0lic186
+# SecretKey: fxJZ8hiCkNy47bMCpIdUxqNqhBfcPzqOloM4TNP1
+minio:
+  endpoint: http://localhost:9000
+  accessKey: TkeEY9pIXSijY0lic186
+  secretKey: fxJZ8hiCkNy47bMCpIdUxqNqhBfcPzqOloM4TNP1
+  bucketName: blog-user
+
+
 logging:
   # 设置 MyBatis-Plus 包的日志级别为 ERROR
   config: classpath:log4j2-spring.xml

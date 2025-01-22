@@ -3,13 +3,13 @@ package com.lj.blog.common.utils;
 import com.lj.blog.common.enums.ColorEnum;
 
 /**
- * @ClassName LogUtil
+ * @ClassName LogUtils
  * @Description 输出工具类
  * @Author Dark Chocolate 2069057986@qq.com
  * @Date 2025/1/18 9:40
  * @Version JDK 17
  */
-public class LogUtil {
+public class LogUtils {
 
     public static String color(String message, ColorEnum color){
         return color.getCode() + message + ColorEnum.RESET.getCode();

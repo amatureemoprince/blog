@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSON;
 import com.lj.blog.application.controller.dto.PutStatusRequest;
 import com.lj.blog.common.constant.PermissionConstant;
 import com.lj.blog.common.result.Result;
-import com.lj.blog.common.utils.LogUtil;
+import com.lj.blog.common.utils.LogUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,7 +28,7 @@ public class BlogStatusController {
     public Result<Integer> putLike(@RequestBody PutStatusRequest request){
         try {
             if(log.isInfoEnabled()){
-                LogUtil.green("BlogStatusController.putLike:request:" + JSON.toJSONString(request));
+                LogUtils.green("BlogStatusController.putLike:request:" + JSON.toJSONString(request));
             }
             return null;
         }catch (Exception e){

@@ -1,6 +1,6 @@
 package com.lj.blog.application.controller.intercepter;
 
-import com.lj.blog.common.utils.LogUtil;
+import com.lj.blog.common.utils.LogUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
@@ -35,12 +35,12 @@ public class StatisticsAccessInterfaceTime implements ResponseBodyAdvice<Object>
             long startTime = (Long) startTimeObj;
             long time = System.currentTimeMillis() - startTime;
             if(time < 1000){
-                log.info("{}", LogUtil.blue(">>> 执行了："+ time +"毫秒"));
+                log.info("{}", LogUtils.blue(">>> 执行了："+ time +"毫秒"));
                 return body;
             }
-            log.warn(LogUtil.yellow("执行时间过长：" + time + "毫秒"));
+            log.warn(LogUtils.yellow("执行时间过长：" + time + "毫秒"));
         } else {
-            log.warn(LogUtil.yellow("没有到获取时间的拦截器"));
+            log.warn(LogUtils.yellow("没有到获取时间的拦截器"));
         }
         return body;
     }

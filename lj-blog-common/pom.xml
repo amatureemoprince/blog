@@ -59,11 +59,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+        <!--邮箱依赖-->
         <dependency>
             <groupId>com.sun.mail</groupId>
             <artifactId>jakarta.mail</artifactId>
             <version>2.0.1</version>
         </dependency>
+        <!--minio依赖-->
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>8.5.17</version>
+        </dependency>
+        <!--SaToken依赖-->
         <dependency>
             <groupId>cn.dev33</groupId>
             <artifactId>sa-token-spring-boot3-starter</artifactId>

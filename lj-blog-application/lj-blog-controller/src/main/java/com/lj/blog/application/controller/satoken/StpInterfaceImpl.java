@@ -1,7 +1,7 @@
 package com.lj.blog.application.controller.satoken;
 
 import cn.dev33.satoken.stp.StpInterface;
-import com.lj.blog.common.utils.LogUtil;
+import com.lj.blog.common.utils.LogUtils;
 import com.lj.blog.domain.serivce.imp.BlogUserDomainServiceImp;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +19,7 @@ import java.util.List;
 @Component
 @Slf4j
 public class StpInterfaceImpl implements StpInterface {
+
     @Autowired
     private BlogUserDomainServiceImp blogUserDomainService;
 
@@ -36,7 +37,7 @@ public class StpInterfaceImpl implements StpInterface {
             list.add("user.get");
             // list.add("user.delete");
             list.add("art.*");
-            log.info(LogUtil.blue("验证的type为" + loginType));
+            log.info(LogUtils.blue("验证的type为" + loginType));
             return list;
         }
         return null;

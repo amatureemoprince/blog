@@ -1,16 +1,14 @@
 package com.lj.blog.application.controller.controller;
 
-import cn.hutool.extra.mail.Mail;
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
 import com.lj.blog.application.controller.convert.BlogUserConvert;
 import com.lj.blog.application.controller.dto.BlogUserRegisterDto;
 import com.lj.blog.common.result.Result;
-import com.lj.blog.common.utils.LogUtil;
+import com.lj.blog.common.utils.LogUtils;
 import com.lj.blog.common.utils.MailUtils;
 import com.lj.blog.domain.serivce.imp.BlogUserDomainServiceImp;
 import lombok.extern.slf4j.Slf4j;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -51,7 +49,7 @@ public class UserRegisterController {
             }
             return Result.error("验证码验证错误");
         } catch (Exception e) {
-            log.info(LogUtil.red("注册普通用户失败 " + e + " " + e.getMessage()));
+            log.info(LogUtils.red("注册普通用户失败 " + e + " " + e.getMessage()));
             return Result.error(e.getMessage());
         }
     }

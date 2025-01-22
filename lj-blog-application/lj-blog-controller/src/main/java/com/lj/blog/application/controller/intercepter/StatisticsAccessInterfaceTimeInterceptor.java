@@ -2,7 +2,7 @@ package com.lj.blog.application.controller.intercepter;
 
 import com.alibaba.fastjson.JSON;
 import com.lj.blog.common.enums.ColorEnum;
-import com.lj.blog.common.utils.LogUtil;
+import com.lj.blog.common.utils.LogUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.NonNull;
@@ -32,7 +32,7 @@ public class StatisticsAccessInterfaceTimeInterceptor implements HandlerIntercep
             params = JSON.toJSONString(request.getParameterMap());
         }
         log.info("{}",
-                LogUtil.color(">>>> 收到请求 - " +
+                LogUtils.color(">>>> 收到请求 - " +
                         "URI: " +uri+
                         " Method: "+method+
                         " Params: "+params,
