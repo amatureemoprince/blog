@@ -30,3 +30,4 @@ build/
 
 ### VS Code ###
 .vscode/
+ /lj-blog-starter/src/main/resources/application.yml

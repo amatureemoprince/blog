@@ -61,7 +61,7 @@ public class MinioUtils {
     }
 
     /**
-     * 获得Bucket的策略
+     * 获得Bucket的策略模式
      *
      * @param bucketName 桶名
      * @return 该桶的策略
