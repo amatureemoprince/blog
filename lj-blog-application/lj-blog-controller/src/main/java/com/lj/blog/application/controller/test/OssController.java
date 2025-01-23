@@ -1,14 +1,17 @@
 package com.lj.blog.application.controller.test;
 
 import com.lj.blog.common.conf.MinioConfig;
+import com.lj.blog.common.result.Result;
 import com.lj.blog.common.satoken.StpKit;
 import com.lj.blog.common.utils.LogUtils;
 import com.lj.blog.common.utils.MinioUtils;
+import io.minio.ObjectWriteResponse;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.filter.OrderedFormContentFilter;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
@@ -30,6 +33,8 @@ public class OssController {
 
     @Autowired
     private MinioConfig minioConfig;
+    @Autowired
+    private OrderedFormContentFilter formContentFilter;
 
     /**
      * 文件上传
@@ -56,19 +61,16 @@ public class OssController {
      * 用户上传头像
      */
     @PostMapping("/avatar")
-    public String uploadAvatar(@RequestParam("avatar") MultipartFile avatar){
+    public Result<String> uploadAvatar(@RequestParam("avatar") MultipartFile avatar){
         try {
-            //文件名
-            String fileName = avatar.getOriginalFilename();
-            String newFileName = "user/" + StpKit.USER.getLoginId() + "/avatar/" + System.currentTimeMillis() + "." + StringUtils.substringAfterLast(fileName, ".");
-            //类型
-            String contentType = avatar.getContentType();
-            LogUtils.blue("contentType:" + contentType);
-            minioUtils.uploadFile(minioConfig.getBucketName(), avatar, newFileName, contentType);
-            return "上传成功";
+            String url = minioUtils.uploadUserOrAdminAvatar(avatar, StpKit.USER_ROLE);
+            if(url == null){
+                return Result.error("url为空");
+            }
+            return Result.success(url);
         } catch (Exception e) {
             log.error("上传失败.{} {}", e, e.getMessage());
-            return "上传失败";
+            return Result.error("上传图片失败");
         }
     }
 

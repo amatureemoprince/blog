@@ -1,13 +1,17 @@
 package com.lj.blog.application.controller.satoken;
 
 import cn.dev33.satoken.stp.StpInterface;
-import com.lj.blog.common.utils.LogUtils;
+import cn.hutool.core.collection.CollectionUtil;
+import com.lj.blog.common.exception.exceptions.BusinessException;
+import com.lj.blog.common.satoken.StpKit;
+import com.lj.blog.domain.serivce.imp.BlogAdminDomainServiceImp;
 import com.lj.blog.domain.serivce.imp.BlogUserDomainServiceImp;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @ClassName StpInterfaceImpl
@@ -20,8 +24,16 @@ import java.util.List;
 @Slf4j
 public class StpInterfaceImpl implements StpInterface {
 
+    private final BlogUserDomainServiceImp blogUserDomainService;
+
+    private final BlogAdminDomainServiceImp blogAdminDomainService;
+
     @Autowired
-    private BlogUserDomainServiceImp blogUserDomainService;
+    public StpInterfaceImpl(BlogUserDomainServiceImp blogUserDomainService,
+                            BlogAdminDomainServiceImp blogAdminDomainService){
+        this.blogUserDomainService = blogUserDomainService;
+        this.blogAdminDomainService = blogAdminDomainService;
+    }
 
     /**
      * 返回一个账号所拥有的权限码集合
@@ -29,18 +41,24 @@ public class StpInterfaceImpl implements StpInterface {
     @Override
     public List<String> getPermissionList(Object loginId, String loginType) {
         log.info("获取权限列表，loginId: {}, loginType: {}", loginId, loginType);
-        if("admin".equals(loginType)){
-            List<String> list = new ArrayList<String>();
-            list.add("101");
-            list.add("user.add");
-            list.add("user.update");
-            list.add("user.get");
-            // list.add("user.delete");
-            list.add("art.*");
-            log.info(LogUtils.blue("验证的type为" + loginType));
-            return list;
+        String id = (String) StpKit.USER.getLoginId();
+        Set<String> permissionSet;
+        List<String> permissionList;
+        if(StpKit.USER_ROLE.equals(loginType)){
+            permissionSet = blogUserDomainService.getPermissionListById(Long.parseLong(id));
+            permissionList = new ArrayList<>(permissionSet);
+            if(CollectionUtil.isEmpty(permissionList)){
+                throw new BusinessException("该用户没有权限");
+            }
+            return permissionList;
         }
-        return null;
+        //这里就是管理者权限查询
+        permissionSet = blogAdminDomainService.getPermissionListById(Long.parseLong(id));
+        permissionList = new ArrayList<>(permissionSet);
+        if(CollectionUtil.isEmpty(permissionList)){
+            throw new BusinessException("该管理者没有权限");
+        }
+        return permissionList;
     }
 
     /**

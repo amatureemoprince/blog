@@ -1,5 +1,9 @@
 package com.lj.blog.common.utils;
 
+import cn.hutool.Hutool;
+import cn.hutool.core.util.IdUtil;
+import com.lj.blog.common.conf.MinioConfig;
+import com.lj.blog.common.satoken.StpKit;
 import io.minio.*;
 import io.minio.http.Method;
 import io.minio.messages.Bucket;
@@ -7,10 +11,13 @@ import io.minio.messages.DeleteObject;
 import io.minio.messages.Item;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.print.DocFlavor;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.net.URLDecoder;
@@ -29,13 +36,77 @@ import java.util.*;
 @Component
 public class MinioUtils {
 
+    //文件存储文件夹
+    public static String USER_AVATAR = "user/%d/avatar/";
+
+    public static String ADMIN_AVATAR = "admin/%d/avatar/";
+
+    public static String USER_EMOTICON = "user/%d/emoticon/";
+
     private final MinioClient minioClient;
 
+    private final MinioConfig minioConfig;
     @Autowired
-    public MinioUtils(MinioClient minioClient){
+    public MinioUtils(MinioClient minioClient, MinioConfig minioConfig){
         this.minioClient = minioClient;
+        this.minioConfig = minioConfig;
     }
 
+    /**
+     * @Description 上传用户或管理者头像
+     */
+    @SneakyThrows(Exception.class)
+    public String uploadUserOrAdminAvatar(MultipartFile avatar, String loginType) {
+        String originalFilename = avatar.getOriginalFilename();
+        InputStream inputStream;
+        String avatarFileName = getString(loginType, originalFilename);
+        // 上传文件到 MinIO
+        inputStream = avatar.getInputStream();
+        minioClient.putObject(
+                PutObjectArgs.builder()
+                        .bucket(minioConfig.getBucketName())
+                        .object(avatarFileName)
+                        .contentType(avatar.getContentType())
+                        .stream(inputStream, inputStream.available(), -1)
+                        .build()
+        );
+        // 生成预签名 URL，确保指定 HTTP 方法
+        return minioClient.getPresignedObjectUrl(
+                GetPresignedObjectUrlArgs.builder()
+                        .bucket(minioConfig.getBucketName())
+                        .object(avatarFileName)
+                        .method(Method.GET)
+                        .expiry(7 * 24 * 60 * 60)
+                        .build());
+    }
+    private static @NotNull String getString(String loginType, String originalFilename) {
+        String avatarFileName;
+        if (loginType.equals(StpKit.USER.loginType)) {
+            String userId = (String) StpKit.USER.getLoginId();
+            avatarFileName = String.format(MinioUtils.USER_AVATAR, Long.parseLong(userId)) + IdUtil.getSnowflakeNextId() + "_" + originalFilename;
+        } else {
+            String adminId = (String) StpKit.ADMIN.getLoginId();
+            avatarFileName = String.format(MinioUtils.ADMIN_AVATAR, Long.parseLong(adminId)) + IdUtil.getSnowflakeNextId() + "_" + originalFilename;
+        }
+        return avatarFileName;
+    }
+
+    /**
+     * @Description 获取对应文件目录的url
+     * @param objectName 文件名
+     * @return 文件url
+     */
+    @SneakyThrows
+    private String getFileUrl(String objectName){
+        return minioClient.getPresignedObjectUrl(GetPresignedObjectUrlArgs.builder()
+                        .expiry(7 * 24 * 60 * 60)
+                        .bucket(minioConfig.getBucketName())
+                        .method(Method.GET)
+                        .object(objectName)
+                .build());
+    }
+
+    
     /**
      * 启动SpringBoot容器的时候初始化Bucket
      * 如果没有Bucket则创建

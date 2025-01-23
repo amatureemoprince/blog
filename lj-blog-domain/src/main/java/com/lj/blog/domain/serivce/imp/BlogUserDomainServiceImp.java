@@ -16,6 +16,7 @@ import com.lj.blog.infra.basic.service.impl.BlogUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @ClassName BlogUserDomainServiceImp
@@ -81,6 +82,13 @@ public class BlogUserDomainServiceImp implements BlogUserDomainService {
         String loginId = (String) StpKit.USER.getLoginId();
         BlogUser blogUser = blogUserService.queryById(Long.parseLong(loginId));
         return infoBoConvert.blogUserInfoToBo(blogUser);
+    }
+    /**
+     * 根据用户id查询权限集合
+     * */
+    @Override
+    public Set<String> getPermissionListById(long id) {
+        return Set.of();
     }
 
     /**

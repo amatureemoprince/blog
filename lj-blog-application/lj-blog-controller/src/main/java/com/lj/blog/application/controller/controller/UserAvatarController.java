@@ -23,6 +23,11 @@ public class UserAvatarController {
     @Autowired
     private BlogFileDomainServiceImp fileService;
 
+    /**
+     * @Description 用户上传或者更新图片
+     * @param avatar 图片
+     * @return 上传结果
+     */
     @PostMapping("upload")
     public Result<String> upload(@RequestParam("avatar") MultipartFile avatar){
         return fileService.uploadAvatar(avatar);
