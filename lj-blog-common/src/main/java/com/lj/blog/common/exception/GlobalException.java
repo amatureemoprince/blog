@@ -10,10 +10,10 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.mail.MailSendException;
+import org.springframework.validation.BindException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -106,6 +106,15 @@ public class GlobalException {
         log.error(LogUtils.red("SYSTEM-ERROR: 编码不支持, 错误信息: " + e.getMessage() + e));
     }
 
+    @ExceptionHandler(BindException.class)
+    public ResponseEntity<?> bindException(BindException e){
+        log.error(LogUtils.red("VALIDATION-ERROR: 参数校验错误, 错误信息: " + e + e.getMessage()));
+        return ResponseEntity.builder()
+                .code(HttpStatus.BAD_REQUEST.value())
+                .message("参数校验失败")
+                .data(null)
+                .build();
+    }
     @Data
     @Builder
     public static class ResponseEntity<T>{

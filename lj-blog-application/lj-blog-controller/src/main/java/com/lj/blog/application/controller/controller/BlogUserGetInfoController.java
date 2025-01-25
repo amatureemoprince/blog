@@ -12,6 +12,9 @@ import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
 import com.lj.blog.domain.entity.BlogUserInfoRspBo;
 import com.lj.blog.domain.serivce.imp.BlogArticleBasicDomainServiceImp;
 import com.lj.blog.domain.serivce.imp.BlogUserDomainServiceImp;
+import io.swagger.v3.oas.annotations.OpenAPI31;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +34,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/user/get/")
+@Tag(name = "用户获取自身信息控制器")
 public class BlogUserGetInfoController {
 
     @Autowired
@@ -49,6 +53,7 @@ public class BlogUserGetInfoController {
     /**
      * @Description 获取用户自己的信息
      **/
+    @Operation(summary = "获取自己的信息数据")
     @GetMapping("mine")
     public Result<BlogUserInfoRspDto> mine(){
         BlogUserInfoRspBo bo = blogUserDomainService.getBlogUserInfo();
@@ -59,6 +64,7 @@ public class BlogUserGetInfoController {
      * @Description 获取文章卡片展示的数据
      */
     @GetMapping("likes")
+    @Operation(summary = "用户点赞")
     public Result<List<BlogArticleBasicInfoDto>> likes(@RequestBody PageRequest pageRequest){
         if(log.isInfoEnabled()){
             log.info(LogUtils.green("BlogUserGetInfoController.likes.PageRequest:" + JSON.toJSONString(pageRequest)));
@@ -68,6 +74,5 @@ public class BlogUserGetInfoController {
         List<BlogArticleBasicInfoDto> blogArticleBasicInfoDtoList = blogArticleBasicInfoConvert.toBlogArticleBasicInfoDtoList(articleBasicInfoBos);
         return Result.success(blogArticleBasicInfoDtoList);
     }
-
 
 }

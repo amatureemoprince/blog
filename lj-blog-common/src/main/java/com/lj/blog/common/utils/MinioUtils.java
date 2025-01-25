@@ -3,6 +3,7 @@ package com.lj.blog.common.utils;
 import cn.hutool.Hutool;
 import cn.hutool.core.util.IdUtil;
 import com.lj.blog.common.conf.MinioConfig;
+import com.lj.blog.common.dto.AvatarRespDto;
 import com.lj.blog.common.satoken.StpKit;
 import io.minio.*;
 import io.minio.http.Method;
@@ -54,9 +55,10 @@ public class MinioUtils {
 
     /**
      * @Description 上传用户或管理者头像
+     * 返回一个展示的url和一个存储于数据库中的文件位置
      */
     @SneakyThrows(Exception.class)
-    public String uploadUserOrAdminAvatar(MultipartFile avatar, String loginType) {
+    public AvatarRespDto uploadUserOrAdminAvatar(MultipartFile avatar, String loginType) {
         String originalFilename = avatar.getOriginalFilename();
         InputStream inputStream;
         String avatarFileName = getString(loginType, originalFilename);
@@ -71,13 +73,17 @@ public class MinioUtils {
                         .build()
         );
         // 生成预签名 URL，确保指定 HTTP 方法
-        return minioClient.getPresignedObjectUrl(
+        String url = minioClient.getPresignedObjectUrl(
                 GetPresignedObjectUrlArgs.builder()
                         .bucket(minioConfig.getBucketName())
                         .object(avatarFileName)
                         .method(Method.GET)
                         .expiry(7 * 24 * 60 * 60)
                         .build());
+        return AvatarRespDto.builder()
+                .url(url)
+                .folderLocation(avatarFileName)
+                .build();
     }
     private static @NotNull String getString(String loginType, String originalFilename) {
         String avatarFileName;
@@ -106,7 +112,7 @@ public class MinioUtils {
                 .build());
     }
 
-    
+
     /**
      * 启动SpringBoot容器的时候初始化Bucket
      * 如果没有Bucket则创建

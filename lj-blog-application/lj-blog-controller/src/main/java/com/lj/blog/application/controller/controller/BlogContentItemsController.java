@@ -5,6 +5,8 @@ import com.lj.blog.application.controller.dto.BlogContentDto;
 import com.lj.blog.common.result.Result;
 import com.lj.blog.domain.entity.BlogContentItemsBo;
 import com.lj.blog.domain.serivce.imp.BlogContentItemsDomainServiceImp;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,11 +23,13 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/home")
+@Tag(name = "获取主页数据控制器")
 public class BlogContentItemsController {
     @Resource
     private BlogContentItemsDomainServiceImp serviceImp;
     @Resource
     private BlogContentItemConvert convert;
+    @Operation(summary = "返回打字机内容、页脚、大标题数据")
     @GetMapping("/sentences")
     public Result<BlogContentDto> getSentences(){
         List<BlogContentItemsBo> result = serviceImp.getAllSentences();

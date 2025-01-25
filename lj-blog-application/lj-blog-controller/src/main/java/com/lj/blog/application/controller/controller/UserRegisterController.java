@@ -8,6 +8,8 @@ import com.lj.blog.common.result.Result;
 import com.lj.blog.common.utils.LogUtils;
 import com.lj.blog.common.utils.MailUtils;
 import com.lj.blog.domain.serivce.imp.BlogUserDomainServiceImp;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,6 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/user")
+@Tag(name = "注册控制器")
 public class UserRegisterController {
     @Autowired
     private BlogUserDomainServiceImp blogUserDomainService;
@@ -33,6 +36,7 @@ public class UserRegisterController {
     @Autowired
     private MailUtils mailUtils;
 
+    @Operation(summary = "用户注册")
     @PostMapping("/register")
     public Result<String> register(@RequestBody BlogUserRegisterDto registerDto) {
         try {

@@ -1,5 +1,6 @@
 package com.lj.blog.application.controller.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 /**
@@ -9,6 +10,7 @@ import lombok.Data;
  * @Date 2025/1/21 19:02
  * @Version JDK 17
  */
+@Schema(title = "用户登录模型")
 @Data
 public class BlogUserLoginDto {
     private String userName;

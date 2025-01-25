@@ -12,7 +12,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum GlobalEnum {
-    WEBSITE_NAME(10000, "朝花夕拾_"),
+    WEBSITE_NAME(10000, "止于春山"),
     IS_DELETED(1, "删除"),
     IS_NOT_DELETED(0, "未删除");
     public static GlobalEnum getEnumByCode(int code){

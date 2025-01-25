@@ -1,5 +1,6 @@
 package com.lj.blog.application.controller.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
  * @Date 2024/12/18 18:55
  * @Version JDK 17
  */
+@Schema(title = "博客主页展示数据模型")
 @Data
 public class BlogContentDto {
     private String title;

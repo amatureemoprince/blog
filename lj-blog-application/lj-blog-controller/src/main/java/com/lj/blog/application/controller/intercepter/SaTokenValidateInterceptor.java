@@ -22,11 +22,12 @@ public class SaTokenValidateInterceptor implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new SaInterceptor(handler -> StpKit.USER.checkLogin()))
                 .addPathPatterns("/**")
-                        .excludePathPatterns("/home/**",
+                .excludePathPatterns("/home/**",
                         "/test/**",
                         "/email/**",
                         "/user/login",
-                        "/user/register")
+                        "/user/register",
+                        "/user-service/**")
                 .order(10);
         registry.addInterceptor(new SaInterceptor(handle -> StpKit.ADMIN.checkLogin()))
                 .addPathPatterns("/admin/**")

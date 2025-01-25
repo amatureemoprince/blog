@@ -1,6 +1,7 @@
 package com.lj.blog.application.controller.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.Date;
@@ -13,6 +14,7 @@ import java.util.List;
  * @Date 2024/12/19 21:33
  * @Version JDK 17
  */
+@Schema(title = "博客返回文章基本信息模型")
 @Data
 public class BlogArticleBasicInfoDto {
     /**

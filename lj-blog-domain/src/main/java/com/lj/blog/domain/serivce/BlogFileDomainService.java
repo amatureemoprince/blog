@@ -11,6 +11,6 @@ import org.springframework.web.multipart.MultipartFile;
  * @Version JDK 17
  */
 public interface BlogFileDomainService {
-    Result<String> uploadAvatar(MultipartFile avatar);
+    Result<String> uploadUserAvatar(MultipartFile avatar);
 }
 

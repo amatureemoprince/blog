@@ -1,5 +1,6 @@
 package com.lj.blog.application.controller.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.Date;
  * @Date 2025/1/21 23:05
  * @Version JDK 17
  */
+@Schema(title = "返回用户信息模型")
 @Data
 public class BlogUserInfoRspDto {
     private String nickName;

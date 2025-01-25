@@ -2,6 +2,8 @@ package com.lj.blog.application.controller.controller;
 
 import com.lj.blog.common.result.Result;
 import com.lj.blog.domain.serivce.imp.BlogFileDomainServiceImp;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @RestController
 @RequestMapping("/user/avatar/")
+@Tag(name = "用户文件控制器")
 public class UserAvatarController {
 
     @Autowired
@@ -28,9 +31,10 @@ public class UserAvatarController {
      * @param avatar 图片
      * @return 上传结果
      */
+    @Operation(summary = "用户头像上传和更新")
     @PostMapping("upload")
     public Result<String> upload(@RequestParam("avatar") MultipartFile avatar){
-        return fileService.uploadAvatar(avatar);
+        return fileService.uploadUserAvatar(avatar);
     }
 
 }

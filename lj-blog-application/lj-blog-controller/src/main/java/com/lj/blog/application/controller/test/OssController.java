@@ -63,7 +63,7 @@ public class OssController {
     @PostMapping("/avatar")
     public Result<String> uploadAvatar(@RequestParam("avatar") MultipartFile avatar){
         try {
-            String url = minioUtils.uploadUserOrAdminAvatar(avatar, StpKit.USER_ROLE);
+            String url = minioUtils.uploadUserOrAdminAvatar(avatar, StpKit.USER_ROLE).getUrl();
             if(url == null){
                 return Result.error("url为空");
             }

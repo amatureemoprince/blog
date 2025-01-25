@@ -1,4 +1,5 @@
 package com.lj.blog.application.controller.dto;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 /**
@@ -8,6 +9,7 @@ import lombok.Data;
  * @Date 2024/12/20 17:04
  * @Version JDK 17
  */
+@Schema(title = "文章内容模型")
 @Data
 public class BlogArticleContentDto {
     //markdown格式数据

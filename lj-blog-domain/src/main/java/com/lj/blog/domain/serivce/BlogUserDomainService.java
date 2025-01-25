@@ -4,8 +4,6 @@ import com.lj.blog.common.result.Result;
 import com.lj.blog.domain.entity.BlogUserInfoRspBo;
 import com.lj.blog.domain.entity.BlogUserLoginBo;
 import com.lj.blog.infra.basic.entity.BlogUser;
-
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -24,4 +22,5 @@ public interface BlogUserDomainService {
     BlogUserInfoRspBo getBlogUserInfo();
 
     Set<String> getPermissionListById(long l);
+
 }

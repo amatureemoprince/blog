@@ -3,6 +3,7 @@ package com.lj.blog.infra.basic.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.util.Date;
@@ -15,6 +16,9 @@ import java.io.Serializable;
  * @since 2025-01-20 14:11:30
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class BlogUser implements Serializable {
 
     @Serial

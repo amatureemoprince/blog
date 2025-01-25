@@ -43,7 +43,7 @@ public class BlogUserDomainServiceImp implements BlogUserDomainService {
             return Result.error("该邮箱已经被注册了");
         }
         long snowflakeNextId = IdUtil.getSnowflakeNextId();
-        String userName = GlobalEnum.WEBSITE_NAME.getMsg() + snowflakeNextId;
+        String userName = GlobalEnum.WEBSITE_NAME.getMsg() + "_" + snowflakeNextId;
         //使用生成的userName
         blogUser.setUserName(userName);
         BlogUser insert = blogUserService.insert(blogUser);
@@ -90,6 +90,8 @@ public class BlogUserDomainServiceImp implements BlogUserDomainService {
     public Set<String> getPermissionListById(long id) {
         return Set.of();
     }
+
+
 
     /**
      * Description 判断邮箱，是返回true，不是返回false

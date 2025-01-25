@@ -1,202 +1,109 @@
-2025-01-23 14:43:02,474 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 39836 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 14:43:02,480 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 14:43:03,041 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 14:43:03,043 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 14:43:03,076 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2025-01-23 14:43:03,547 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 14:43:03,562 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 14:43:03,569 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 14:43:03,570 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 14:43:03,637 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 14:43:03,637 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1115 ms
-2025-01-23 14:43:05,416 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 14:43:06,592 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 14:43:06,613 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 14:43:06,620 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.517 seconds (process running for 5.466)
-2025-01-23 14:43:25,484 INFO  [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 14:43:25,484 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 14:43:25,485 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-23 14:43:25,546 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 14:43:26,689 ERROR [http-nio-8085-exec-2] c.l.b.a.c.t.OssController.(): 上传失败.java.util.IllegalFormatConversionException: d != java.lang.String d != java.lang.String
-2025-01-23 14:43:26,731 WARN  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1188毫秒[0m
-2025-01-23 14:45:54,058 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 14:45:59,396 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 30952 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 14:45:59,401 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 14:45:59,823 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 14:45:59,825 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 14:45:59,856 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2025-01-23 14:46:00,255 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 14:46:00,263 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 14:46:00,266 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 14:46:00,266 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 14:46:00,333 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 14:46:00,333 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 904 ms
-2025-01-23 14:46:01,802 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 14:46:02,840 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 14:46:02,855 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 14:46:02,861 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 3.744 seconds (process running for 4.662)
-2025-01-23 14:46:08,719 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 14:46:08,719 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 14:46:08,720 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-23 14:46:08,748 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 14:46:09,549 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：802毫秒[0m
-2025-01-23 14:46:09,561 ERROR [http-nio-8085-exec-1] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class io.minio.ObjectWriteResponse] Type definition error: [simple type, class io.minio.ObjectWriteResponse][0m
-2025-01-23 14:46:09,565 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：819毫秒[0m
-2025-01-23 15:48:39,940 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 15:48:39,953 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：13毫秒[0m
-2025-01-23 15:48:39,953 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class io.minio.ObjectWriteResponse] Type definition error: [simple type, class io.minio.ObjectWriteResponse][0m
-2025-01-23 15:48:39,954 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：14毫秒[0m
-2025-01-23 15:48:54,590 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 15:49:00,656 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 34012 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 15:49:00,662 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 15:49:01,170 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 15:49:01,171 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 15:49:01,206 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-2025-01-23 15:49:01,627 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 15:49:01,640 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 15:49:01,649 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 15:49:01,650 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 15:49:01,725 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 15:49:01,725 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1034 ms
-2025-01-23 15:49:03,429 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 15:49:04,617 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 15:49:04,631 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 15:49:04,637 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.307 seconds (process running for 5.24)
-2025-01-23 15:49:08,145 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 15:49:08,145 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 15:49:08,146 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-23 15:49:08,180 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 15:49:08,969 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：791毫秒[0m
-2025-01-23 15:58:16,287 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 15:58:22,349 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 31044 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 15:58:22,355 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 15:58:22,776 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 15:58:22,779 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 15:58:22,809 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2025-01-23 15:58:23,178 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 15:58:23,186 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 15:58:23,190 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 15:58:23,191 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 15:58:23,263 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 15:58:23,263 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 882 ms
-2025-01-23 15:58:24,767 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 15:58:25,850 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 15:58:25,861 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 15:58:25,868 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 3.797 seconds (process running for 4.671)
-2025-01-23 16:00:03,791 INFO  [http-nio-8085-exec-6] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 16:00:03,791 INFO  [http-nio-8085-exec-6] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 16:00:03,793 INFO  [http-nio-8085-exec-6] o.s.w.s.DispatcherServlet.(): Completed initialization in 2 ms
-2025-01-23 16:00:03,827 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 16:00:04,510 ERROR [http-nio-8085-exec-6] c.l.b.a.c.t.OssController.(): 上传失败.java.util.IllegalFormatConversionException: d != java.lang.String d != java.lang.String
-2025-01-23 16:00:04,538 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：712毫秒[0m
-2025-01-23 16:01:01,495 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 16:01:07,717 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 39492 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 16:01:07,724 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 16:01:08,197 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 16:01:08,199 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 16:01:08,235 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2025-01-23 16:01:08,636 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 16:01:08,643 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:01:08,648 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 16:01:08,649 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 16:01:08,722 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 16:01:08,722 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 961 ms
-2025-01-23 16:01:10,333 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 16:01:11,297 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:01:11,310 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 16:01:11,315 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 3.996 seconds (process running for 5.186)
-2025-01-23 16:01:40,722 INFO  [http-nio-8085-exec-9] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 16:01:40,722 INFO  [http-nio-8085-exec-9] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 16:01:40,725 INFO  [http-nio-8085-exec-9] o.s.w.s.DispatcherServlet.(): Completed initialization in 0 ms
-2025-01-23 16:01:40,780 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 16:01:42,374 ERROR [http-nio-8085-exec-9] c.l.b.a.c.t.OssController.(): 上传失败.java.lang.IllegalArgumentException: expiry must be minimum 1 second to maximum 7 days expiry must be minimum 1 second to maximum 7 days
-2025-01-23 16:01:42,417 WARN  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1642毫秒[0m
-2025-01-23 16:02:01,151 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 16:02:06,513 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 34100 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 16:02:06,518 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 16:02:06,937 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 16:02:06,938 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 16:02:06,979 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
-2025-01-23 16:02:07,410 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 16:02:07,423 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:02:07,431 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 16:02:07,432 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 16:02:07,526 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 16:02:07,526 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 978 ms
-2025-01-23 16:02:09,448 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 16:02:10,324 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:02:10,341 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 16:02:10,347 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.12 seconds (process running for 5.223)
-2025-01-23 16:03:06,196 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 16:03:06,196 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 16:03:06,198 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 2 ms
-2025-01-23 16:03:06,246 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 16:03:07,892 ERROR [http-nio-8085-exec-1] c.l.b.a.c.t.OssController.(): 上传失败.java.lang.IllegalArgumentException: method must not be null. method must not be null.
-2025-01-23 16:03:07,942 WARN  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1698毫秒[0m
-2025-01-23 16:03:56,488 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 16:04:06,703 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 19332 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 16:04:06,714 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 16:04:07,199 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 16:04:07,201 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 16:04:07,234 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-2025-01-23 16:04:07,658 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 16:04:07,672 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:04:07,679 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 16:04:07,680 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 16:04:07,743 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 16:04:07,744 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 994 ms
-2025-01-23 16:04:09,433 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 16:04:10,539 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:04:10,556 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 16:04:10,566 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.211 seconds (process running for 8.953)
-2025-01-23 16:04:24,364 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 16:04:24,364 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 16:04:24,365 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-23 16:04:24,430 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 16:08:09,965 ERROR [http-nio-8085-exec-1] c.l.b.a.c.t.OssController.(): 上传失败.java.lang.IllegalArgumentException: method must not be null. method must not be null.
-2025-01-23 16:08:20,626 WARN  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：236200毫秒[0m
-2025-01-23 16:12:53,983 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 16:13:03,060 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 38208 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 16:13:03,069 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 16:13:03,537 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 16:13:03,538 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 16:13:03,569 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-2025-01-23 16:13:04,033 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 16:13:04,052 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:13:04,058 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 16:13:04,058 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 16:13:04,126 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 16:13:04,127 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1030 ms
-2025-01-23 16:13:05,825 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 16:13:06,855 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:13:06,869 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 16:13:06,876 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.148 seconds (process running for 7.913)
-2025-01-23 16:13:18,698 INFO  [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 16:13:18,698 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 16:13:18,699 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Completed initialization in 0 ms
-2025-01-23 16:13:18,733 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 16:13:19,896 ERROR [http-nio-8085-exec-2] c.l.b.a.c.t.OssController.(): 上传失败.java.lang.IllegalArgumentException: method must not be null. method must not be null.
-2025-01-23 16:13:19,942 WARN  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1209毫秒[0m
-2025-01-23 16:14:33,890 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-23 16:14:42,742 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 38340 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-23 16:14:42,752 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-23 16:14:43,212 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-23 16:14:43,214 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-23 16:14:43,252 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-2025-01-23 16:14:43,677 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-23 16:14:43,696 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:14:43,702 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-23 16:14:43,702 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-23 16:14:43,765 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-23 16:14:43,766 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 986 ms
-2025-01-23 16:14:45,626 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-23 16:14:46,587 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-23 16:14:46,599 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-23 16:14:46,606 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.285 seconds (process running for 7.739)
-2025-01-23 16:15:03,441 INFO  [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-23 16:15:03,441 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-23 16:15:03,442 INFO  [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-23 16:15:03,479 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /oss/avatar Method: POST Params: {}[0m
-2025-01-23 16:15:04,469 ERROR [http-nio-8085-exec-2] c.l.b.a.c.t.OssController.(): 上传失败.java.lang.IllegalArgumentException: method must not be null. method must not be null.
-2025-01-23 16:15:04,495 WARN  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1019毫秒[0m
-2025-01-23 16:19:26,120 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2025-01-25 09:51:12,448 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 2400 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2025-01-25 09:51:12,459 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2025-01-25 09:51:13,094 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-25 09:51:13,096 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-25 09:51:13,132 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2025-01-25 09:51:13,606 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2025-01-25 09:51:13,615 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2025-01-25 09:51:13,619 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2025-01-25 09:51:13,619 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-25 09:51:13,696 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2025-01-25 09:51:13,696 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1186 ms
+2025-01-25 09:51:15,430 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
+2025-01-25 09:51:16,562 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2025-01-25 09:51:16,576 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2025-01-25 09:51:16,581 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.474 seconds (process running for 5.511)
+2025-01-25 09:52:06,827 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-25 09:52:06,827 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2025-01-25 09:52:06,828 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
+2025-01-25 09:52:06,857 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
+2025-01-25 09:52:06,873 ERROR [http-nio-8085-exec-1] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:52:06,917 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：63毫秒[0m
+2025-01-25 09:52:07,080 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
+2025-01-25 09:52:07,080 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:52:07,080 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：0毫秒[0m
+2025-01-25 09:55:34,739 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2025-01-25 09:55:39,132 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 35652 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2025-01-25 09:55:39,140 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2025-01-25 09:55:39,914 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-25 09:55:39,916 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-25 09:55:39,947 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2025-01-25 09:55:40,347 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2025-01-25 09:55:40,359 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2025-01-25 09:55:40,363 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2025-01-25 09:55:40,364 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-25 09:55:40,445 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2025-01-25 09:55:40,445 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1261 ms
+2025-01-25 09:55:42,126 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
+2025-01-25 09:55:43,072 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2025-01-25 09:55:43,097 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2025-01-25 09:55:43,106 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.251 seconds (process running for 4.958)
+2025-01-25 09:55:47,621 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-25 09:55:47,621 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2025-01-25 09:55:47,621 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 0 ms
+2025-01-25 09:55:47,635 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
+2025-01-25 09:55:47,964 INFO  [http-nio-8085-exec-1] o.s.a.AbstractOpenApiResource.(): Init duration for springdoc-openapi is: 309 ms
+2025-01-25 09:55:47,980 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：347毫秒[0m
+2025-01-25 09:55:48,064 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
+2025-01-25 09:55:48,070 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:55:48,072 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：8毫秒[0m
+2025-01-25 09:56:29,769 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
+2025-01-25 09:56:29,769 ERROR [http-nio-8085-exec-7] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:56:29,769 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：0毫秒[0m
+2025-01-25 09:56:37,899 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/index.html Method: GET Params: {}[0m
+2025-01-25 09:56:37,920 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：21毫秒[0m
+2025-01-25 09:56:37,929 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.html Method: GET Params: {}[0m
+2025-01-25 09:56:37,929 ERROR [http-nio-8085-exec-6] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:56:37,929 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：0毫秒[0m
+2025-01-25 09:56:37,993 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
+2025-01-25 09:56:37,994 ERROR [http-nio-8085-exec-4] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:56:37,994 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：1毫秒[0m
+2025-01-25 09:57:21,798 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2025-01-25 09:57:27,914 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 42792 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
+2025-01-25 09:57:27,919 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
+2025-01-25 09:57:28,475 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-25 09:57:28,476 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-25 09:57:28,506 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-01-25 09:57:29,011 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
+2025-01-25 09:57:29,020 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
+2025-01-25 09:57:29,025 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
+2025-01-25 09:57:29,025 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-01-25 09:57:29,118 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
+2025-01-25 09:57:29,118 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1171 ms
+2025-01-25 09:57:31,177 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
+2025-01-25 09:57:32,315 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
+2025-01-25 09:57:32,329 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
+2025-01-25 09:57:32,335 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.731 seconds (process running for 5.651)
+2025-01-25 09:57:50,253 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-25 09:57:50,253 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
+2025-01-25 09:57:50,254 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
+2025-01-25 09:57:50,267 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.html Method: GET Params: {}[0m
+2025-01-25 09:57:50,294 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui.css Method: GET Params: {}[0m
+2025-01-25 09:57:50,295 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-initializer.js Method: GET Params: {}[0m
+2025-01-25 09:57:50,295 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-bundle.js Method: GET Params: {}[0m
+2025-01-25 09:57:50,296 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.css Method: GET Params: {}[0m
+2025-01-25 09:57:50,296 INFO  [http-nio-8085-exec-5] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-standalone-preset.js Method: GET Params: {}[0m
+2025-01-25 09:57:50,545 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs/swagger-config Method: GET Params: {}[0m
+2025-01-25 09:57:50,547 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/favicon-32x32.png Method: GET Params: {}[0m
+2025-01-25 09:57:50,565 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：20毫秒[0m
+2025-01-25 09:57:50,581 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
+2025-01-25 09:57:50,894 INFO  [http-nio-8085-exec-9] o.s.a.AbstractOpenApiResource.(): Init duration for springdoc-openapi is: 302 ms
+2025-01-25 09:57:50,906 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：325毫秒[0m
+2025-01-25 09:58:12,332 INFO  [http-nio-8085-exec-10] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
+2025-01-25 09:58:12,339 INFO  [http-nio-8085-exec-10] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：7毫秒[0m
+2025-01-25 09:58:19,083 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
+2025-01-25 09:58:19,089 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：6毫秒[0m
+2025-01-25 09:58:19,164 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
+2025-01-25 09:58:19,170 ERROR [http-nio-8085-exec-8] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
+2025-01-25 09:58:19,175 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：12毫秒[0m
+2025-01-25 10:04:38,959 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.html Method: GET Params: {}[0m
+2025-01-25 10:04:39,005 INFO  [http-nio-8085-exec-10] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.css Method: GET Params: {}[0m
+2025-01-25 10:04:39,005 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui.css Method: GET Params: {}[0m
+2025-01-25 10:04:39,005 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-bundle.js Method: GET Params: {}[0m
+2025-01-25 10:04:39,008 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-standalone-preset.js Method: GET Params: {}[0m
+2025-01-25 10:04:39,012 INFO  [http-nio-8085-exec-5] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-initializer.js Method: GET Params: {}[0m
+2025-01-25 10:04:39,207 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs/swagger-config Method: GET Params: {}[0m
+2025-01-25 10:04:39,208 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：1毫秒[0m
+2025-01-25 10:04:39,224 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
+2025-01-25 10:04:39,228 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：4毫秒[0m
+2025-01-25 17:44:57,555 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...

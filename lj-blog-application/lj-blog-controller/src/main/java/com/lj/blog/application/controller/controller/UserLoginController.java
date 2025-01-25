@@ -6,6 +6,8 @@ import com.lj.blog.application.controller.dto.BlogUserLoginDto;
 import com.lj.blog.common.result.Result;
 import com.lj.blog.domain.entity.BlogUserLoginBo;
 import com.lj.blog.domain.serivce.imp.BlogUserDomainServiceImp;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Slf4j
 @RequestMapping("/user")
+@Tag(name = "登录控制器")
 public class UserLoginController {
 
     @Autowired
@@ -28,6 +31,7 @@ public class UserLoginController {
     @Autowired
     private BlogUserDomainServiceImp blogUserDomainService;
 
+    @Operation(summary = "用户登录")
     @PostMapping("/login")
     public Result<SaTokenInfo> login(@RequestBody BlogUserLoginDto blogUserLoginDto){
         if(log.isInfoEnabled()){
@@ -36,4 +40,5 @@ public class UserLoginController {
         BlogUserLoginBo blogUserLoginBo = convert.blogUserLoginDtoToBo(blogUserLoginDto);
         return blogUserDomainService.login(blogUserLoginBo);
     }
+
 }

@@ -1,5 +1,6 @@
 package com.lj.blog.application.controller.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 /**
@@ -9,6 +10,7 @@ import lombok.Data;
  * @Date 2024/12/28 14:57
  * @Version JDK 17
  */
+@Schema(title = "用户点赞、收藏请求模型")
 @Data
 public class PutStatusRequest {
     private Integer articleId;
