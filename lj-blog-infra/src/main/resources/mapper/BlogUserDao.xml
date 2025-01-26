@@ -201,10 +201,10 @@
                 is_deleted = #{isDeleted},
             </if>
             <if test="password != null and password != ''">
-                and password = #{password}
+                password = #{password}
             </if>
             <if test="avatar != null and avatar != ''">
-                and avatar = #{avatar}
+                avatar = #{avatar}
             </if>
         </set>
         where id = #{id}

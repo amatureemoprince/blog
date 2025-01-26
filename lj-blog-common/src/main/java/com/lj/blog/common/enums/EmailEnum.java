@@ -18,5 +18,4 @@ public enum EmailEnum {
     CAPTCHA_SUBJECT("你的验证码到啦！！！"),
     CAPTCHA_CONTENT("请保管好你的验证码，请勿让他人知晓\n在3分钟内有效:\n\n\n");
     private final String msg;
-
 }

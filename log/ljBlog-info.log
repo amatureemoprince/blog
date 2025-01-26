@@ -1,109 +1,119 @@
-2025-01-25 09:51:12,448 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 2400 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-25 09:51:12,459 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-25 09:51:13,094 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-25 09:51:13,096 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-25 09:51:13,132 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-2025-01-25 09:51:13,606 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-25 09:51:13,615 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-25 09:51:13,619 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-25 09:51:13,619 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-25 09:51:13,696 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-25 09:51:13,696 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1186 ms
-2025-01-25 09:51:15,430 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-25 09:51:16,562 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-25 09:51:16,576 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-25 09:51:16,581 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.474 seconds (process running for 5.511)
-2025-01-25 09:52:06,827 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-25 09:52:06,827 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-25 09:52:06,828 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-25 09:52:06,857 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
-2025-01-25 09:52:06,873 ERROR [http-nio-8085-exec-1] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:52:06,917 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：63毫秒[0m
-2025-01-25 09:52:07,080 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
-2025-01-25 09:52:07,080 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:52:07,080 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：0毫秒[0m
-2025-01-25 09:55:34,739 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-25 09:55:39,132 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 35652 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-25 09:55:39,140 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-25 09:55:39,914 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-25 09:55:39,916 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-25 09:55:39,947 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
-2025-01-25 09:55:40,347 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-25 09:55:40,359 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-25 09:55:40,363 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-25 09:55:40,364 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-25 09:55:40,445 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-25 09:55:40,445 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1261 ms
-2025-01-25 09:55:42,126 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-25 09:55:43,072 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-25 09:55:43,097 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-25 09:55:43,106 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.251 seconds (process running for 4.958)
-2025-01-25 09:55:47,621 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-25 09:55:47,621 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-25 09:55:47,621 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 0 ms
-2025-01-25 09:55:47,635 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
-2025-01-25 09:55:47,964 INFO  [http-nio-8085-exec-1] o.s.a.AbstractOpenApiResource.(): Init duration for springdoc-openapi is: 309 ms
-2025-01-25 09:55:47,980 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：347毫秒[0m
-2025-01-25 09:55:48,064 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
-2025-01-25 09:55:48,070 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:55:48,072 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：8毫秒[0m
-2025-01-25 09:56:29,769 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
-2025-01-25 09:56:29,769 ERROR [http-nio-8085-exec-7] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:56:29,769 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：0毫秒[0m
-2025-01-25 09:56:37,899 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/index.html Method: GET Params: {}[0m
-2025-01-25 09:56:37,920 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：21毫秒[0m
-2025-01-25 09:56:37,929 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.html Method: GET Params: {}[0m
-2025-01-25 09:56:37,929 ERROR [http-nio-8085-exec-6] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:56:37,929 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：0毫秒[0m
-2025-01-25 09:56:37,993 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
-2025-01-25 09:56:37,994 ERROR [http-nio-8085-exec-4] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:56:37,994 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：1毫秒[0m
-2025-01-25 09:57:21,798 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
-2025-01-25 09:57:27,914 INFO  [main] c.l.b.BlogApplication.(): Starting BlogApplication using Java 17.0.5 with PID 42792 (G:\SpringBootProduct\Blog\lj-blog-starter\target\classes started by PC in G:\SpringBootProduct\Blog)
-2025-01-25 09:57:27,919 INFO  [main] c.l.b.BlogApplication.(): No active profile set, falling back to 1 default profile: "default"
-2025-01-25 09:57:28,475 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Multiple Spring Data modules found, entering strict repository configuration mode
-2025-01-25 09:57:28,476 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-01-25 09:57:28,506 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate.(): Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2025-01-25 09:57:29,011 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat initialized with port 8085 (http)
-2025-01-25 09:57:29,020 INFO  [main] o.a.c.h.Http11NioProtocol.(): Initializing ProtocolHandler ["http-nio-8085"]
-2025-01-25 09:57:29,025 INFO  [main] o.a.c.c.StandardService.(): Starting service [Tomcat]
-2025-01-25 09:57:29,025 INFO  [main] o.a.c.c.StandardEngine.(): Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-01-25 09:57:29,118 INFO  [main] o.a.c.c.C.[.[.[/].(): Initializing Spring embedded WebApplicationContext
-2025-01-25 09:57:29,118 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext.(): Root WebApplicationContext: initialization completed in 1171 ms
-2025-01-25 09:57:31,177 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping.(): Adding welcome page template: index
-2025-01-25 09:57:32,315 INFO  [main] o.a.c.h.Http11NioProtocol.(): Starting ProtocolHandler ["http-nio-8085"]
-2025-01-25 09:57:32,329 INFO  [main] o.s.b.w.e.t.TomcatWebServer.(): Tomcat started on port 8085 (http) with context path '/'
-2025-01-25 09:57:32,335 INFO  [main] c.l.b.BlogApplication.(): Started BlogApplication in 4.731 seconds (process running for 5.651)
-2025-01-25 09:57:50,253 INFO  [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].(): Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-25 09:57:50,253 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Initializing Servlet 'dispatcherServlet'
-2025-01-25 09:57:50,254 INFO  [http-nio-8085-exec-1] o.s.w.s.DispatcherServlet.(): Completed initialization in 1 ms
-2025-01-25 09:57:50,267 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.html Method: GET Params: {}[0m
-2025-01-25 09:57:50,294 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui.css Method: GET Params: {}[0m
-2025-01-25 09:57:50,295 INFO  [http-nio-8085-exec-6] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-initializer.js Method: GET Params: {}[0m
-2025-01-25 09:57:50,295 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-bundle.js Method: GET Params: {}[0m
-2025-01-25 09:57:50,296 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.css Method: GET Params: {}[0m
-2025-01-25 09:57:50,296 INFO  [http-nio-8085-exec-5] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-standalone-preset.js Method: GET Params: {}[0m
-2025-01-25 09:57:50,545 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs/swagger-config Method: GET Params: {}[0m
-2025-01-25 09:57:50,547 INFO  [http-nio-8085-exec-3] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/favicon-32x32.png Method: GET Params: {}[0m
-2025-01-25 09:57:50,565 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：20毫秒[0m
-2025-01-25 09:57:50,581 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
-2025-01-25 09:57:50,894 INFO  [http-nio-8085-exec-9] o.s.a.AbstractOpenApiResource.(): Init duration for springdoc-openapi is: 302 ms
-2025-01-25 09:57:50,906 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：325毫秒[0m
-2025-01-25 09:58:12,332 INFO  [http-nio-8085-exec-10] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
-2025-01-25 09:58:12,339 INFO  [http-nio-8085-exec-10] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：7毫秒[0m
-2025-01-25 09:58:19,083 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
-2025-01-25 09:58:19,089 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：6毫秒[0m
-2025-01-25 09:58:19,164 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /favicon.ico Method: GET Params: {}[0m
-2025-01-25 09:58:19,170 ERROR [http-nio-8085-exec-8] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:58:19,175 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：12毫秒[0m
-2025-01-25 10:04:38,959 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.html Method: GET Params: {}[0m
-2025-01-25 10:04:39,005 INFO  [http-nio-8085-exec-10] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/index.css Method: GET Params: {}[0m
-2025-01-25 10:04:39,005 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui.css Method: GET Params: {}[0m
-2025-01-25 10:04:39,005 INFO  [http-nio-8085-exec-1] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-bundle.js Method: GET Params: {}[0m
-2025-01-25 10:04:39,008 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-ui-standalone-preset.js Method: GET Params: {}[0m
-2025-01-25 10:04:39,012 INFO  [http-nio-8085-exec-5] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/swagger-ui/swagger-ui/swagger-initializer.js Method: GET Params: {}[0m
-2025-01-25 10:04:39,207 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs/swagger-config Method: GET Params: {}[0m
-2025-01-25 10:04:39,208 INFO  [http-nio-8085-exec-2] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：1毫秒[0m
-2025-01-25 10:04:39,224 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /user-service/v3/api-docs Method: GET Params: {}[0m
-2025-01-25 10:04:39,228 INFO  [http-nio-8085-exec-4] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：4毫秒[0m
-2025-01-25 17:44:57,555 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-0} closing ...
+2025-01-26 10:26:49,319 INFO  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /home/sentences Method: GET Params: {}[0m
+2025-01-26 10:26:49,420 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = BlogContentItems(id=null, type=null, content=null, createTime=null, updateTime=null, isDeleted=0)[0m
+2025-01-26 10:26:49,420 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogContentItemsDao.queryPrimary[0m
+2025-01-26 10:26:49,422 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_c ontent_items[0m
+2025-01-26 10:26:49,470 INFO  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /home/articles Method: POST Params: {}[0m
+2025-01-26 10:26:49,708 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:49,708 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:49,708 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): 执行时间: 284 ms
+2025-01-26 10:26:49,709 INFO  [http-nio-8085-exec-8] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,297 INFO  [http-nio-8085-exec-7] c.l.b.d.s.i.BlogArticleBasicDomainServiceImp.(): BlogArticleBasicDomainServiceImp.getBlogArticleBasicInfo.pageRequest:{"offset":0,"pageNum":1,"pageSize":10}
+2025-01-26 10:26:50,297 INFO  [http-nio-8085-exec-8] c.l.b.d.s.i.BlogContentItemsDomainServiceImp.(): BlogContentItemsDomainServiceImp.getAllSentences.boList:[{"content":"Wonder your life","type":1},{"content":"探索编程的无限可能","type":0},{"content":"Together, We Can Achieve More","type":0},{"content":"Success Starts with Self-Belief","type":0},{"content":"Every Day is a New Opportunity","type":0},{"content":"Turn Your Dreams into Plans","type":0},{"content":"用代码改变世界","type":0},{"content":"ljBlog. All Rights Reserved. 版权所有","type":2},{"content":"在 技术的海洋中探索前行，分享知识的乐趣，共同成长的喜悦","type":3}]
+2025-01-26 10:26:50,310 WARN  [http-nio-8085-exec-8] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1000毫秒[0m
+2025-01-26 10:26:50,374 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {blogArticleBasicInfo=null, pageRequest=com.lj.blog.common.result.PageRequest@696f6527, param1=null, param2=com.lj.blog.common.result.PageRequest@696f6527}[0m
+2025-01-26 10:26:50,374 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao.queryAllByLimit[0m
+2025-01-26 10:26:50,379 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select id, title, descripti on, reading_time, cover_image, article_status, create_time, is_deleted from blog_article_basic_info LIMIT 10 OFFSET 0[0m
+2025-01-26 10:26:50,420 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:50,420 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:50,420 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 执行时间: 39 ms
+2025-01-26 10:26:50,420 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,438 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {articleIds=[1, 2, 3, 4, 5, 6, 7, 8], param1=[1, 2, 3, 4, 5, 6, 7, 8]}[0m
+2025-01-26 10:26:50,438 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleCategoryLabelMappingDao.queryByArticleIds[0m
+2025-01-26 10:26:50,439 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_article_categ ory_label_mapping where article_id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 )[0m
+2025-01-26 10:26:50,464 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:50,464 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:50,464 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 执行时间: 25 ms
+2025-01-26 10:26:50,464 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,466 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 3, 4, 5, 6], param1=[1, 3, 4, 5, 6]}[0m
+2025-01-26 10:26:50,466 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogCategoryDao.queryByIds[0m
+2025-01-26 10:26:50,466 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_categ ory where id in ( 1 , 3 , 4 , 5 , 6 ) and is_deleted = 0[0m
+2025-01-26 10:26:50,480 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:50,481 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:50,481 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 执行时间: 13 ms
+2025-01-26 10:26:50,481 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,485 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 2, 3, 4, 5, 6, 7, 8, 9], param1=[1, 2, 3, 4, 5, 6, 7, 8, 9]}[0m
+2025-01-26 10:26:50,485 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogLabelDao.queryByIds[0m
+2025-01-26 10:26:50,485 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_label where id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 )[0m
+2025-01-26 10:26:50,494 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:50,494 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:50,494 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 执行时间: 8 ms
+2025-01-26 10:26:50,494 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,497 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 2, 3, 4, 5, 6, 7, 8], param1=[1, 2, 3, 4, 5, 6, 7, 8]}[0m
+2025-01-26 10:26:50,497 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleStatusDao.queryByIds[0m
+2025-01-26 10:26:50,497 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_article_status where id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 )[0m
+2025-01-26 10:26:50,506 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:50,506 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:50,506 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 执行时间: 8 ms
+2025-01-26 10:26:50,506 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,511 INFO  [http-nio-8085-exec-7] c.l.b.d.s.i.BlogArticleBasicDomainServiceImp.(): BlogArticleBasicDomainServiceImp.getBlogArticleBasicInf.boList[BlogArticleBasicInfoBo(id=1, title=Vue3 基础教程, description=深入学习Vue3的核心概念和实践应用, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Thu Dec 19 05:43:13 CST 2024, readingTime=5, category=前端开发, labels=[Vue3], likes=21, views=12, comments=0, collections=0), BlogArticleBasicInfoBo(id=2, title=TypeScript 入门指南, description=详解TypeScript的基本语法和高级特性, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Fri Dec 20 07:24:28 CST 2024, readingTime=7, category=前端开发, labels=[Vue3, JavaScript], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=3, title=前端构建工具对比, description=深入对比Vite、Webpack和Rollup的特点和应用场景, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:28:09 CST 2024, readingTime=6, category=前端开发, labels=[Vue3, Vite], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=4, title=Docker容器化实践, description=详细讲解Docker的基本概念和实际应用案例, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:28:38 CST 2024, readingTime=8, category=数据库, labels=[Docker], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=5, title=React高级开发技巧, description=探索React的高级特性和性能优化方法, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:29:19 CST 2024, readingTime=10, category=前端开发, labels=[React], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=6, title=MongoDB数据库入门, description=学习MongoDB的基础操作和实践应用, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:29:54 CST 2024, readingTime=5, category=架构设计, labels=[MongoDB], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=7, title=微服务架构实践, description=探讨微服务架构的设计与实现方案, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:30:27 CST 2024, readingTime=7, category=开发工具, labels=[SpringBoot], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=8, title=AI编程助手指南, description=介绍主流的AI编程工具，如GitHub Copilot, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:31:05 CST 2024, readingTime=8, category=运维部署, labels=[AI开发, Cursor], likes=null, views=null, comments=null, collections=null)]
+2025-01-26 10:26:50,580 INFO  [http-nio-8085-exec-7] c.l.b.a.c.c.BlogArticleInfoController.(): [92mBlogArticleInfoController.getBlogArticleInfos.basicInfoDtos:[{"category":"前端开发","collections":0,"comments":0,"coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-19 05:43:13","description":"深入学习Vue3的核心概念和实践应用","id":1,"labels":["Vue3"],"likes":21,"readingTime":5,"title":"Vue3 基础教程","views":12},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-20 07:24:28","description":"详解TypeScript的基本语法和高级特性","id":2,"labels":["Vue3","JavaScript"],"readingTime":7,"title":"TypeScript 入门指南"},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:28:09","description":"深入对比Vite、Webpack和Rollup的特点和应用场景","id":3,"labels":["Vue3","Vite"],"readingTime":6,"title":"前端构建工具对比"},{"category":"数据库","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:28:38","description":"详细讲解Docker的基本概念和实际应用案例","id":4,"labels":["Docker"],"readingTime":8,"title":"Docker容器化实践"},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:29:19","description":"探索React的高级特性和性能优化方法","id":5,"labels":["React"],"readingTime":10,"title":"React高级开发技巧"},{"category":"架构设计","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:29:54","description":"学习MongoDB的基础操作和实践应用","id":6,"labels":["MongoDB"],"readingTime":5,"title":"MongoDB数据库入门"},{"category":"开发工具","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:30:27","description":"探讨微服务架构的设计与实现方案","id":7,"labels":["SpringBoot"],"readingTime":7,"title":"微服务架构实践"},{"category":"运维部署","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:31:05","description":"介绍主流的AI编程工具，如GitHub Copilot","id":8,"labels":["AI开发","Cursor"],"readingTime":8,"title":"AI编程助手指南"}][0m
+2025-01-26 10:26:50,595 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = BlogArticleBasicInfo(id=null, title=null, description=null, readingTime=null, coverImage=null, articleStatus=null, createTime=null, isDeleted=0)[0m
+2025-01-26 10:26:50,595 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao.count[0m
+2025-01-26 10:26:50,595 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select count(1) from blog_article_basic_info WHERE is_deleted = 0[0m
+2025-01-26 10:26:50,599 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:26:50,599 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:26:50,599 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): 执行时间: 3 ms
+2025-01-26 10:26:50,599 INFO  [http-nio-8085-exec-7] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:26:50,600 WARN  [http-nio-8085-exec-7] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [93m执行时间过长：1130毫秒[0m
+2025-01-26 10:27:48,208 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTimeInterceptor.(): [96m>>>> 收到请求 - URI: /home/articles Method: POST Params: {}[0m
+2025-01-26 10:27:48,210 INFO  [http-nio-8085-exec-9] c.l.b.d.s.i.BlogArticleBasicDomainServiceImp.(): BlogArticleBasicDomainServiceImp.getBlogArticleBasicInfo.pageRequest:{"offset":0,"pageNum":1,"pageSize":10}
+2025-01-26 10:27:48,210 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {blogArticleBasicInfo=null, pageRequest=com.lj.blog.common.result.PageRequest@472b2401, param1=null, param2=com.lj.blog.common.result.PageRequest@472b2401}[0m
+2025-01-26 10:27:48,210 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao.queryAllByLimit[0m
+2025-01-26 10:27:48,210 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select id, title, descripti on, reading_time, cover_image, article_status, create_time, is_deleted from blog_article_basic_info LIMIT 10 OFFSET 0[0m
+2025-01-26 10:27:48,225 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:27:48,225 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:27:48,225 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 执行时间: 13 ms
+2025-01-26 10:27:48,225 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:27:48,227 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {articleIds=[1, 2, 3, 4, 5, 6, 7, 8], param1=[1, 2, 3, 4, 5, 6, 7, 8]}[0m
+2025-01-26 10:27:48,227 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleCategoryLabelMappingDao.queryByArticleIds[0m
+2025-01-26 10:27:48,227 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_article_categ ory_label_mapping where article_id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 )[0m
+2025-01-26 10:27:48,238 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:27:48,238 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:27:48,238 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 执行时间: 10 ms
+2025-01-26 10:27:48,238 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:27:48,239 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 3, 4, 5, 6], param1=[1, 3, 4, 5, 6]}[0m
+2025-01-26 10:27:48,239 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogCategoryDao.queryByIds[0m
+2025-01-26 10:27:48,239 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_categ ory where id in ( 1 , 3 , 4 , 5 , 6 ) and is_deleted = 0[0m
+2025-01-26 10:27:48,245 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:27:48,245 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:27:48,245 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 执行时间: 5 ms
+2025-01-26 10:27:48,245 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:27:48,246 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 2, 3, 4, 5, 6, 7, 8, 9], param1=[1, 2, 3, 4, 5, 6, 7, 8, 9]}[0m
+2025-01-26 10:27:48,246 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogLabelDao.queryByIds[0m
+2025-01-26 10:27:48,246 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_label where id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 )[0m
+2025-01-26 10:27:48,256 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:27:48,256 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:27:48,256 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 执行时间: 9 ms
+2025-01-26 10:27:48,256 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:27:48,257 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = {ids=[1, 2, 3, 4, 5, 6, 7, 8], param1=[1, 2, 3, 4, 5, 6, 7, 8]}[0m
+2025-01-26 10:27:48,258 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleStatusDao.queryByIds[0m
+2025-01-26 10:27:48,258 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select * from blog_article_status where id in ( 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 )[0m
+2025-01-26 10:27:48,264 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:27:48,264 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:27:48,264 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 执行时间: 5 ms
+2025-01-26 10:27:48,264 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:27:48,264 INFO  [http-nio-8085-exec-9] c.l.b.d.s.i.BlogArticleBasicDomainServiceImp.(): BlogArticleBasicDomainServiceImp.getBlogArticleBasicInf.boList[BlogArticleBasicInfoBo(id=1, title=Vue3 基础教程, description=深入学习Vue3的核心概念和实践应用, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Thu Dec 19 05:43:13 CST 2024, readingTime=5, category=前端开发, labels=[Vue3], likes=21, views=12, comments=0, collections=0), BlogArticleBasicInfoBo(id=2, title=TypeScript 入门指南, description=详解TypeScript的基本语法和高级特性, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Fri Dec 20 07:24:28 CST 2024, readingTime=7, category=前端开发, labels=[Vue3, JavaScript], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=3, title=前端构建工具对比, description=深入对比Vite、Webpack和Rollup的特点和应用场景, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:28:09 CST 2024, readingTime=6, category=前端开发, labels=[Vue3, Vite], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=4, title=Docker容器化实践, description=详细讲解Docker的基本概念和实际应用案例, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:28:38 CST 2024, readingTime=8, category=数据库, labels=[Docker], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=5, title=React高级开发技巧, description=探索React的高级特性和性能优化方法, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:29:19 CST 2024, readingTime=10, category=前端开发, labels=[React], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=6, title=MongoDB数据库入门, description=学习MongoDB的基础操作和实践应用, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:29:54 CST 2024, readingTime=5, category=架构设计, labels=[MongoDB], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=7, title=微服务架构实践, description=探讨微服务架构的设计与实现方案, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:30:27 CST 2024, readingTime=7, category=开发工具, labels=[SpringBoot], likes=null, views=null, comments=null, collections=null), BlogArticleBasicInfoBo(id=8, title=AI编程助手指南, description=介绍主流的AI编程工具，如GitHub Copilot, coverImage=https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg, createTime=Sat Dec 21 02:31:05 CST 2024, readingTime=8, category=运维部署, labels=[AI开发, Cursor], likes=null, views=null, comments=null, collections=null)]
+2025-01-26 10:27:48,266 INFO  [http-nio-8085-exec-9] c.l.b.a.c.c.BlogArticleInfoController.(): [92mBlogArticleInfoController.getBlogArticleInfos.basicInfoDtos:[{"category":"前端开发","collections":0,"comments":0,"coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-19 05:43:13","description":"深入学习Vue3的核心概念和实践应用","id":1,"labels":["Vue3"],"likes":21,"readingTime":5,"title":"Vue3 基础教程","views":12},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-20 07:24:28","description":"详解TypeScript的基本语法和高级特性","id":2,"labels":["Vue3","JavaScript"],"readingTime":7,"title":"TypeScript 入门指南"},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:28:09","description":"深入对比Vite、Webpack和Rollup的特点和应用场景","id":3,"labels":["Vue3","Vite"],"readingTime":6,"title":"前端构建工具对比"},{"category":"数据库","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:28:38","description":"详细讲解Docker的基本概念和实际应用案例","id":4,"labels":["Docker"],"readingTime":8,"title":"Docker容器化实践"},{"category":"前端开发","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:29:19","description":"探索React的高级特性和性能优化方法","id":5,"labels":["React"],"readingTime":10,"title":"React高级开发技巧"},{"category":"架构设计","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:29:54","description":"学习MongoDB的基础操作和实践应用","id":6,"labels":["MongoDB"],"readingTime":5,"title":"MongoDB数据库入门"},{"category":"开发工具","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:30:27","description":"探讨微服务架构的设计与实现方案","id":7,"labels":["SpringBoot"],"readingTime":7,"title":"微服务架构实践"},{"category":"运维部署","coverImage":"https://doctorpicture.oss-cn-beijing.aliyuncs.com/avatar/95520dd8-c8d8-4ebf-9807-ea166a7bcf56.jpg","createTime":"2024-12-21 02:31:05","description":"介绍主流的AI编程工具，如GitHub Copilot","id":8,"labels":["AI开发","Cursor"],"readingTime":8,"title":"AI编程助手指南"}][0m
+2025-01-26 10:27:48,267 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 参数 = BlogArticleBasicInfo(id=null, title=null, description=null, readingTime=null, coverImage=null, articleStatus=null, createTime=null, isDeleted=0)[0m
+2025-01-26 10:27:48,267 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 调用方法 = com.lj.blog.infra.basic.dao.BlogArticleBasicInfoDao.count[0m
+2025-01-26 10:27:48,267 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [93m>>>> 使用的完整的SQL:
+select count(1) from blog_article_basic_info WHERE is_deleted = 0[0m
+2025-01-26 10:27:48,269 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): [32mSQL 执行时间:
+2025-01-26 10:27:48,269 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 方法: query
+2025-01-26 10:27:48,269 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): 执行时间: 2 ms
+2025-01-26 10:27:48,269 INFO  [http-nio-8085-exec-9] BLOG-SYSTEM-SQL.(): ========================================[0m
+2025-01-26 10:27:48,269 INFO  [http-nio-8085-exec-9] c.l.b.a.c.i.StatisticsAccessInterfaceTime.(): [94m>>> 执行了：61毫秒[0m
+2025-01-26 14:31:09,308 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closing ...
+2025-01-26 14:31:09,311 INFO  [SpringApplicationShutdownHook] c.a.d.p.DruidDataSource.(): {dataSource-1} closed
