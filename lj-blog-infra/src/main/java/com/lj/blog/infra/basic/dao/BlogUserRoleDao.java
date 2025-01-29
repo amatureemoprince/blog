@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 用户角色表(BlogUserRole)表数据库访问层
@@ -81,5 +82,6 @@ public interface BlogUserRoleDao {
      */
     int deleteById(Integer id);
 
+    Set<String> queryRolesByUserId(Integer userId);
 }
 

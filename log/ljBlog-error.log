@@ -1,22 +1,4 @@
-2025-01-25 09:52:06,873 ERROR [http-nio-8085-exec-1] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:52:07,080 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:55:48,070 ERROR [http-nio-8085-exec-3] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:56:29,769 ERROR [http-nio-8085-exec-7] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:56:37,929 ERROR [http-nio-8085-exec-6] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:56:37,994 ERROR [http-nio-8085-exec-4] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 09:58:19,170 ERROR [http-nio-8085-exec-8] c.l.b.c.e.GlobalException.(): [91mSaToken ERROR: cn.dev33.satoken.exception.NotLoginException: 未能读取到有效 token 未能读取到有效 token[0m
-2025-01-25 21:52:07,362 ERROR [http-nio-8085-exec-2] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.jdbc.BadSqlGrammarException: 
-### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and avatar = 'user/3/avatar/1883150856061198336_image_1731239792059_数据库er�' at line 2
-### The error may exist in file [G:\SpringBootProduct\Blog\lj-blog-infra\target\classes\mapper\BlogUserDao.xml]
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: update blog_user          SET and avatar = ?          where id = ?
-### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and avatar = 'user/3/avatar/1883150856061198336_image_1731239792059_数据库er�' at line 2
-; bad SQL grammar [] 
-### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and avatar = 'user/3/avatar/1883150856061198336_image_1731239792059_数据库er�' at line 2
-### The error may exist in file [G:\SpringBootProduct\Blog\lj-blog-infra\target\classes\mapper\BlogUserDao.xml]
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: update blog_user          SET and avatar = ?          where id = ?
-### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and avatar = 'user/3/avatar/1883150856061198336_image_1731239792059_数据库er�' at line 2
-; bad SQL grammar [][0m
+2025-01-29 11:30:23,496 ERROR [http-nio-8085-exec-4] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico. No static resource favicon.ico.[0m
+2025-01-29 11:30:27,166 ERROR [http-nio-8085-exec-9] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico. No static resource favicon.ico.[0m
+2025-01-29 11:30:32,027 ERROR [http-nio-8085-exec-6] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico. No static resource favicon.ico.[0m
+2025-01-29 11:30:51,887 ERROR [http-nio-8085-exec-2] c.l.b.c.e.GlobalException.(): [91mSYSTEM-ERROR: 系统错误, 错误信息: org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico. No static resource favicon.ico.[0m

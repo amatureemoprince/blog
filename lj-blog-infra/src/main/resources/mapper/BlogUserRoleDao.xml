@@ -66,6 +66,12 @@ id, user_id, user_role_name, create_time, is_deleted
         </where>
     </select>
 
+    <select id="queryRolesByUserId" resultType="java.lang.String" parameterType="java.lang.Integer">
+        select distinct user_role_name
+        from blog_user_role
+        where user_id = #{userId}
+    </select>
+
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
         insert into blog_user_role(user_id, user_role_name, create_time, is_deleted)

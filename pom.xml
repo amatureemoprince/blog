@@ -36,6 +36,8 @@
         <satoken.version>1.39.0</satoken.version>
         <hutool.version>5.8.25</hutool.version>
         <webui.version>2.6.0</webui.version>
+        <knife4j.version>4.4.0</knife4j.version>
+        <jakarta.version>6.0.0</jakarta.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -47,6 +49,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--knife增强-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
             <!--引入druid连接池-->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -137,6 +146,7 @@
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
                 <version>${webui.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.lj</groupId>
                 <artifactId>lj-blog-domain</artifactId>
@@ -147,7 +157,6 @@
                 <artifactId>lj-blog-infra</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
     <repositories>

@@ -4,6 +4,8 @@ import com.lj.blog.infra.basic.entity.BlogRolePermission;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 /**
  * 角色权限表(BlogRolePermission)表服务接口
  *
@@ -53,4 +55,12 @@ public interface BlogRolePermissionService {
      */
     boolean deleteById(Integer id);
 
+
+    /**
+     * 根据传入的role查询权限
+     *
+     * @param role 传入的角色
+     * @return 权限集合
+     */
+    Set<String> getPermissionSetByRole(Set<String> role);
 }

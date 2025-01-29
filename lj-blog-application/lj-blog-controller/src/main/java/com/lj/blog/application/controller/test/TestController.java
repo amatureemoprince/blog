@@ -57,7 +57,10 @@ public class TestController {
         return String.valueOf(login);
     }
 
-
+    @GetMapping("/user/isLogin")
+    public String isLogin(){
+        return String.valueOf(StpKit.USER.isLogin());
+    }
 
     @RequestMapping("/admin")
     @SaCheckLogin(type = StpKit.ADMIN_ROLE)

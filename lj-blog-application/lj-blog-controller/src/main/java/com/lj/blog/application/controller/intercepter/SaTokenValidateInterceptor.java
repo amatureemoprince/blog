@@ -1,10 +1,8 @@
 package com.lj.blog.application.controller.intercepter;
 
 import cn.dev33.satoken.interceptor.SaInterceptor;
-import cn.dev33.satoken.stp.StpUtil;
 import com.lj.blog.common.satoken.StpKit;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -27,12 +25,16 @@ public class SaTokenValidateInterceptor implements WebMvcConfigurer {
                         "/email/**",
                         "/user/login",
                         "/user/register",
-                        "/user-service/**")
+                        "/swagger-ui.html",
+                        "/swagger-ui/**",
+                        "/doc.html",
+                        "/webjars/**",
+                        "/favicon.ico",
+                        "/v3/**")
                 .order(10);
         registry.addInterceptor(new SaInterceptor(handle -> StpKit.ADMIN.checkLogin()))
                 .addPathPatterns("/admin/**")
                 .excludePathPatterns("/admin/login")
-                .excludePathPatterns("/admin/register")
                 .order(10);
     }
 }

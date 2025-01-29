@@ -7,12 +7,13 @@
         <result property="roleName" column="role_name" jdbcType="VARCHAR"/>
         <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
         <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+        <result property="adminId" column="admin_id" jdbcType="INTEGER"/>
     </resultMap>
 
     <!--查询单个-->
     <select id="queryById" resultMap="BlogAdminRoleMap">
         select
-id, role_name, create_time, is_deleted
+id, role_name, create_time, is_deleted, admin_id
         from blog_admin_role
         where id = #{id}
     </select>
@@ -20,7 +21,7 @@ id, role_name, create_time, is_deleted
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="BlogAdminRoleMap">
         select
-id, role_name, create_time, is_deleted
+id, role_name, create_time, is_deleted, admin_id
         from blog_admin_role
         <where>
             <if test="id != null">
@@ -31,6 +32,9 @@ id, role_name, create_time, is_deleted
             </if>
             <if test="createTime != null">
                 and create_time = #{createTime}
+            </if>
+            <if test="adminId != null and adminId != ''">
+                and admin_id = #{adminId}
             </if>
             <if test="isDeleted != null">
                 and is_deleted = #{isDeleted}
@@ -47,6 +51,9 @@ id, role_name, create_time, is_deleted
             <if test="id != null">
                 and id = #{id}
             </if>
+            <if test="adminId != null and adminId != ''">
+                and admin_id = #{adminId}
+            </if>
             <if test="roleName != null and roleName != ''">
                 and role_name = #{roleName}
             </if>
@@ -59,30 +66,37 @@ id, role_name, create_time, is_deleted
         </where>
     </select>
 
+    <select id="queryRolesByAdminId" resultType="java.lang.String" parameterType="java.lang.Integer">
+        select distinct role_name
+        from blog_admin_role
+        where admin_id = #{adminId}
+    </select>
+
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
-        insert into blog_admin_role(role_name, create_time, is_deleted)
-        values (#{roleName}, #{createTime}, #{isDeleted})
+        insert into blog_admin_role(role_name, create_time, is_deleted, admin_id)
+        values (#{roleName}, #{createTime}, #{isDeleted}), #{adminId}
     </insert>
 
     <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into blog_admin_role(role_name, create_time, is_deleted)
+        insert into blog_admin_role(role_name, create_time, is_deleted, admin_id)
         values
         <foreach collection="entities" item="entity" separator=",">
-        (#{entity.roleName}, #{entity.createTime}, #{entity.isDeleted})
+        (#{entity.roleName}, #{entity.createTime}, #{entity.isDeleted}, #{entity.adminId})
         </foreach>
     </insert>
 
     <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
-        insert into blog_admin_role(role_name, create_time, is_deleted)
+        insert into blog_admin_role(role_name, create_time, is_deleted, admin_id)
         values
         <foreach collection="entities" item="entity" separator=",">
-            (#{entity.roleName}, #{entity.createTime}, #{entity.isDeleted})
+            (#{entity.roleName}, #{entity.createTime}, #{entity.isDeleted}), #{entity.adminId}
         </foreach>
         on duplicate key update
 role_name = values(role_name),
 create_time = values(create_time),
 is_deleted = values(is_deleted)
+                         admin_id = values(admin_id)
     </insert>
 
     <!--通过主键修改数据-->
@@ -97,6 +111,9 @@ is_deleted = values(is_deleted)
             </if>
             <if test="isDeleted != null">
                 is_deleted = #{isDeleted},
+            </if>
+            <if test="adminId != null and adminId != ''">
+                and admin_id = #{adminId}
             </if>
         </set>
         where id = #{id}

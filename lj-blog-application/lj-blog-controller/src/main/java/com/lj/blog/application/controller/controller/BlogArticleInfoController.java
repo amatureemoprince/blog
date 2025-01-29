@@ -14,7 +14,6 @@ import com.lj.blog.domain.entity.BlogArticleBasicInfoBo;
 import com.lj.blog.domain.entity.BlogArticleContentBo;
 import com.lj.blog.domain.serivce.imp.BlogArticleBasicDomainServiceImp;
 import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
-import io.swagger.v3.oas.annotations.OpenAPI31;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;

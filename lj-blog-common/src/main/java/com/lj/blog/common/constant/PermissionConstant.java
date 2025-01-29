@@ -11,7 +11,15 @@ import lombok.Getter;
  */
 @Getter
 public class PermissionConstant {
-    //用户权限
-    public static final String USER_LIKE = "user:like";
-    public static final String USER_COMMENT = "user:comment";
+    //普通用户对文章的权限
+    public static final String USER_ARTICLE_LIKE = "user:article:like";
+    public static final String USER_ARTICLE_SELECT = "user:article:select";
+    public static final String USER_ARTICLE_COLLECTION = "user:article:collection";
+    //普通用户对评论的权限
+    public static final String USER_COMMENT_PUT = "user:comment:put";
+    public static final String USER_COMMENT_DELETE = "user:comment:delete";
+    public static final String USER_COMMENT_SELECT = "user:comment:select";
+    //vip用户权限
+    public static final String VIP_ARTICLE_ALL = "vip:article:*";
+
 }

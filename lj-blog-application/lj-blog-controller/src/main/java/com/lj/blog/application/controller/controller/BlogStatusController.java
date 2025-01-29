@@ -26,21 +26,21 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "用户点赞、收藏控制器")
 public class BlogStatusController {
     @PostMapping("/like")
-    @SaCheckPermission(PermissionConstant.USER_LIKE)
-    public Result<Integer> putLike(@RequestBody PutStatusRequest request){
+    @SaCheckPermission(PermissionConstant.USER_ARTICLE_LIKE)
+    public String putLike(@RequestBody PutStatusRequest request){
         try {
             if(log.isInfoEnabled()){
                 LogUtils.green("BlogStatusController.putLike:request:" + JSON.toJSONString(request));
             }
-            return null;
+            return "点赞成功";
         }catch (Exception e){
            log.error("点赞文章出错：{}", e.getMessage(), e);
-           return Result.error("点赞文章失败");
+           return "点赞失败";
         }
     }
 
     @PostMapping("/collection")
-    @SaCheckPermission(PermissionConstant.USER_COMMENT)
+    @SaCheckPermission(PermissionConstant.USER_COMMENT_PUT)
     public Result<String> putCollection(){
         return null;
     }

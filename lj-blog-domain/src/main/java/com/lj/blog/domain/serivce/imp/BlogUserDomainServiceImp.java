@@ -83,13 +83,6 @@ public class BlogUserDomainServiceImp implements BlogUserDomainService {
         BlogUser blogUser = blogUserService.queryById(Long.parseLong(loginId));
         return infoBoConvert.blogUserInfoToBo(blogUser);
     }
-    /**
-     * 根据用户id查询权限集合
-     * */
-    @Override
-    public Set<String> getPermissionListById(long id) {
-        return Set.of();
-    }
 
 
 

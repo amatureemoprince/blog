@@ -4,6 +4,8 @@ import com.lj.blog.infra.basic.entity.BlogAdminRole;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 /**
  * 博客管理员角色表(BlogAdminRole)表服务接口
  *
@@ -53,4 +55,11 @@ public interface BlogAdminRoleService {
      */
     boolean deleteById(Integer id);
 
+    /**
+     * 通过管理员id查询角色
+     *
+     * @param adminId 管理员id
+     * @return 管理员角色
+     */
+    Set<String> getRoleSetByAdminId(Integer adminId);
 }

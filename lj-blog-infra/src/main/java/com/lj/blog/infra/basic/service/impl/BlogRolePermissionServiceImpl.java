@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 
 /**
  * 角色权限表(BlogRolePermission)表服务实现类
@@ -78,5 +80,10 @@ public class BlogRolePermissionServiceImpl implements BlogRolePermissionService 
     @Override
     public boolean deleteById(Integer id) {
         return this.blogRolePermissionDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public Set<String> getPermissionSetByRole(Set<String> roleSet) {
+        return this.blogRolePermissionDao.queryPermissionByRoles(roleSet);
     }
 }

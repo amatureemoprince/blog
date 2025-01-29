@@ -20,6 +20,8 @@ public class BlogAdminRole implements Serializable {
      * 角色ID
      */
     private Integer id;
+
+    private Integer adminId;
     /**
      * 角色名称
      */

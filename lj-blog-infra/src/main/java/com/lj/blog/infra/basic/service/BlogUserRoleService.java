@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 /**
  * 用户角色表(BlogUserRole)表服务接口
  *
@@ -55,4 +57,11 @@ public interface BlogUserRoleService {
      */
     boolean deleteById(Integer id);
 
+    /**
+     * 根据主键获取角色Set集合
+     *
+     * @param userId 用户id
+     * @return 角色Set集合
+     */
+    Set<String> getRoleSetByUserId(Integer userId);
 }

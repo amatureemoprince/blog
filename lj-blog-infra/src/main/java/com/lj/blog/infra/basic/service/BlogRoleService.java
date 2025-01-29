@@ -4,6 +4,8 @@ import com.lj.blog.infra.basic.entity.BlogRole;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 /**
  * 博客角色表(BlogRole)表服务接口
  *
@@ -52,5 +54,6 @@ public interface BlogRoleService {
      * @return 是否成功
      */
     boolean deleteById(Integer id);
+
 
 }

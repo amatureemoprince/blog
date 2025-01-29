@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 /**
  * 博客管理员角色表(BlogAdminRole)表服务实现类
  *
@@ -77,5 +79,10 @@ public class BlogAdminRoleServiceImpl implements BlogAdminRoleService {
     @Override
     public boolean deleteById(Integer id) {
         return this.blogAdminRoleDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public Set<String> getRoleSetByAdminId(Integer adminId) {
+        return this.blogAdminRoleDao.queryRolesByAdminId(adminId);
     }
 }

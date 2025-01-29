@@ -4,6 +4,8 @@ import com.lj.blog.infra.basic.entity.BlogPermission;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 /**
  * 博客权限表(BlogPermission)表服务接口
  *
@@ -52,5 +54,6 @@ public interface BlogPermissionService {
      * @return 是否成功
      */
     boolean deleteById(Integer id);
+
 
 }

@@ -9,6 +9,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
+import java.util.Set;
+
 
 /**
  * 用户角色表(BlogUserRole)表服务实现类
@@ -78,5 +80,10 @@ public class BlogUserRoleServiceImpl implements BlogUserRoleService {
     @Override
     public boolean deleteById(Integer id) {
         return this.blogUserRoleDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public Set<String> getRoleSetByUserId(Integer userId) {
+        return this.blogUserRoleDao.queryRolesByUserId(userId);
     }
 }

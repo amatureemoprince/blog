@@ -69,6 +69,21 @@
         </where>
     </select>
 
+
+    <select id="queryPermissionByRoles" resultType="java.lang.String" parameterType="java.util.Set">
+        SELECT DISTINCT permission
+        FROM blog_role_permission
+        <where>
+            <if test="roles != null and roles.size() > 0">
+                role_name IN
+                <foreach item="role" collection="roles" open="(" separator="," close=")">
+                    #{role}
+                </foreach>
+                AND is_deleted = 0
+            </if>
+        </where>
+    </select>
+
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
         insert into blog_role_permission(role_name, permission, create_time, is_deleted)
