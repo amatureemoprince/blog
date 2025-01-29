@@ -60,7 +60,7 @@ public class MybatisPlusAllSqlLog implements InnerInterceptor {
     private static String getSql(Configuration configuration, BoundSql boundSql, String sqlId) {
         Object parameterObject = boundSql.getParameterObject();
         List<ParameterMapping> parameterMappings = boundSql.getParameterMappings();
-        String sql = boundSql.getSql().replaceAll("[\\s]+", " ");
+        String sql = boundSql.getSql().replaceAll("\\s+", " ");
         if (!CollectionUtils.isEmpty(parameterMappings) && parameterObject != null) {
             TypeHandlerRegistry typeHandlerRegistry = configuration.getTypeHandlerRegistry();
             if (typeHandlerRegistry.hasTypeHandler(parameterObject.getClass())) {

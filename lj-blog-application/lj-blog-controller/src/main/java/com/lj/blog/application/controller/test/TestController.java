@@ -6,9 +6,11 @@ import com.lj.blog.common.exception.exceptions.BusinessException;
 import com.lj.blog.common.satoken.StpKit;
 import com.lj.blog.common.utils.MailUtils;
 import com.lj.blog.common.utils.RedisUtils;
+import jdk.dynalink.linker.LinkerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -57,6 +59,10 @@ public class TestController {
         return String.valueOf(login);
     }
 
+    @GetMapping("/permission")
+    public List<String> permission(){
+        return StpKit.USER.getPermissionList();
+    }
     @GetMapping("/user/isLogin")
     public String isLogin(){
         return String.valueOf(StpKit.USER.isLogin());

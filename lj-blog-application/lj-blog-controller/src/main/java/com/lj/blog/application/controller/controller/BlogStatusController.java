@@ -3,9 +3,12 @@ package com.lj.blog.application.controller.controller;
 import cn.dev33.satoken.annotation.SaCheckPermission;
 import com.alibaba.fastjson.JSON;
 import com.lj.blog.application.controller.dto.PutStatusRequest;
+import com.lj.blog.common.annotation.SaUserCheckPermission;
 import com.lj.blog.common.constant.PermissionConstant;
 import com.lj.blog.common.result.Result;
+import com.lj.blog.common.satoken.StpKit;
 import com.lj.blog.common.utils.LogUtils;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "用户点赞、收藏控制器")
 public class BlogStatusController {
     @PostMapping("/like")
-    @SaCheckPermission(PermissionConstant.USER_ARTICLE_LIKE)
+    @SaUserCheckPermission(PermissionConstant.USER_ARTICLE_LIKE)
     public String putLike(@RequestBody PutStatusRequest request){
         try {
             if(log.isInfoEnabled()){
