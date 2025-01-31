@@ -48,8 +48,7 @@ public class UserPermissionOrRoleHandler implements PermissionOrRoleHandler {
      * @return 用户角色
      */
     @Override
-    public Set<String> getRoleSet() {
-        String loginId = (String) StpKit.USER.getLoginId();
-        return blogRoleDomainService.getUserRoleByUserId(Integer.parseInt(loginId));
+    public Set<String> getRoleSet(Object loginId) {
+        return blogRoleDomainService.getUserRoleByUserId(Integer.parseInt((String) loginId));
     }
 }

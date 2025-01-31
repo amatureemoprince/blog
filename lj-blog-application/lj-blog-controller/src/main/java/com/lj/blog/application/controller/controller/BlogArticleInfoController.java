@@ -15,6 +15,8 @@ import com.lj.blog.domain.entity.BlogArticleContentBo;
 import com.lj.blog.domain.serivce.imp.BlogArticleBasicDomainServiceImp;
 import com.lj.blog.infra.basic.entity.BlogArticleBasicInfo;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -64,8 +66,11 @@ public class BlogArticleInfoController {
         }
     }
 
-    @Operation(summary = "获取id为?的文章内容", description = "传递文章id")
+    @Operation(summary = "获取id为?的文章内容",
+               description = "传递文章id",
+               operationId = "获取确定id的文章内容")
     @GetMapping("/get/{id}")
+    @Parameter(name = "id", description = "文章id", required = true, schema = @Schema(type = "integer", format = "int64"))
     public Result<BlogArticleContentDto> getArticleContent(@PathVariable("id") Integer id){
         try {
             if(log.isInfoEnabled()){

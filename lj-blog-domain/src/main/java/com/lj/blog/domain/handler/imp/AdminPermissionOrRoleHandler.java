@@ -41,8 +41,7 @@ public class AdminPermissionOrRoleHandler implements PermissionOrRoleHandler {
     }
 
     @Override
-    public Set<String> getRoleSet() {
-        String loginId = (String) StpKit.USER.getLoginId();
-        return blogRoleDomainService.getAdminRoleByAdminId(Integer.parseInt(loginId));
+    public Set<String> getRoleSet(Object loginId) {
+        return blogRoleDomainService.getAdminRoleByAdminId(Integer.parseInt((String) loginId));
     }
 }

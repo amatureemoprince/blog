@@ -6,6 +6,7 @@ import com.lj.blog.common.exception.exceptions.BusinessException;
 import com.lj.blog.common.satoken.StpKit;
 import com.lj.blog.common.utils.MailUtils;
 import com.lj.blog.common.utils.RedisUtils;
+import jakarta.servlet.http.HttpServletRequest;
 import jdk.dynalink.linker.LinkerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,10 +24,18 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/test")
 public class TestController {
+    private final RedisUtils redisUtils;
+    private final MailUtils mailUtils;
     @Autowired
-    private RedisUtils redisUtils;
-    @Autowired
-    private MailUtils mailUtils;
+    public TestController(RedisUtils redisUtils, MailUtils mailUtils) {
+        this.redisUtils = redisUtils;
+        this.mailUtils = mailUtils;
+    }
+
+    @PostMapping("/request")
+    public String request(HttpServletRequest request){
+        return request.getRequestURI();
+    }
     @PostMapping("/redis")
     public String redis(){
         redisUtils.set("test", "你好redis", 10, TimeUnit.HOURS);

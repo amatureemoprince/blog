@@ -18,8 +18,12 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class RedisUtils {
 
+    private final RedisTemplate<String, Object> redisTemplate;
+
     @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+    public RedisUtils(RedisTemplate<String, Object> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
 
     /**
      * 设置字符串类型的值

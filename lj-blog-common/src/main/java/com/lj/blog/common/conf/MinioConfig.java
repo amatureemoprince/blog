@@ -36,7 +36,7 @@ public class MinioConfig {
     private String secretKey;
 
     /**
-     * 默认存储桶
+     * 默认存储桶，如果需要可以多创建几个桶来使用
      */
     @Value("${minio.bucketName}")
     private String bucketName;
