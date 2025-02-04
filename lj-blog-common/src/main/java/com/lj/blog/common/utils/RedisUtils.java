@@ -1,6 +1,7 @@
 package com.lj.blog.common.utils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import java.util.Collection;
@@ -24,6 +25,8 @@ public class RedisUtils {
     public RedisUtils(RedisTemplate<String, Object> redisTemplate) {
         this.redisTemplate = redisTemplate;
     }
+
+    
 
     /**
      * 设置字符串类型的值

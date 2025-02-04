@@ -36,6 +36,7 @@ public class MailUtils {
 
     @Value("${spring.mail.username}")
     private String from;
+
     /**
      * @Description 验证发送邮箱的验证码和前端传入的验证码是否一致
      * */
@@ -145,5 +146,27 @@ public class MailUtils {
             log.error("发送邮件时发生异常！", e);
         }
 
+    }
+
+    public void sendRegisterMail(String email) {
+        // 创建消息
+        MimeMessage mimeMessage = mailSender.createMimeMessage();
+        try {
+            // 设置主题、发件人、内容
+            mimeMessage.setSubject("朝花夕拾");
+            mimeMessage.setFrom(new InternetAddress(from, "朝花夕拾", "UTF-8"));
+            mimeMessage.setText(
+                    "\n\n\n欢迎您的注册！希望我们一起在博客中度过快乐的时光~~"
+            );
+            // 设置收件人
+            mimeMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
+            // 发送邮件
+            mailSender.send(mimeMessage);
+        } catch (MessagingException e) {
+            log.error("发送邮箱失败, 收件人: {}, 错误信息: {}", email, e.getMessage(), e);
+            throw new BusinessException("发送邮箱失败");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -27,6 +27,10 @@ public class Result <T>{
         return new Result<>(ResultHttpEnum.SUCCESS.getHttpCode(), msg, date);
     }
 
+    public static Result<String> success(String date){
+        return new Result<>(ResultHttpEnum.SUCCESS.getHttpCode(), date, null);
+    }
+
     public static <T> Result<T> error(){
         return new Result<>(ResultHttpEnum.ERROR.getHttpCode(), ResultHttpEnum.ERROR.getMsg(), null);
     }

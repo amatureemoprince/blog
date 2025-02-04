@@ -5,6 +5,7 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.IdUtil;
 import com.lj.blog.common.enums.GlobalEnum;
 import com.lj.blog.common.exception.exceptions.BusinessException;
+import com.lj.blog.common.publish.Publisher;
 import com.lj.blog.common.result.Result;
 import com.lj.blog.common.satoken.StpKit;
 import com.lj.blog.domain.convert.BlogUserInfoBoConvert;
@@ -13,10 +14,11 @@ import com.lj.blog.domain.entity.BlogUserLoginBo;
 import com.lj.blog.domain.serivce.BlogUserDomainService;
 import com.lj.blog.infra.basic.entity.BlogUser;
 import com.lj.blog.infra.basic.service.impl.BlogUserServiceImpl;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import java.util.Set;
 
 /**
  * @ClassName BlogUserDomainServiceImp
@@ -28,49 +30,68 @@ import java.util.Set;
 @Service
 public class BlogUserDomainServiceImp implements BlogUserDomainService {
 
-    @Autowired
-    private BlogUserServiceImpl blogUserService;
+    private static final Logger log = LogManager.getLogger(BlogUserDomainServiceImp.class);
+    private final Publisher publisher;
+
+    private final BlogUserServiceImpl blogUserService;
+
+    private final BlogUserInfoBoConvert infoBoConvert;
 
     @Autowired
-    private BlogUserInfoBoConvert infoBoConvert;
+    public BlogUserDomainServiceImp(Publisher publisher, BlogUserServiceImpl blogUserService, BlogUserInfoBoConvert infoBoConvert) {
+        this.publisher = publisher;
+        this.blogUserService = blogUserService;
+        this.infoBoConvert = infoBoConvert;
+    }
 
     @Override
     public Result<String> register(BlogUser blogUser) {
-        BlogUser blogUserD = new BlogUser();
-        blogUserD.setEmail(blogUser.getEmail());
-        List<BlogUser> blogUsers = blogUserService.queryPrimary(blogUserD);
-        if(!CollectionUtil.isEmpty(blogUsers)){
-            return Result.error("该邮箱已经被注册了");
+        try {
+            BlogUser blogUserD = new BlogUser();
+            blogUserD.setEmail(blogUser.getEmail());
+            List<BlogUser> blogUsers = blogUserService.queryPrimary(blogUserD);
+            if (!CollectionUtil.isEmpty(blogUsers)) {
+                return Result.error("该邮箱已经被注册了");
+            }
+            long snowflakeNextId = IdUtil.getSnowflakeNextId();
+            String userName = GlobalEnum.WEBSITE_NAME.getMsg() + "_" + snowflakeNextId;
+            //使用生成的userName
+            blogUser.setUserName(userName);
+            BlogUser insert = blogUserService.insert(blogUser);
+            if (insert != null) {
+                publisher.registerUserPublisher(insert.getEmail());
+                return Result.success("注册成功");
+            }
+            return Result.error("用户注册失败");
+        }catch (Exception e){
+            throw new BusinessException("用户注册失败");
         }
-        long snowflakeNextId = IdUtil.getSnowflakeNextId();
-        String userName = GlobalEnum.WEBSITE_NAME.getMsg() + "_" + snowflakeNextId;
-        //使用生成的userName
-        blogUser.setUserName(userName);
-        BlogUser insert = blogUserService.insert(blogUser);
-        if(insert != null){
-            return Result.success("注册成功");
-        }
-        return Result.error("注册失败");
     }
     /**
      * @Description 用户登录：可以使用邮箱或者用户名
      * */
     @Override
     public Result<SaTokenInfo> login(BlogUserLoginBo blogUserLoginBo) {
-        BlogUser blogUser = new BlogUser();
-        //若是用户名则查询user_name
-        if(!checkEmail(blogUserLoginBo.getUserName())){
-            //设置需要查询的条件
-            blogUser.setUserName(blogUserLoginBo.getUserName());
+        try {
+            BlogUser blogUser = new BlogUser();
+
+            //若是用户名则查询user_name
+            if (!checkEmail(blogUserLoginBo.getUserName())) {
+                //设置需要查询的条件
+                blogUser.setUserName(blogUserLoginBo.getUserName());
+                blogUser.setIsDeleted(GlobalEnum.IS_NOT_DELETED.getCode());
+                SaTokenInfo saTokenInfo = loginByEmailOrUserName(blogUser, blogUserLoginBo.getPassword());
+                return Result.success(saTokenInfo);
+            }
+            //若是email则查询email
+            blogUser.setEmail(blogUserLoginBo.getUserName());
             blogUser.setIsDeleted(GlobalEnum.IS_NOT_DELETED.getCode());
             SaTokenInfo saTokenInfo = loginByEmailOrUserName(blogUser, blogUserLoginBo.getPassword());
             return Result.success(saTokenInfo);
+        }catch (Exception e){
+            log.error("登录用户失败 {}, {}", e, e.getMessage());
+            throw new BusinessException("登录用户失败");
         }
-        //若是email则查询email
-        blogUser.setEmail(blogUserLoginBo.getUserName());
-        blogUser.setIsDeleted(GlobalEnum.IS_NOT_DELETED.getCode());
-        SaTokenInfo saTokenInfo = loginByEmailOrUserName(blogUser, blogUserLoginBo.getPassword());
-        return Result.success(saTokenInfo);
     }
 
 

@@ -1,4 +1,7 @@
 package com.lj.blog.domain.entity;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.ServletRequestListener;
+import jakarta.servlet.http.HttpSessionListener;
 import lombok.Data;
 
 import java.util.Date;

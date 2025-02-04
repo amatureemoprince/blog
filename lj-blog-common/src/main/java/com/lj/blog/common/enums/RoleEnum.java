@@ -15,7 +15,7 @@ import lombok.Getter;
 @Getter
 public enum RoleEnum {
 
-    USER(RoleConstant.USER, "普通用户"),
+    USER(RoleConstant.NORMAL_USER, "普通用户"),
 
     VIP_USER(RoleConstant.VIP_USR, "VIP用户"),
 

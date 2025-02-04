@@ -29,12 +29,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 @Tag(name = "注册控制器")
 public class UserRegisterController {
+
+    private final BlogUserDomainServiceImp blogUserDomainService;
+    private final BlogUserConvert convert;
+    private final MailUtils mailUtils;
     @Autowired
-    private BlogUserDomainServiceImp blogUserDomainService;
-    @Autowired
-    private BlogUserConvert convert;
-    @Autowired
-    private MailUtils mailUtils;
+    public UserRegisterController(BlogUserDomainServiceImp blogUserDomainService, BlogUserConvert convert, MailUtils mailUtils) {
+        this.blogUserDomainService = blogUserDomainService;
+        this.convert = convert;
+        this.mailUtils = mailUtils;
+    }
 
     @Operation(summary = "用户注册")
     @PostMapping("/register")

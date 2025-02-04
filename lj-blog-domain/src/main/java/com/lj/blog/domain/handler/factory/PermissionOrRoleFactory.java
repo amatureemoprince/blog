@@ -5,6 +5,7 @@ import com.lj.blog.domain.handler.PermissionOrRoleHandler;
 import com.lj.blog.common.utils.LogUtils;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -11,7 +11,7 @@ import lombok.Getter;
 @Getter
 public class RoleConstant {
 
-    public static final String USER = "normal_blog_user";
+    public static final String NORMAL_USER = "normal_blog_user";
 
     public static final String VIP_USR = "vip_blog_user";
 

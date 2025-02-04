@@ -1,20 +1,12 @@
 package com.lj.blog.application.controller.satoken;
 
 import cn.dev33.satoken.stp.StpInterface;
-import cn.hutool.core.collection.CollectionUtil;
-import com.lj.blog.common.exception.exceptions.BusinessException;
-import com.lj.blog.common.satoken.StpKit;
 import com.lj.blog.domain.handler.PermissionOrRoleHandler;
 import com.lj.blog.domain.handler.factory.PermissionOrRoleFactory;
-import com.lj.blog.domain.serivce.imp.BlogPermissionDomainServiceImp;
-import com.lj.blog.domain.serivce.imp.BlogRoleDomainServiceImp;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-
 /**
  * @ClassName StpInterfaceImpl
  * @Description 使用工厂模式 自定义权限加载接口实现类
@@ -25,6 +17,7 @@ import java.util.stream.Collectors;
 @Component
 @Slf4j
 public class StpInterfaceImpl implements StpInterface {
+
 
     private final PermissionOrRoleFactory permissionOrRoleFactory;
 

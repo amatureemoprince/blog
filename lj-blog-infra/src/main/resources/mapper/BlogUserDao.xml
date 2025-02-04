@@ -144,7 +144,7 @@
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
         insert into blog_user(email, sex, user_name, nick_name, create_time, update_time, is_deleted, password, avatar)
-        values (#{email}, #{sex}, #{userName}, #{nickName}, #{createTime}, #{updateTime}, #{isDeleted}, #{password}), #{avatar}
+        values (#{email}, #{sex}, #{userName}, #{nickName}, #{createTime}, #{updateTime}, #{isDeleted}, #{password}, #{avatar})
     </insert>
 
     <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">

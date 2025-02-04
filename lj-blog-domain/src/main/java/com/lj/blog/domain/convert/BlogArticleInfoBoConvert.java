@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  */
 @Mapper(componentModel = "spring",
         unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface BlogArticleInfoBoConvert {
+public interface BlogArticleInfoBoConvert{
     @Mapping(target = "id", source = "blogArticleBasicInfo.id")
     @Mapping(target = "createTime", source = "blogArticleBasicInfo.createTime")
     @Mapping(target = "category", source = "blogCategory.category")
