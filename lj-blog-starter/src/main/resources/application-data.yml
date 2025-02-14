@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    username: root
+    password: 200481lj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lj_blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 20
+      min-idle: 20
+      max-active: 100
+      max-wait: 60000
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: 123456
+      filter:
+        stat:
+          enabled: true
+          slow-sql-millis: 2000
+          log-slow-sql: true
+  # redis配置
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password:
+      database: 0
+      lettuce:
+        pool:
+          max-active: 20
+          max-idle: 8
+          max-wait: -1
+          min-idle: 0
+############## MinIo配置 ##############
+# AccessKey: TkeEY9pIXSijY0lic186
+# SecretKey: fxJZ8hiCkNy47bMCpIdUxqNqhBfcPzqOloM4TNP1
+minio:
+  endpoint: http://localhost:9000
+  accessKey: TkeEY9pIXSijY0lic186
+  secretKey: fxJZ8hiCkNy47bMCpIdUxqNqhBfcPzqOloM4TNP1
+  bucketName: blog-user

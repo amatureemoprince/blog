@@ -40,6 +40,14 @@ public class StatisticsAccessInterfaceTimeInterceptor implements HandlerIntercep
         return true;
     }
 
+    /**
+     * 请求完成后，视图渲染前调用
+     * @param request 请求
+     * @param response 响应
+     * @param handler 主体
+     * @param modelAndView 视图
+     * @throws Exception 异常
+     */
     @Override
     public void postHandle(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull Object handler, ModelAndView modelAndView) throws Exception {
         HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);

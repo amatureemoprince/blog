@@ -1,0 +1,20 @@
+spring:
+  # 邮箱配置
+  mail:
+    host: smtp.qq.com  # 邮箱服务器地址
+    username: 2069057986@qq.com  # 邮箱账号
+    password: fosxhidqxtmnehce  # 邮箱授权码，请确保这是您的邮箱授权码而非登录密码
+    default-encoding: utf-8  # 默认编码
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory

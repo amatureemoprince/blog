@@ -31,7 +31,7 @@ import java.util.List;
  * @Version JDK 17
  */
 @Slf4j
-@Tag(name = "获取文章控制器")
+@Tag(name = "获取文章控制器", description = "获取到展示到首页的文章简介和点赞等数据")
 @RestController
 @RequestMapping("/home")
 public class BlogArticleInfoController {

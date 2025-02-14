@@ -15,6 +15,7 @@ import java.util.List;
 @Schema(title = "博客主页展示数据模型")
 @Data
 public class BlogContentDto {
+    @Schema(description = "页面展示标题", name = "title", example = "WonderLife")
     private String title;
     private String subtitle;
     private List<String> sentences;
